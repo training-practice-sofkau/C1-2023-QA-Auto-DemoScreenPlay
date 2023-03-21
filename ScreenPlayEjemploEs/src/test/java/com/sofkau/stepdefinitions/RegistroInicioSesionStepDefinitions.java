@@ -1,5 +1,6 @@
 package com.sofkau.stepdefinitions;
 
+import com.github.javafaker.Faker;
 import com.sofkau.setup.Configuracion;
 import com.sofkau.tasks.AbrirPaginaInicial;
 import io.cucumber.java.es.Cuando;
@@ -17,6 +18,10 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class RegistroInicioSesionStepDefinitions extends Configuracion {
+    Faker faker = new Faker();
+    private String nameUser = faker.name().username();
+    private String password = faker.numerify("#######");
+    private String email = faker.internet().emailAddress();
 
     @Dado("que el usuario esta en la pagina de inicio")
     public void queElUsuarioEstaEnLaPaginaDeInicio() {
@@ -40,26 +45,26 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
     public void llenaTodosLosCampos() {
         theActorInTheSpotlight().attemptsTo(
                 iniciarRegistro()
-                        .conElUsuario("Jose Nunez")
-                        .yConElEmail("nunezjose@gmail.com")
+                        .conElUsuario(nameUser)
+                        .yConElEmail(email)
         );
         theActorInTheSpotlight().attemptsTo(
                 llenarRegistro()
                         .conElGenero("Hombre")
-                        .laContrasenna("123456")
-                        .elDia("5")
-                        .elMonth("1")
-                        .elYear("2000")
-                        .elFirstName("Jose")
-                        .elLastName("Rodriguez")
-                        .laCompany("Sofka")
-                        .laAddress("Calle 15")
-                        .laAddress2("Cra 16")
-                        .elPais("India")
-                        .elEstado("Delhi")
-                        .laciudad("Zipa")
-                        .elZipCode("946512")
-                        .yElNumeroCelular("3104598456")
+                        .laContrasenna(password)
+                        .elDia(String.valueOf(faker.number().numberBetween(1,28)))
+                        .elMonth(String.valueOf(faker.number().numberBetween(1,12)))
+                        .elYear(String.valueOf(faker.number().numberBetween(1975,2005)))
+                        .elFirstName(faker.name().firstName())
+                        .elLastName(faker.name().lastName())
+                        .laCompany(faker.company().name())
+                        .laAddress(faker.address().streetAddress())
+                        .laAddress2(faker.address().streetAddress())
+                        .elPais("Israel")
+                        .elEstado(faker.country().name())
+                        .laciudad(faker.country().name())
+                        .elZipCode(faker.numerify("######"))
+                        .yElNumeroCelular(faker.numerify("##########"))
         );
     }
 
