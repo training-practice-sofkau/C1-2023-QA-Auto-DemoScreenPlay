@@ -9,6 +9,7 @@ import io.cucumber.java.es.Entonces;
 import static com.sofkau.questions.MensajeNombre.mensajeNombre;
 import static com.sofkau.tasks.IniciarSesion.iniciarSesion;
 import static com.sofkau.tasks.NavegarAlRegistro.navegarAlRegistro;
+import static com.sofkau.tasks.Registrarse.registrarse;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -36,11 +37,17 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
 
     @Cuando("Llena todos los campos")
     public void llenaTodosLosCampos() {
+        theActorInTheSpotlight().attemptsTo(
+                registrarse()
+                    .conElUsuario("Jessica")
+                    .yConElEmail("jessi@gmail.com")
+        );
 
     }
 
     @Entonces("el usuario debe ser redireccionado a la pagina principal")
     public void elUsuarioDebeSerRedireccionadoALaPaginaPrincipal() {
+        //Validar que se haya hecho el registro
         quitarDriver();
     }
 

@@ -3,10 +3,14 @@ package com.sofkau.tasks;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
 
 import static com.sofkau.ui.PaginaRegistro.BOTON_REGISTRO;
+import static com.sofkau.ui.Registro.*;
 
 public class NavegarAlRegistro implements Task {
+
+
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
@@ -14,6 +18,7 @@ public class NavegarAlRegistro implements Task {
         );
     }
         public static NavegarAlRegistro navegarAlRegistro(){
-        return new NavegarAlRegistro();
+            return new NavegarAlRegistro();
     }
+
 }
