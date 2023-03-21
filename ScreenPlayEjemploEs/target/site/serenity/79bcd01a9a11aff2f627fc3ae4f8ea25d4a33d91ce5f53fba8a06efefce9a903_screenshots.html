@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-03-2023 10:10</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-03-2023 13:59</span>
     <br style="clear:left"/>
 </div>
 
@@ -197,9 +197,9 @@ para poder comprar productos en la página
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Iniciar sesion
+                                <span class="failing-color">Iniciar sesion
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -216,31 +216,89 @@ para poder comprar productos en la página
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.sofkau.tasks.LLenarFormularioRegistroCompleto.performAs(LLenarFormularioRegistroCompleto.java:67)<br />com.sofkau.stepdefinitions.RegistroInicioSesionStepDefinitions.completaLosCamposParaIniciarSesion(RegistroInicioSesionStepDefinitions.java:59)<br />io.cucumber.java.Invoker.invoke(Invoker.java:27)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:49)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:51)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:67)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:227)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.id: //button[normalize-space()='Create Account'] to be enabled (tried for 60 second(s) with 100 milliseconds interval)</pre>
+                        <pre>com.sofkau.tasks.LLenarFormularioRegistroCompleto.performAs(LLenarFormularioRegistroCompleto.java :67)<br />com.sofkau.stepdefinitions.RegistroInicioSesionStepDefinitions.completaLosCamposParaIniciarSesion(RegistroInicioSesionStepDefinitions.java :59)<br />io.cucumber.java.Invoker.invoke(Invoker.java :27)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :27)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :64)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :49)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :46)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :51)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :67)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :83)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :24)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :227)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :54)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource6779114734038232386.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="49c8e674ca7ca84c9c4d2902c9764b875003ae30d6f8237074f5bbbb664392b3.png" title=" Dado que el usuario esta en la pagina de inicio" width="1366"/>
-                <img src="49c8e674ca7ca84c9c4d2902c9764b875003ae30d6f8237074f5bbbb664392b3.png" title=" Juanes abrir pagina inicial" width="1366"/>
-                <img src="49c8e674ca7ca84c9c4d2902c9764b875003ae30d6f8237074f5bbbb664392b3.png" title=" Juanes opens the Pagina inicial" width="1366"/>
-                <img src="21f64782fc53ebcf56876bc4dc5cfbf7cab85a54fcfa8fa20af553e287005659.png" title=" Juanes opens the Pagina inicial (completed)" width="1366"/>
-                <img src="21f64782fc53ebcf56876bc4dc5cfbf7cab85a54fcfa8fa20af553e287005659.png" title=" Juanes abrir pagina inicial (completed)" width="1366"/>
-                <img src="21f64782fc53ebcf56876bc4dc5cfbf7cab85a54fcfa8fa20af553e287005659.png" title=" Dado que el usuario esta en la pagina de inicio (completed)" width="1366"/>
-                <img src="bb0527b862503230e34fef737c01026acc42becacd6d249653fdcce6965dca44.png" title=" Cuando navega hasta la el formulario de registro" width="1366"/>
-                <img src="bb0527b862503230e34fef737c01026acc42becacd6d249653fdcce6965dca44.png" title=" Juanes navegar al registro" width="1366"/>
-                <img src="bb0527b862503230e34fef737c01026acc42becacd6d249653fdcce6965dca44.png" title=" Juanes clicks on Boton ir al registro" width="1366"/>
-                <img src="9b0ab7b1e146c8b401b0fc21c77029efac5403275adc39fba0455b56e16051ba.png" title=" Juanes navegar al registro (completed)" width="1366"/>
-                <img src="9b0ab7b1e146c8b401b0fc21c77029efac5403275adc39fba0455b56e16051ba.png" title=" Cuando navega hasta la el formulario de registro (completed)" width="1366"/>
-                <img src="129a63b90979bca57e84b84d5abb9e730b8e2e5f386e31306ec7c62a9a09798d.png" title=" Y completa los campos para iniciar sesion" width="1366"/>
-                <img src="129a63b90979bca57e84b84d5abb9e730b8e2e5f386e31306ec7c62a9a09798d.png" title=" Juanes iniciar sesion" width="1366"/>
-                <img src="129a63b90979bca57e84b84d5abb9e730b8e2e5f386e31306ec7c62a9a09798d.png" title=" Juanes enters 'juan.pineda@gmail.com' into campo usuario" width="1366"/>
-                <img src="129a63b90979bca57e84b84d5abb9e730b8e2e5f386e31306ec7c62a9a09798d.png" title=" Juanes enters '123456' into campo contrase&Atilde;&plusmn;a" width="1366"/>
-                <img src="de5380f64faa9181e53f29319db5a82553ce4c7e6fec48dc80d7cb2191f5f13d.png" title=" Juanes enters '123456' into campo contrase&Atilde;&plusmn;a (completed)" width="1366"/>
-                <img src="de5380f64faa9181e53f29319db5a82553ce4c7e6fec48dc80d7cb2191f5f13d.png" title=" Juanes clicks on Bot&Atilde;&sup3;n iniciar sesion" width="1366"/>
-                <img src="176be78b751c3b425ec8f59a55a6d5a62ed1cab96da17e3fc4be289c0809f88e.png" title=" Juanes clicks on Bot&Atilde;&sup3;n iniciar sesion (completed)" width="1366"/>
-                <img src="176be78b751c3b425ec8f59a55a6d5a62ed1cab96da17e3fc4be289c0809f88e.png" title=" Juanes iniciar sesion (completed)" width="1366"/>
-                <img src="176be78b751c3b425ec8f59a55a6d5a62ed1cab96da17e3fc4be289c0809f88e.png" title=" Y completa los campos para iniciar sesion (completed)" width="1366"/>
-                <img src="176be78b751c3b425ec8f59a55a6d5a62ed1cab96da17e3fc4be289c0809f88e.png" title=" Entonces el usuario debe ver su nombre en la pagina principal" width="1366"/>
-                <img src="176be78b751c3b425ec8f59a55a6d5a62ed1cab96da17e3fc4be289c0809f88e.png" title=" Then mensaje nombre should be 'Logged in as Juan Esteban'" width="1366"/>
-                <img src="176be78b751c3b425ec8f59a55a6d5a62ed1cab96da17e3fc4be289c0809f88e.png" title=" Entonces el usuario debe ver su nombre en la pagina principal (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Dado que el usuario esta en la pagina de inicio" width="1366"/>
+                <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Juanes abrir pagina inicial" width="1366"/>
+                <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Juanes opens the Pagina inicial" width="1366"/>
+                <img src="17b5948d43781c40babcc012c063c5886b2a4a4a623c701541207c7c5fbc29e4.png" title=" Juanes opens the Pagina inicial (completed)" width="1366"/>
+                <img src="17b5948d43781c40babcc012c063c5886b2a4a4a623c701541207c7c5fbc29e4.png" title=" Juanes abrir pagina inicial (completed)" width="1366"/>
+                <img src="17b5948d43781c40babcc012c063c5886b2a4a4a623c701541207c7c5fbc29e4.png" title=" Dado que el usuario esta en la pagina de inicio (completed)" width="1366"/>
+                <img src="5564119ee2c934add57d0d12fa82d0557a662240f2784d4533f0b263ba63e918.png" title=" Cuando navega hasta la el formulario de registro" width="1366"/>
+                <img src="5564119ee2c934add57d0d12fa82d0557a662240f2784d4533f0b263ba63e918.png" title=" Juanes navegar al registro" width="1366"/>
+                <img src="5564119ee2c934add57d0d12fa82d0557a662240f2784d4533f0b263ba63e918.png" title=" Juanes clicks on Boton ir al registro" width="1366"/>
+                <img src="5564119ee2c934add57d0d12fa82d0557a662240f2784d4533f0b263ba63e918.png" title=" Juanes navegar al registro (completed)" width="1366"/>
+                <img src="5564119ee2c934add57d0d12fa82d0557a662240f2784d4533f0b263ba63e918.png" title=" Cuando navega hasta la el formulario de registro (completed)" width="1366"/>
+                <img src="5564119ee2c934add57d0d12fa82d0557a662240f2784d4533f0b263ba63e918.png" title=" Y completa los campos para iniciar sesion" width="1366"/>
+                <img src="ce8a38c5b47060578bbb181db573c59d2936be2a87af27957b35a6d860b1a1d7.png" title=" Juanes realizar registro" width="1366"/>
+                <img src="ce8a38c5b47060578bbb181db573c59d2936be2a87af27957b35a6d860b1a1d7.png" title=" Juanes enters 'Santy' into Campo nombre de registo" width="1366"/>
+                <img src="62de948d8e65f0961470c9bdab585120a648b9850ca917aa3f7386a0a087f819.png" title=" Juanes enters 'Santy' into Campo nombre de registo (completed)" width="1366"/>
+                <img src="62de948d8e65f0961470c9bdab585120a648b9850ca917aa3f7386a0a087f819.png" title=" Juanes enters 'santiokami.23@gamil.com' into Campo email de registo" width="1366"/>
+                <img src="3dd9f3c7b5658389dab4fb90e744d0ba743ba756614c236968858adf0b400311.png" title=" Juanes enters 'santiokami.23@gamil.com' into Campo email de registo (completed)" width="1366"/>
+                <img src="3dd9f3c7b5658389dab4fb90e744d0ba743ba756614c236968858adf0b400311.png" title=" Juanes clicks on Bot&oacute;n SingUp" width="1366"/>
+                <img src="c191fae3381b11c47eaf7885e3e348a62db20b779d207fb4cb2d466380dc10f2.png" title=" Juanes clicks on Bot&oacute;n SingUp (completed)" width="1366"/>
+                <img src="c191fae3381b11c47eaf7885e3e348a62db20b779d207fb4cb2d466380dc10f2.png" title=" Juanes realizar registro (completed)" width="1366"/>
+                <img src="c191fae3381b11c47eaf7885e3e348a62db20b779d207fb4cb2d466380dc10f2.png" title=" Juanes l lenar formulario registro completo" width="1366"/>
+                <img src="c191fae3381b11c47eaf7885e3e348a62db20b779d207fb4cb2d466380dc10f2.png" title=" Juanes enters 'Ramirez' into Campo apellido" width="1366"/>
+                <img src="af0e924fcbef1202bdc7f5c1ed497e3d0616b4619b25d0b367ddf73fcc52c5e0.png" title=" Juanes enters 'Ramirez' into Campo apellido (completed)" width="1366"/>
+                <img src="af0e924fcbef1202bdc7f5c1ed497e3d0616b4619b25d0b367ddf73fcc52c5e0.png" title=" Juanes enters 'Arenas' into Campo segundo apellido" width="1366"/>
+                <img src="1ea0feab4de296fbb6f556f7eba3887ee3e09e5c97add15210500e126079af51.png" title=" Juanes enters 'Arenas' into Campo segundo apellido (completed)" width="1366"/>
+                <img src="1ea0feab4de296fbb6f556f7eba3887ee3e09e5c97add15210500e126079af51.png" title=" Juanes enters 'California' into Campo estado" width="1366"/>
+                <img src="0d61176c9983d4ec3978cc7fead3c6df6fc74ea9a8839ebf7f01c7f927145f3c.png" title=" Juanes enters 'California' into Campo estado (completed)" width="1366"/>
+                <img src="0d61176c9983d4ec3978cc7fead3c6df6fc74ea9a8839ebf7f01c7f927145f3c.png" title=" Juanes enters 'Los Angeles' into Campo ciudad" width="1366"/>
+                <img src="4c110f6f614f08e031c7ce6ea4c126ff29fabfb144ad3a0000c435067b6ea2e8.png" title=" Juanes enters 'Los Angeles' into Campo ciudad (completed)" width="1366"/>
+                <img src="4c110f6f614f08e031c7ce6ea4c126ff29fabfb144ad3a0000c435067b6ea2e8.png" title=" Juanes enters '90001' into Campo ZipCode" width="1366"/>
+                <img src="b5d43961abdb42deb7aba924595c451df5d9320912955f975ebe3cb13731ced6.png" title=" Juanes enters '90001' into Campo ZipCode (completed)" width="1366"/>
+                <img src="b5d43961abdb42deb7aba924595c451df5d9320912955f975ebe3cb13731ced6.png" title=" Juanes enters '1234567890' into Campo numero celular" width="1366"/>
+                <img src="911a73fb9fb0a17ea86c970a9db490e4260272059eed5a797e92075968403b6e.png" title=" Juanes enters '1234567890' into Campo numero celular (completed)" width="1366"/>
+                <img src="911a73fb9fb0a17ea86c970a9db490e4260272059eed5a797e92075968403b6e.png" title=" Juanes clicks on Boton create account" width="1366"/>
+                <img src="eaaec1eb859fcfd99b8406954746aa29f7737d26a0d00f36494b111e1ccdbeb7.png" title=" Juanes clicks on Boton create account (completed): <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 
