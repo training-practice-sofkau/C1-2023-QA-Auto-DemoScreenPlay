@@ -10,6 +10,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources/features"},
         glue = {"com.sofkau.stepdefinitions"},
         tags = {"not @Registro"}
+        //@InicioSesión
 )
 public class RegistroTest {
 }
