@@ -7,6 +7,7 @@ import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 
 import static com.sofkau.questions.MensajeNombre.mensajeNombre;
+import static com.sofkau.tasks.IniciarRegistro.iniciarRegistro;
 import static com.sofkau.tasks.IniciarSesion.iniciarSesion;
 import static com.sofkau.tasks.NavegarAlRegistro.navegarAlRegistro;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
@@ -36,7 +37,11 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
 
     @Cuando("Llena todos los campos")
     public void llenaTodosLosCampos() {
-
+        theActorInTheSpotlight().attemptsTo(
+                iniciarRegistro()
+                        .conElUsuario("Jose Nunez")
+                        .yConElEmail("nunezjose@gmail.com")
+        );
     }
 
     @Entonces("el usuario debe ser redireccionado a la pagina principal")
