@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-03-2023 10:10</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-03-2023 14:57</span>
     <br style="clear:left"/>
 </div>
 
@@ -197,9 +197,9 @@ para poder comprar productos en la página
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Iniciar sesion
+                                <span class="failing-color">Iniciar sesion
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -216,31 +216,83 @@ para poder comprar productos en la página
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.sofkau.tasks.LlenarRegistro.performAs(LlenarRegistro.java:17)<br />com.sofkau.stepdefinitions.RegistroInicioSesionStepDefinitions.navegaHastaLaElFormularioDeRegistro(RegistroInicioSesionStepDefinitions.java:32)<br />io.cucumber.java.Invoker.invoke(Invoker.java:27)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:49)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:51)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:67)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:227)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //option[@value='2003' to be enabled (tried for 60 second(s) with 100 milliseconds interval)</pre>
+                        <pre>com.sofkau.tasks.LlenarRegistro.performAs(LlenarRegistro.java :17)<br />com.sofkau.stepdefinitions.RegistroInicioSesionStepDefinitions.navegaHastaLaElFormularioDeRegistro(RegistroInicioSesionStepDefinitions.java :32)<br />io.cucumber.java.Invoker.invoke(Invoker.java :27)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :27)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :64)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :49)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :46)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :51)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :67)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :83)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :24)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :227)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :54)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource706865651108166598.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="49c8e674ca7ca84c9c4d2902c9764b875003ae30d6f8237074f5bbbb664392b3.png" title=" Dado que el usuario esta en la pagina de inicio" width="1366"/>
-                <img src="49c8e674ca7ca84c9c4d2902c9764b875003ae30d6f8237074f5bbbb664392b3.png" title=" Juanes abrir pagina inicial" width="1366"/>
-                <img src="49c8e674ca7ca84c9c4d2902c9764b875003ae30d6f8237074f5bbbb664392b3.png" title=" Juanes opens the Pagina inicial" width="1366"/>
-                <img src="21f64782fc53ebcf56876bc4dc5cfbf7cab85a54fcfa8fa20af553e287005659.png" title=" Juanes opens the Pagina inicial (completed)" width="1366"/>
-                <img src="21f64782fc53ebcf56876bc4dc5cfbf7cab85a54fcfa8fa20af553e287005659.png" title=" Juanes abrir pagina inicial (completed)" width="1366"/>
-                <img src="21f64782fc53ebcf56876bc4dc5cfbf7cab85a54fcfa8fa20af553e287005659.png" title=" Dado que el usuario esta en la pagina de inicio (completed)" width="1366"/>
-                <img src="bb0527b862503230e34fef737c01026acc42becacd6d249653fdcce6965dca44.png" title=" Cuando navega hasta la el formulario de registro" width="1366"/>
-                <img src="bb0527b862503230e34fef737c01026acc42becacd6d249653fdcce6965dca44.png" title=" Juanes navegar al registro" width="1366"/>
-                <img src="bb0527b862503230e34fef737c01026acc42becacd6d249653fdcce6965dca44.png" title=" Juanes clicks on Boton ir al registro" width="1366"/>
-                <img src="9b0ab7b1e146c8b401b0fc21c77029efac5403275adc39fba0455b56e16051ba.png" title=" Juanes navegar al registro (completed)" width="1366"/>
-                <img src="9b0ab7b1e146c8b401b0fc21c77029efac5403275adc39fba0455b56e16051ba.png" title=" Cuando navega hasta la el formulario de registro (completed)" width="1366"/>
-                <img src="129a63b90979bca57e84b84d5abb9e730b8e2e5f386e31306ec7c62a9a09798d.png" title=" Y completa los campos para iniciar sesion" width="1366"/>
-                <img src="129a63b90979bca57e84b84d5abb9e730b8e2e5f386e31306ec7c62a9a09798d.png" title=" Juanes iniciar sesion" width="1366"/>
-                <img src="129a63b90979bca57e84b84d5abb9e730b8e2e5f386e31306ec7c62a9a09798d.png" title=" Juanes enters 'juan.pineda@gmail.com' into campo usuario" width="1366"/>
-                <img src="129a63b90979bca57e84b84d5abb9e730b8e2e5f386e31306ec7c62a9a09798d.png" title=" Juanes enters '123456' into campo contrase&Atilde;&plusmn;a" width="1366"/>
-                <img src="de5380f64faa9181e53f29319db5a82553ce4c7e6fec48dc80d7cb2191f5f13d.png" title=" Juanes enters '123456' into campo contrase&Atilde;&plusmn;a (completed)" width="1366"/>
-                <img src="de5380f64faa9181e53f29319db5a82553ce4c7e6fec48dc80d7cb2191f5f13d.png" title=" Juanes clicks on Bot&Atilde;&sup3;n iniciar sesion" width="1366"/>
-                <img src="176be78b751c3b425ec8f59a55a6d5a62ed1cab96da17e3fc4be289c0809f88e.png" title=" Juanes clicks on Bot&Atilde;&sup3;n iniciar sesion (completed)" width="1366"/>
-                <img src="176be78b751c3b425ec8f59a55a6d5a62ed1cab96da17e3fc4be289c0809f88e.png" title=" Juanes iniciar sesion (completed)" width="1366"/>
-                <img src="176be78b751c3b425ec8f59a55a6d5a62ed1cab96da17e3fc4be289c0809f88e.png" title=" Y completa los campos para iniciar sesion (completed)" width="1366"/>
-                <img src="176be78b751c3b425ec8f59a55a6d5a62ed1cab96da17e3fc4be289c0809f88e.png" title=" Entonces el usuario debe ver su nombre en la pagina principal" width="1366"/>
-                <img src="176be78b751c3b425ec8f59a55a6d5a62ed1cab96da17e3fc4be289c0809f88e.png" title=" Then mensaje nombre should be 'Logged in as Juan Esteban'" width="1366"/>
-                <img src="176be78b751c3b425ec8f59a55a6d5a62ed1cab96da17e3fc4be289c0809f88e.png" title=" Entonces el usuario debe ver su nombre en la pagina principal (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Dado que el usuario esta en la pagina de inicio" width="1366"/>
+                <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Juanes abrir pagina inicial" width="1366"/>
+                <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Juanes opens the Pagina inicial" width="1366"/>
+                <img src="17b5948d43781c40babcc012c063c5886b2a4a4a623c701541207c7c5fbc29e4.png" title=" Juanes opens the Pagina inicial (completed)" width="1366"/>
+                <img src="17b5948d43781c40babcc012c063c5886b2a4a4a623c701541207c7c5fbc29e4.png" title=" Juanes abrir pagina inicial (completed)" width="1366"/>
+                <img src="17b5948d43781c40babcc012c063c5886b2a4a4a623c701541207c7c5fbc29e4.png" title=" Dado que el usuario esta en la pagina de inicio (completed)" width="1366"/>
+                <img src="17b5948d43781c40babcc012c063c5886b2a4a4a623c701541207c7c5fbc29e4.png" title=" Cuando navega hasta la el formulario de registro" width="1366"/>
+                <img src="5564119ee2c934add57d0d12fa82d0557a662240f2784d4533f0b263ba63e918.png" title=" Juanes navegar al registro" width="1366"/>
+                <img src="5564119ee2c934add57d0d12fa82d0557a662240f2784d4533f0b263ba63e918.png" title=" Juanes clicks on Boton ir al registro" width="1366"/>
+                <img src="5564119ee2c934add57d0d12fa82d0557a662240f2784d4533f0b263ba63e918.png" title=" Juanes enters 'Efrain solorzano' into campo usuario" width="1366"/>
+                <img src="90b525c3a176d5863637e620e0136bde77b4594559b49797f809de1603d8fabc.png" title=" Juanes enters 'Efrain solorzano' into campo usuario (completed)" width="1366"/>
+                <img src="90b525c3a176d5863637e620e0136bde77b4594559b49797f809de1603d8fabc.png" title=" Juanes enters 'efsolora@gmail.com' into correo usuario" width="1366"/>
+                <img src="80293dfbbebfefc69ac4e8f0fda5f800b6b0d5c82696ea5db9e7b61445b75e74.png" title=" Juanes enters 'efsolora@gmail.com' into correo usuario (completed)" width="1366"/>
+                <img src="80293dfbbebfefc69ac4e8f0fda5f800b6b0d5c82696ea5db9e7b61445b75e74.png" title=" Juanes clicks on boton" width="1366"/>
+                <img src="6c3bbad51151054e6abd33f0616f54561d252c4a2affb870cb9c0ea9f38421e4.png" title=" Juanes clicks on boton (completed)" width="1366"/>
+                <img src="6c3bbad51151054e6abd33f0616f54561d252c4a2affb870cb9c0ea9f38421e4.png" title=" Juanes navegar al registro (completed)" width="1366"/>
+                <img src="6c3bbad51151054e6abd33f0616f54561d252c4a2affb870cb9c0ea9f38421e4.png" title=" Juanes llenar registro" width="1366"/>
+                <img src="6c3bbad51151054e6abd33f0616f54561d252c4a2affb870cb9c0ea9f38421e4.png" title=" Juanes clicks on Genero" width="1366"/>
+                <img src="758ab0531ac71578cf9e0d8ef1a5d6ceccca816fbd5d4d0e8fc6eb97cb8d76fb.png" title=" Juanes clicks on Genero (completed)" width="1366"/>
+                <img src="e6b8e72b77856e4a3e56dffa4596b42a172a258a5942fb1ee9fddd163839ca76.png" title=" Juanes enters '123456' into Contrase&Atilde;&plusmn;a" width="1366"/>
+                <img src="3e62e7c55b0d5e6f1fd9d22e988c0e3c0fa2026bae22fdb8605a2c5036e5f22e.png" title=" Juanes enters '123456' into Contrase&Atilde;&plusmn;a (completed)" width="1366"/>
+                <img src="3e62e7c55b0d5e6f1fd9d22e988c0e3c0fa2026bae22fdb8605a2c5036e5f22e.png" title=" Juanes clicks on Dia" width="1366"/>
+                <img src="6ab71033fbe0509923bdc030c1b2858bc06d98c33c22d29a8f61d5692671d7ad.png" title=" Juanes clicks on Dia (completed)" width="1366"/>
+                <img src="6ab71033fbe0509923bdc030c1b2858bc06d98c33c22d29a8f61d5692671d7ad.png" title=" Juanes clicks on NUMEMRODIA" width="1366"/>
+                <img src="6ab71033fbe0509923bdc030c1b2858bc06d98c33c22d29a8f61d5692671d7ad.png" title=" Juanes clicks on NUMEMRODIA (completed)" width="1366"/>
+                <img src="6ab71033fbe0509923bdc030c1b2858bc06d98c33c22d29a8f61d5692671d7ad.png" title=" Juanes clicks on Anno" width="1366"/>
+                <img src="f77b2c4c05ffcdef1f42bb1df0d1c52b0c2ac9a09768388341a9fed9e22927ca.png" title=" Juanes clicks on Anno (completed)" width="1366"/>
+                <img src="f77b2c4c05ffcdef1f42bb1df0d1c52b0c2ac9a09768388341a9fed9e22927ca.png" title=" Juanes clicks on NUMEROANNO" width="1366"/>
+                <img src="769e3d1ee16dea52dc6abdc0b2f0f819772640028b169d0bbbfbb1a47632d032.png" title=" Juanes clicks on NUMEROANNO (completed): <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 

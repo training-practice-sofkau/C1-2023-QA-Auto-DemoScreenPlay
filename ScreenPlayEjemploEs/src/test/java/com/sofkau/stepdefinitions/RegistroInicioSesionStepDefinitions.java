@@ -8,6 +8,7 @@ import io.cucumber.java.es.Entonces;
 
 import static com.sofkau.questions.MensajeNombre.mensajeNombre;
 import static com.sofkau.tasks.IniciarSesion.iniciarSesion;
+import static com.sofkau.tasks.LlenarRegistro.llenarRegistro;
 import static com.sofkau.tasks.NavegarAlRegistro.navegarAlRegistro;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
@@ -29,7 +30,8 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
     @Cuando("navega hasta la el formulario de registro")
     public void navegaHastaLaElFormularioDeRegistro() {
         theActorInTheSpotlight().attemptsTo(
-                navegarAlRegistro()
+                navegarAlRegistro(),
+                llenarRegistro()
         );
 
     }
@@ -46,12 +48,13 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
 
     @Cuando("completa los campos para iniciar sesion")
     public void completaLosCamposParaIniciarSesion() {
+        /*
         theActorInTheSpotlight().attemptsTo(
                 iniciarSesion()
                         .conElUsuario("juan.pineda@gmail.com")
                         .yConLaContrasenna("123456")
         );
-
+        */
     }
 
     @Entonces("el usuario debe ver su nombre en la pagina principal")

@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">33.405s</div>
+<div class="counter">1m29.35s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,191 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard error</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Iniciar sesion"></a>
+<h3 class="failures">Iniciar sesion</h3>
+<span class="code">
+<pre>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1148)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:953)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1228)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$THNVlIH3.performAs$accessor$reP6yjg5(Unknown Source)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$THNVlIH3.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at app//com.sofkau.tasks.LlenarRegistro.performAs(LlenarRegistro.java:17)
+	at app//com.sofkau.tasks.LlenarRegistro$ByteBuddy$YRrTfsrG.performAs$accessor$TgHZ4yUs(Unknown Source)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//com.sofkau.tasks.LlenarRegistro$ByteBuddy$YRrTfsrG.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at app//com.sofkau.stepdefinitions.RegistroInicioSesionStepDefinitions.navegaHastaLaElFormularioDeRegistro(RegistroInicioSesionStepDefinitions.java:32)
+	at ✽.navega hasta la el formulario de registro(file:///C:/Users/rolin/Sofka%20U/C1-2023-QA-Auto-DemoScreenPlay/ScreenPlayEjemploEs/src/test/resources/features/registrarse.feature:12)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: //option[@value='2003' to be enabled (tried for 60 second(s) with 100 milliseconds interval)
+	at app//org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1145)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:953)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1228)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$THNVlIH3.performAs$accessor$reP6yjg5(Unknown Source)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$THNVlIH3.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at app//com.sofkau.tasks.LlenarRegistro.performAs(LlenarRegistro.java:17)
+	at app//com.sofkau.tasks.LlenarRegistro$ByteBuddy$YRrTfsrG.performAs$accessor$TgHZ4yUs(Unknown Source)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//com.sofkau.tasks.LlenarRegistro$ByteBuddy$YRrTfsrG.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at app//com.sofkau.stepdefinitions.RegistroInicioSesionStepDefinitions.navegaHastaLaElFormularioDeRegistro(RegistroInicioSesionStepDefinitions.java:32)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at app//io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
+	at app//io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at app//io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at app//io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at app//io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
+	at app//io.cucumber.core.runner.TestCase.run(TestCase.java:51)
+	at app//io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at app//io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at app//io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:227)
+	at app//io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)
+	at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at app//io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:254)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //option[@value='2003' because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//option[@value='2003'' is not a valid XPath expression.
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-7C2GORMF', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\rolin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1404}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7acc0ce7623ed78031d96df793d20ec
+*** Element info: {Using=xpath, value=//option[@value='2003'}
+	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at java.base@11.0.13/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@11.0.13/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at app//org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at app//net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at app//net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:25)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.getResolvedELement(WebElementFacadeImpl.java:234)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:229)
+	at app//net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
+	at app//net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 91 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -78,28 +256,28 @@
 </tr>
 </thead>
 <tr>
-<td class="success">Iniciar sesion</td>
-<td class="success">33.405s</td>
-<td class="success">passed</td>
+<td class="failures">Iniciar sesion</td>
+<td class="failures">1m29.35s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 38450
+<pre>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 41421
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar. 21, 2023 10:10:37 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+mar. 21, 2023 2:57:57 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-mar. 21, 2023 10:10:37 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+mar. 21, 2023 2:57:58 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 25627
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 7466
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar. 21, 2023 10:10:42 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+mar. 21, 2023 2:58:02 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </pre>
 </span>
@@ -112,7 +290,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 21/03/2023, 10:11:10 a. m.</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 21/03/2023, 2:59:28 p. m.</p>
 </div>
 </div>
 </body>
