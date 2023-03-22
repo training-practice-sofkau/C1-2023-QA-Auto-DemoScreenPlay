@@ -1,8 +1,6 @@
-#language:es
-#encoding:UTF-8
 #Author: Juan Esteban Pineda Angel
 
-Característica: Compras en pagina de pruebas
+Feature: Compras en pagina de pruebas
   yo como usuario de la pagina automation exercise
   quiero crear una cuenta e ingresar
   para poder comprar productos en la página

@@ -23,7 +23,6 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
                 new AbrirPaginaInicial()
 
         );
-
     }
 
     @Cuando("navega hasta la el formulario de registro")
@@ -62,6 +61,4 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
 
         quitarDriver();
     }
-
-
 }

@@ -12,7 +12,7 @@ public class MensajeNombre implements Question<String> {
         return MENSAJE_INICIO.resolveFor(actor).getText();
     }
 
-    public static MensajeNombre mensajeNombre(){
+    public static MensajeNombre mensajeNombre() {
         return new MensajeNombre();
     }
 }

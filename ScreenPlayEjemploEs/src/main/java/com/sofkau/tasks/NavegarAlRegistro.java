@@ -13,7 +13,8 @@ public class NavegarAlRegistro implements Task {
                 Click.on(BOTON_REGISTRO)
         );
     }
-        public static NavegarAlRegistro navegarAlRegistro(){
+
+    public static NavegarAlRegistro navegarAlRegistro() {
         return new NavegarAlRegistro();
     }
 }

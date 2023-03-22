@@ -12,13 +12,13 @@ public class IniciarSesion implements Task {
     private String usuario;
     private String contrasenna;
 
-    public IniciarSesion conElUsuario(String usuario){
-        this.usuario=usuario;
+    public IniciarSesion conElUsuario(String usuario) {
+        this.usuario = usuario;
         return this;
     }
 
-    public IniciarSesion yConLaContrasenna(String contrasenna){
-        this.contrasenna=contrasenna;
+    public IniciarSesion yConLaContrasenna(String contrasenna) {
+        this.contrasenna = contrasenna;
         return this;
     }
 
@@ -31,7 +31,7 @@ public class IniciarSesion implements Task {
         );
     }
 
-    public static IniciarSesion iniciarSesion(){
+    public static IniciarSesion iniciarSesion() {
         return new IniciarSesion();
     }
 }
