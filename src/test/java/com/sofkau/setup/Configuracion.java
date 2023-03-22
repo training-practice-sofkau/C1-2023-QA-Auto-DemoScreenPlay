@@ -61,6 +61,4 @@ public class Configuracion {
         WebDriverWait wait = new WebDriverWait(getDriver(), DIEZ_SEGUNDOS);
         wait.until(ExpectedConditions.alertIsPresent());
     }
-
-
 }

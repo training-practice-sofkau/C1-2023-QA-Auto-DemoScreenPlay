@@ -4,7 +4,6 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-
 import static com.sofkau.ui.PaginaRegistro.*;
 
 public class IniciarSesion implements Task {
@@ -21,6 +20,7 @@ public class IniciarSesion implements Task {
         this.contrasenna=contrasenna;
         return this;
     }
+
 
     @Override
     public <T extends Actor> void performAs(T actor) {
