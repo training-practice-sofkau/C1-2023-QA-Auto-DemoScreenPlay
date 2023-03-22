@@ -14,7 +14,7 @@ Característica: Compras en pagina de pruebas
   @Registro
   Escenario: Registro de clientes
     Y Llena todos los campos
-    Entonces el usuario debe ser redireccionado a la pagina principal
+    Entonces recibe un mensaje de confirmacion
 
   @InicioSesión
   Escenario: Iniciar sesion

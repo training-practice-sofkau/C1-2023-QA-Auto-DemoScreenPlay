@@ -4,6 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
 import static com.sofkau.ui.ConfirmacionRegistro.MENSAJE_INICIO;
+import static com.sofkau.ui.PaginaCompletarRegistro.CONFIRMAR_REGISTRO;
 
 public class MensajeNombre implements Question<String> {
 

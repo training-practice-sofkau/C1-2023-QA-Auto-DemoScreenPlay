@@ -7,6 +7,9 @@ import net.serenitybdd.screenplay.actions.Click;
 import static com.sofkau.ui.PaginaRegistro.BOTON_REGISTRO;
 
 public class NavegarAlRegistro implements Task {
+
+    private String name;
+    private String emailadress;
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
