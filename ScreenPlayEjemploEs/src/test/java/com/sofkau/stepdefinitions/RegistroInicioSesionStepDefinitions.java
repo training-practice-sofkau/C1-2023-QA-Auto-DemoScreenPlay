@@ -38,7 +38,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
         theActorInTheSpotlight().attemptsTo(
                 registroUsuario()
                         .conElNombreDeUsuario("GrettyM")
-                        .yConLaCorreo("fatod847@etondy.com")
+                        .yConLaCorreo("fatod8@etondy.com")
                         .yConLaContrasenna("Q12345+")
                         .yConElDia("12")
                         .yConElMes("January")
