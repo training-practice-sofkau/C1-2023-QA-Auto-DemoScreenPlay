@@ -1,5 +1,6 @@
 package com.sofkau.stepdefinitions;
 
+import com.github.javafaker.Faker;
 import com.sofkau.setup.Configuracion;
 import com.sofkau.tasks.AbrirPaginaInicial;
 import com.sofkau.tasks.RegistrarUsuario;
@@ -20,6 +21,9 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static com.sofkau.tasks.RegistrarUsuario.registrarUsuario;
 
 public class RegistroInicioSesionStepDefinitions extends Configuracion {
+
+    Faker faker = new Faker();
+
 
     @Dado("que el usuario esta en la pagina de inicio")
     public void queElUsuarioEstaEnLaPaginaDeInicio() {
@@ -54,16 +58,16 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
                         .yConElDia("7")
                         .yconElMes("12")
                         .yconElAnio("2020")
-                        .yconElPrimerNombre("yeison")
-                        .yconElSegundoNombre("ferney")
-                        .yconLaCompania("apple")
-                        .yConLaDireccion("calle 23")
-                        .yConLaDireccion2("calle 23")
+                        .yconElPrimerNombre(faker.name().firstName())
+                        .yconElSegundoNombre(faker.name().lastName())
+                        .yconLaCompania(faker.company().name())
+                        .yConLaDireccion(faker.address().streetAddress())
+                        .yConLaDireccion2(faker.address().streetAddress())
                         .yConElPais("India")
-                        .yConElEstado("norte de santander")
-                        .yConLaCiudad("cucuta")
+                        .yConElEstado(faker.country().name())
+                        .yConLaCiudad(faker.country().name())
                         .yConLaZipcode("5505")
-                        .yConElCelular("310321321632")
+                        .yConElCelular("3105978412")
         );
 
 
@@ -72,7 +76,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
     @Entonces("el usuario debe ser redireccionado a la pagina principal")
     public void elUsuarioDebeSerRedireccionadoALaPaginaPrincipal() {
         theActorInTheSpotlight().should(
-                seeThat(mensajeRegistroUsuarioNuevo(), equalTo("ACCOUNT DELETED!"))
+                seeThat(mensajeRegistroUsuarioNuevo(), equalTo("ACCOUNT CREATED!"))
         );
 
         quitarDriver();
@@ -84,8 +88,29 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
         theActorInTheSpotlight().attemptsTo(
                 iniciarSesion()
                         .conElUsuario("yeisonBuitrago@gmail.com")
-                        .yConLaContrasenna("123"),
+                        .yConLaContrasenna("123")
 
+        );
+
+
+    }
+
+    @Entonces("el usuario debe ver su nombre en la pagina principal")
+    public void elUsuarioDebeVerSuNombreEnLaPaginaPrincipal() {
+        theActorInTheSpotlight().should(
+                seeThat(mensajeNombre(), equalTo(" Logged in as Yeison Osorio"))
+        );
+
+        quitarDriver();
+    }
+
+
+    @Cuando("completa los campos para iniciar sesion y comprar productos y proceder a pagar")
+    public void completaLosCamposParaIniciarSesionYComprarProductosYProcederAPagar() {
+        theActorInTheSpotlight().attemptsTo(
+                iniciarSesion()
+                        .conElUsuario("yeisonBuitrago@gmail.com")
+                        .yConLaContrasenna("123"),
 
                 seleccionarProducto()
                         .conLaNombreTarjeta("YEISON OSORIO")
@@ -98,13 +123,16 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
 
     }
 
-    @Entonces("el usuario debe ver su nombre en la pagina principal")
-    public void elUsuarioDebeVerSuNombreEnLaPaginaPrincipal() {
+    @Entonces("el usuario debe ver un mensaje de compra exitosa")
+    public void elUsuarioDebeVerUnMensajeDeCompraExitosa() {
+
         theActorInTheSpotlight().should(
                 seeThat(mensajeCompraExitosa(), equalTo("ORDER PLACED!"))
         );
 
         quitarDriver();
+
+
     }
 
 

@@ -67,6 +67,8 @@ public class SeleccionarProducto implements Task {
                 Click.on(BOTON_DRESS),
                 Scroll.to(BOTON_COMPRAR_SLEEVES),
                 Click.on(BOTON_COMPRAR_SLEEVES),
+                Click.on(BOTON_CONTINUE),
+                Click.on(BOTON_COMPRAR_SLEEVES2),
                 Click.on(VIEW_CART),
                 Click.on(BOTON_CARRITO),
                 Click.on(BOTON_CHECKOUT),

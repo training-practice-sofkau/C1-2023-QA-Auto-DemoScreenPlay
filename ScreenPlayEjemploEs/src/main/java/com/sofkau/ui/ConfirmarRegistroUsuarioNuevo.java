@@ -8,5 +8,5 @@ public class ConfirmarRegistroUsuarioNuevo extends PageObject {
 
 
     public static Target MENSAJE_FINAL_REGISTRO = Target.the("mensaje con el nombre")
-            .located(By.xpath("(//b[normalize-space()='Account Deleted!'])[1]"));
+            .located(By.xpath("//b[normalize-space()='Account Created!']"));
 }

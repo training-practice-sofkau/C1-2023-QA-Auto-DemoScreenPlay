@@ -16,7 +16,13 @@ Característica: Compras en pagina de pruebas
     Y Llena todos los campos
     Entonces el usuario debe ser redireccionado a la pagina principal
 
-  @InicioSesión
+  @InicioSesion
   Escenario: Iniciar sesion
     Y completa los campos para iniciar sesion
     Entonces el usuario debe ver su nombre en la pagina principal
+
+
+  @Compra
+  Escenario: Iniciar sesion y comprar productos
+    Y completa los campos para iniciar sesion y comprar productos y proceder a pagar
+    Entonces el usuario debe ver un mensaje de compra exitosa

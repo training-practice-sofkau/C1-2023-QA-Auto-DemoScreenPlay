@@ -23,12 +23,17 @@ public class ComprarProducto extends PageObject {
     public static final Target BOTON_DRESS = Target.the("dress")
             .located(By.xpath("(//a[contains(text(),'Dress')])[2]"));
 
-    public static final Target BOTON_COMPRAR_SLEEVES = Target.the("ADD_VESTIDO")
+    public static final Target BOTON_COMPRAR_SLEEVES = Target.the("ADD_VESTIDO_!")
             .located(By.xpath("(//a[@href='javascript:void();'][normalize-space()='Add to cart'])[1]"));
 
     public static final Target BOTON_CONTINUE = Target.the("BOTON_CONTINUE")
-            .located(By.xpath("(//*[@id=\"cartModal\"]/div/div/div[3]/button']"));
+            .located(By.xpath("//*[@id=\"cartModal\"]/div/div/div[3]/button"));
 
+
+
+
+    public static final Target BOTON_COMPRAR_SLEEVES2 = Target.the("BOTON VESTIDO 2")
+            .located(By.xpath("(//a[@href='javascript:void();'][normalize-space()='Add to cart'])[3]"));
 
     public static final Target VIEW_CART = Target.the("Opcion view cart")
             .located(By.xpath("//u[normalize-space()='View Cart']"));
