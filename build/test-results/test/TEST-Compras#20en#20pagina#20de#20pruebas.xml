@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Compras en pagina de pruebas" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-22T03:36:17" hostname="DESKTOP-L1405KV" time="36.587">
+<testsuite name="Compras en pagina de pruebas" tests="1" skipped="1" failures="0" errors="0" timestamp="2023-03-22T17:26:20" hostname="DESKTOP-L1405KV" time="53.751">
   <properties/>
-  <testcase name="Registro de clientes" classname="Compras en pagina de pruebas" time="36.587"/>
+  <testcase name="Compra de productos" classname="Compras en pagina de pruebas" time="53.751">
+    <skipped/>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 15630
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 4363
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar. 21, 2023 10:36:20 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+mar. 22, 2023 12:26:23 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-mar. 21, 2023 10:36:20 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+mar. 22, 2023 12:26:23 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 40745
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 19425
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar. 21, 2023 10:36:24 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+mar. 22, 2023 12:26:26 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

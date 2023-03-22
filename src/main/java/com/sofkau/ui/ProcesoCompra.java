@@ -18,6 +18,7 @@ public class ProcesoCompra extends PageObject {
     public static final Target DRESSES = Target.the("Vestidos").located(By.xpath("(//a)[21]"));
     public static final Target VIEW_CART = Target.the("Ver carrito").located(By.xpath("(//u)[1]"));
     public static final Target CART_ICON = Target.the("Icono del carrito").located(By.xpath("(//i)[12]"));
+    public static final Target CHECKOUT = Target.the("Realizar pedido").located(By.xpath("(//a)[13]"));
     public static final Target PLACE_ORDER = Target.the("Realizar pedido").located(By.xpath("(//a[normalize-space()='Place Order'])[1]"));
     public static final Target CARD_NAME = Target.the("Nombre en la tarjeta").located(By.xpath("(//input[@data-qa='name-on-card'])[1]"));
     public static final Target CARD_NUMBER = Target.the("Número de la tarjeta").located(By.xpath("(//input[@data-qa='card-number'])[1]"));

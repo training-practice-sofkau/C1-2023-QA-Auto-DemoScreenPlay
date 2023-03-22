@@ -6,7 +6,9 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Scroll;
 
+import static com.sofkau.tasks.Refrescar.thePage;
 import static com.sofkau.ui.PaginaRegistro.*;
 
 public class RealizarCompra implements Task {
@@ -58,11 +60,9 @@ public class RealizarCompra implements Task {
 
         actor.attemptsTo(
                 // Iniciar sesión
-                Enter.theValue(usuario).into(CAMPO_USUARIO),
-                Enter.theValue(contrasenna).into(CAMPO_CONTRASENNA),
-                Click.on(BOTON_INICIAR_SESION),
                 // Agregar productos al carrito
                 Click.on(ProcesoCompra.PRODUCTS),
+                thePage(),
                 Click.on(ProcesoCompra.WOMEN),
                 Click.on(ProcesoCompra.DRESS),
                 Click.on(ProcesoCompra.ADD_CART),
@@ -75,7 +75,8 @@ public class RealizarCompra implements Task {
                 Click.on(ProcesoCompra.DRESSES),
                 Click.on(ProcesoCompra.ADD_CART),
                 Click.on(ProcesoCompra.VIEW_CART),
-                Click.on(ProcesoCompra.CART_ICON),
+                Click.on(ProcesoCompra.CHECKOUT),
+                Scroll.to(ProcesoCompra.PLACE_ORDER),
                 Click.on(ProcesoCompra.PLACE_ORDER),
                 Enter.theValue(faker.name().fullName()).into(ProcesoCompra.CARD_NAME),
                 Enter.theValue(faker.finance().creditCard()).into(ProcesoCompra.CARD_NUMBER),
@@ -84,5 +85,8 @@ public class RealizarCompra implements Task {
                 Enter.theValue(String.valueOf(faker.number().numberBetween(2024, 2030))).into(ProcesoCompra.EXPIRATION_YEAR),
                 Click.on(ProcesoCompra.PAY)
         );
+    }
+    public static RealizarCompra realizarCompra() {
+        return new RealizarCompra();
     }
 }
