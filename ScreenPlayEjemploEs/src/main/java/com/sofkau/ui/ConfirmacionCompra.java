@@ -9,7 +9,7 @@ public class ConfirmacionCompra {
     /**
      *
      */
-    public static final Target MENSAJE_FINAL_COMPRA = Target.the("BOTON_CHECKOUT")
+    public static final Target MENSAJE_FINAL_COMPRA = Target.the("MENSAJE FINAL")
             .located(By.xpath("//b[normalize-space()='Order Placed!']"));
 
 }

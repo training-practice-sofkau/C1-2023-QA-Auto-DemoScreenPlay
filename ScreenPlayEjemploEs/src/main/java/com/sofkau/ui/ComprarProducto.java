@@ -14,6 +14,8 @@ public class ComprarProducto extends PageObject {
     public static final Target BOTON_PRODUCTO = Target.the("Producto")
             .located(By.xpath("//a[@href='/products']"));
 
+
+
     public static final Target BOTON_KIDS = Target.the("kids")
             .located(By.xpath("//a[normalize-space()='Kids']"));
 
@@ -25,8 +27,11 @@ public class ComprarProducto extends PageObject {
             .located(By.xpath("(//a[@href='javascript:void();'][normalize-space()='Add to cart'])[1]"));
 
     public static final Target BOTON_CONTINUE = Target.the("BOTON_CONTINUE")
-            .located(By.xpath("(//button[normalize-space()='Continue Shopping']"));
+            .located(By.xpath("(//*[@id=\"cartModal\"]/div/div/div[3]/button']"));
 
+
+    public static final Target VIEW_CART = Target.the("Opcion view cart")
+            .located(By.xpath("//u[normalize-space()='View Cart']"));
 
     public static final Target BOTON_CARRITO = Target.the("BOTON_CARRITO")
             .located(By.xpath("//a[normalize-space()='Cart']//i[@class='fa fa-shopping-cart']"));

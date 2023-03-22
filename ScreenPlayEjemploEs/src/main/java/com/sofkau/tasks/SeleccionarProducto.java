@@ -4,8 +4,11 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Scroll;
 
+import static com.sofkau.tasks.Refrescar.thePage;
 import static com.sofkau.ui.ComprarProducto.*;
+import static com.sofkau.ui.RegistraCampos.CAMPO_DAYS;
 
 public class SeleccionarProducto implements Task {
 
@@ -51,13 +54,23 @@ public class SeleccionarProducto implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(BOTON_PRODUCTO),
+                Click.on(BOTON_PRODUCTO)
+        );
+
+        actor.attemptsTo(
+                thePage()
+        );
+
+        actor.attemptsTo(
+                Scroll.to(BOTON_KIDS),
                 Click.on(BOTON_KIDS),
                 Click.on(BOTON_DRESS),
+                Scroll.to(BOTON_COMPRAR_SLEEVES),
                 Click.on(BOTON_COMPRAR_SLEEVES),
-                Click.on(BOTON_CONTINUE),
+                Click.on(VIEW_CART),
                 Click.on(BOTON_CARRITO),
                 Click.on(BOTON_CHECKOUT),
+                Scroll.to(BOTON_PLACE_ORDEN),
                 Click.on(BOTON_PLACE_ORDEN),
                 Enter.theValue(nameCrad).into(CAMPO_NAME_CARD),
                 Enter.theValue(cardNumber).into(CAMPO_CARD_NUMERO),

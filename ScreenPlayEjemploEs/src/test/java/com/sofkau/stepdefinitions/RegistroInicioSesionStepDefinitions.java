@@ -7,6 +7,7 @@ import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 
+import static com.sofkau.questions.MensajeCompraExitosa.mensajeCompraExitosa;
 import static com.sofkau.questions.MensajeNombre.mensajeNombre;
 import static com.sofkau.questions.MensajeRegistroUsuarioNuevo.mensajeRegistroUsuarioNuevo;
 import static com.sofkau.tasks.CompletarCampos.completarCampos;
@@ -100,7 +101,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
     @Entonces("el usuario debe ver su nombre en la pagina principal")
     public void elUsuarioDebeVerSuNombreEnLaPaginaPrincipal() {
         theActorInTheSpotlight().should(
-                seeThat(mensajeNombre(), equalTo("Logged in as Juan Esteban"))
+                seeThat(mensajeCompraExitosa(), equalTo("ORDER PLACED!"))
         );
 
         quitarDriver();
