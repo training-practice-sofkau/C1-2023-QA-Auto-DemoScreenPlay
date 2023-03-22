@@ -1,0 +1,8 @@
+
+`
+java:S1301v"KReplace this "switch" statement by "if" statements to increase readability.(ÔÖ	
+r
+java:S1450"WRemove the "noticias" field and declare it as a local variable in the relevant methods.(ê„³¼ÿÿÿÿÿ
+6	java:S131v""Add a default case to this switch.(ÔÖ	
+G
+java:S1068",Remove this unused "noticias" private field.(ê„³¼ÿÿÿÿÿ
