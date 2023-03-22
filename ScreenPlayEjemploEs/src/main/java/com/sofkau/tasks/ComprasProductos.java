@@ -34,9 +34,11 @@ public class ComprasProductos implements Task{
                 Click.on(CATEGORIA_HOMBRE),
                Click.on(SECCION_JEANS)
                 );
+
         actor.attemptsTo(
                 thePage()
         );
+
         actor.attemptsTo(
                 Click.on(CATEGORIA_HOMBRE),
                 Click.on(SECCION_JEANS),

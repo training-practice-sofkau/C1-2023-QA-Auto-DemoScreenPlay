@@ -1,5 +1,6 @@
 package com.sofkau.stepdefinitions;
 
+import com.github.javafaker.Faker;
 import com.sofkau.setup.Configuracion;
 import com.sofkau.tasks.AbrirPaginaInicial;
 import com.sofkau.tasks.Refrescar;
@@ -19,6 +20,7 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class RegistroInicioSesionStepDefinitions extends Configuracion  {
+    Faker faker = new Faker();
 
     @Dado("que el usuario esta en la pagina de inicio")
     public void queElUsuarioEstaEnLaPaginaDeInicio() {
@@ -40,6 +42,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion  {
 
     @Cuando("Llena todos los campos")
     public void llenaTodosLosCampos() {
+        Faker faker = new Faker();
         theActorInTheSpotlight().attemptsTo(
                 registroUsuario().conNombre("Antonio")
                 .conEmail("naoz@gmail.com")
@@ -51,7 +54,6 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion  {
                         .conFirstName("Jesus")
                         .conLastName("Ospina")
                         .condireccion("Mz 23")
-                        //.conPais("4")
                         .conEstado("Columbia")
                         .conCiudad("Burnaby")
                         .conCodigoPostal("29044")
@@ -61,7 +63,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion  {
 
     @Entonces("el usuario debe ser redireccionado a la pagina principal")
     public void elUsuarioDebeSerRedireccionadoALaPaginaPrincipal() {
-       // quitarDriver();
+        quitarDriver();
     }
 
     @Cuando("completa los campos para iniciar sesion")
@@ -80,7 +82,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion  {
                 seeThat(mensajeNombre(), equalTo("Logged in as Antonio"))
         );
 
-       // quitarDriver();
+        quitarDriver();
     }
 
 

@@ -14,6 +14,7 @@ public class CompraProducto extends PageObject {
 
     public static final Target PASSWORD_USUARIO = Target.the("Passwor del usuario")
             .located(By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/form/input[3]"));
+
     public static final Target BOTON_LOGIN = Target.the("boton de confirmacion usuario y password")
             .located(By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/form/button"));
 

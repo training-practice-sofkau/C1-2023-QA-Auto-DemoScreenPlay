@@ -14,6 +14,7 @@ public class Refrescar implements Task {
 
         return Tasks.instrumented(Refrescar.class);
     }
+
     @Override
     @Step("{0} refreshes the browser")
     public <T extends Actor> void performAs(T actor) {
