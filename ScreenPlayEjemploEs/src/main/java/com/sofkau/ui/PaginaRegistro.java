@@ -16,4 +16,14 @@ public class PaginaRegistro extends PageObject {
 
     public static final Target BOTON_INICIAR_SESION = Target.the("Botón iniciar sesion")
             .located(By.xpath("//button[@data-qa='login-button']"));
+
+    public static final Target CAMPO_NOMBRE = Target.the("Campo nombre")
+            .located(By.xpath("//*[@name='name']"));
+
+    public static final Target CAMPO_EMAIL = Target.the("Campo email")
+            .located(By.xpath("(//input[@data-qa='signup-email'])[1]"));
+
+    public static final Target BOTON_SIGNUP = Target.the("Boton signup")
+            .located(By.xpath("(//button[normalize-space()='Signup'])[1]\n"));
+
 }
