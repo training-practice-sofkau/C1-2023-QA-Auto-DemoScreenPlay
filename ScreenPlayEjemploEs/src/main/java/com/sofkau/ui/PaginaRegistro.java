@@ -63,19 +63,4 @@ public class PaginaRegistro extends PageObject {
     public static final Target BOTON_CREAR_CUENTA= Target.the("boton crear cuenta")
             .located(By.xpath("//*[@id=\"form\"]/div/div/div/div[1]/form/button"));
 
-
-
-
-
-
-
-
-
-
-//*[@id="country"]
-
-
-
-
-
 }

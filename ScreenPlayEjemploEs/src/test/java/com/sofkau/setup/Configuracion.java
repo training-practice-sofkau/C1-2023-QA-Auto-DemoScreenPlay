@@ -44,9 +44,7 @@ public class Configuracion {
         webDriver.manage().window().maximize();
     }
 
-    protected void quitarDriver() {
-        webDriver.quit();
-    }
+   // protected void quitarDriver() {webDriver.quit();}
 
     protected void configurarNavegador() {
         setupUser(webDriver);
