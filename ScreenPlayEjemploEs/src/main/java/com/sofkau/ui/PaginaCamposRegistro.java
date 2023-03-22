@@ -3,7 +3,14 @@ package com.sofkau.ui;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class LlenarCamposRegistro {
+public class PaginaCamposRegistro {
+
+
+    public static final Target MALE = Target.the("campo genero masculino")
+            .located(By.xpath("//*[@id=\"id_gender1\"]"));
+
+    public static final Target FEMALE = Target.the("campo genero femenino")
+            .located(By.xpath("//input[@id='id_gender2']"));
 
     public static final Target CAMPO_PASSWORD = Target.the("campo password")
             .located(By.xpath("//input[@id='password']"));
@@ -38,12 +45,17 @@ public class LlenarCamposRegistro {
     public static final Target CAMPO_ZIPCODE = Target.the("campo zipcode")
             .located(By.xpath("//input[@id='zipcode']"));
 
+    public static final Target CAMPO_MOBILE_NUMBER = Target.the("campo mobile number")
+            .located(By.xpath("//input[@id='mobile_number']"));
 
+    public static final Target BOTON_CREATE_ACCOUNT = Target.the("boton create account")
+            .located(By.xpath("//button[normalize-space()='Create Account']"));
 
+    public static final Target ACCOUNT_CREATED = Target.the("mensaje cuenta creada")
+            .located(By.xpath("//b[normalize-space()='Account Created!']"));
 
-
-
-
+    public static final Target BOTON_CONTINUE = Target.the("Boton Continue")
+            .located(By.xpath("//a[normalize-space()='Continue']"));
 
 
 }
