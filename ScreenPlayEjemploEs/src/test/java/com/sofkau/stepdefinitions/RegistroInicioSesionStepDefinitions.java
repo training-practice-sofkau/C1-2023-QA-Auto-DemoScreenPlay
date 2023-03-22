@@ -81,11 +81,11 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
                         .conElUsuario("juan.pineda@gmail.com")
                         .yConLaContrasenna("123456"),
                 comprarProducto()
-                        .conNombreCard("12345")
-                        .yNumeroCard("1234")
-                        .yCvc("123")
-                        .yMes("11")
-                        .yAnio("2024")
+                        .conNombreCard(String.valueOf(faker.number().numberBetween(10000,99999)))
+                        .yNumeroCard(String.valueOf(faker.number().numberBetween(1000,9999)))
+                        .yCvc(String.valueOf(faker.number().numberBetween(100,999)))
+                        .yMes(String.valueOf(faker.number().numberBetween(1,12)))
+                        .yAnio(String.valueOf(faker.number().numberBetween(2024,2029)))
         );
     }
 
