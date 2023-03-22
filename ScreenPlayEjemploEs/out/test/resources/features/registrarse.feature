@@ -20,3 +20,9 @@ Característica: Compras en pagina de pruebas
   Escenario: Iniciar sesion
     Y completa los campos para iniciar sesion
     Entonces el usuario debe ver su nombre en la pagina principal
+
+  @Compras
+  Escenario: Realizar Compra
+    Y Inicio sesion en la pagina
+    Y Seleccione y pague un producto
+    Entonces el usuario debera ver un mensaje de compra exitosa

@@ -80,7 +80,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
     public void completaLosCamposParaIniciarSesion() {
         theActorInTheSpotlight().attemptsTo(
                 iniciarSesion()
-                        .conElUsuario("juan.pineda@gmail.com")
+                        .conElUsuario("123@gmail.com")
                         .yConLaContrasenna("123456")
         );
     }
@@ -88,7 +88,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
     @Entonces("el usuario debe ver su nombre en la pagina principal")
     public void elUsuarioDebeVerSuNombreEnLaPaginaPrincipal() {
         theActorInTheSpotlight().should(
-                seeThat(mensajeNombre(), equalTo("Logged in as Juan Esteban"))
+                seeThat(mensajeNombre(), equalTo("Logged in as Pruebas123"))
         );
         quitarDriver();
     }

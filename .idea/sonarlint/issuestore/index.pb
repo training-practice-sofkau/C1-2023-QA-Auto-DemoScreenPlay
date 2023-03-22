@@ -1,0 +1,19 @@
+
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+y
+IScreenPlayEjemploEs/src/main/java/com/sofkau/tasks/NavegarAlRegistro.java,c\0\c070941656b0268b1ba4c1bb8439156f3d7d0f08
+u
+EScreenPlayEjemploEs/src/main/java/com/sofkau/tasks/IniciarSesion.java,1\9\193758d0cdd009dbc9f77c150b3b2e9c1156f97e
+w
+GScreenPlayEjemploEs/src/main/java/com/sofkau/tasks/IniciarRegistro.java,9\2\92a4a0232fb16d4bf256be0f4710aacccb75f4b4
+P
+ ScreenPlayEjemploEs/build.gradle,0\1\01e7f54adae8b79d76242199ee5a3cd6ffaebf0a
+f
+6ScreenPlayEjemploEs/src/main/java/com/sofkau/Main.java,2\f\2f4f73c091ff5a20782e355e3bf9446299c1d25d
+r
+BScreenPlayEjemploEs/src/main/java/com/sofkau/ui/PaginaInicial.java,5\4\54041f929b207435a3f210dedf16103b199f2d89
+s
+CScreenPlayEjemploEs/src/main/java/com/sofkau/ui/PaginaRegistro.java,9\8\98f39951e0a5c6957d93a56a2a31dd51d6e8fbdf
+z
+JScreenPlayEjemploEs/src/main/java/com/sofkau/tasks/AbrirPaginaInicial.java,1\a\1ae2f629c7c59f4e1ee3195bc4bfda40621cae30
