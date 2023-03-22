@@ -10,7 +10,7 @@ import static com.sofkau.ui.SignUpLoginPage.*;
 
 
 public class Login implements Task {
-    private final User user = User.getInstance();
+    private static final User user = User.getInstance();
 
     @Override
     public <T extends Actor> void performAs(T actor) {

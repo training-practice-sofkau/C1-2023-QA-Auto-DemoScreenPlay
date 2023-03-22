@@ -5,7 +5,6 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.targets.Target;
 
 import static com.sofkau.ui.SignUpLoginPage.*;
 
@@ -21,7 +20,7 @@ public class GoToSignup implements Task {
         );
     }
 
-    public static GoToSignup signup() {
+    public static GoToSignup goToSignup() {
         return new GoToSignup();
     }
 }
