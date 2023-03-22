@@ -35,6 +35,7 @@ public class LlenarDatosRegistro implements Task {
         this.nombre = nombre;
         return this;
     }
+
     public LlenarDatosRegistro conCorreoElectronico(String correoElectronico) {
         this.correoElectronico = correoElectronico;
         return this;
@@ -109,9 +110,8 @@ public class LlenarDatosRegistro implements Task {
         Faker faker = new Faker();
 
         actor.attemptsTo(
-                Enter.theValue("James").into(REGISTRO_USUARIO),
-                Enter.theValue("james12345678@gmail.com").into(REGISTRO_EMAIL),
-
+                Enter.theValue(faker.name().firstName()).into(REGISTRO_USUARIO),
+                Enter.theValue(faker.internet().emailAddress()).into(REGISTRO_EMAIL),
                 Click.on(BOTON_REGISTRO2),
                 Click.on(TITULO_GENERO_MASCULINO),
                 Enter.theValue(faker.internet().password()).into(CAMPO_CONTRASENNA1),
@@ -126,7 +126,7 @@ public class LlenarDatosRegistro implements Task {
                 Enter.theValue(faker.company().name()).into(CAMPO_COMPANIA),
                 Enter.theValue(faker.address().streetAddress()).into(CAMPO_DIRECCION),
                 Click.on(MENU_DESPEGABLE_PAIS),
-                Click.on(By.xpath("//option[contains(text(),'Canada')]")),
+                Click.on(By.xpath("//option[contains(text(),'India')]")),
                 Enter.theValue(faker.address().state()).into(CAMPO_ESTADO_PROVINCIA),
                 Enter.theValue(faker.address().city()).into(CAMPO_CIUDAD),
                 Enter.theValue(faker.address().zipCode()).into(CAMPO_CODIGO_POSTAL),
@@ -139,5 +139,4 @@ public class LlenarDatosRegistro implements Task {
         return new LlenarDatosRegistro();
     }
 }
-
 

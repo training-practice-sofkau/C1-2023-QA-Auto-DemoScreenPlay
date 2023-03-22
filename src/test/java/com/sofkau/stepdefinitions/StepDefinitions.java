@@ -3,10 +3,10 @@ package com.sofkau.stepdefinitions;
 import com.github.javafaker.Faker;
 import com.sofkau.setup.Configuracion;
 import com.sofkau.tasks.AbrirPaginaInicial;
+import com.sofkau.tasks.RealizarCompra;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
-
 import static com.sofkau.questions.MensajeNombre.mensajeNombre;
 import static com.sofkau.tasks.IniciarSesion.iniciarSesion;
 import static com.sofkau.tasks.LlenarDatosRegistro.llenarDatosRegistro;
@@ -16,17 +16,14 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class StepDefinitions extends Configuracion {
-
     @Dado("que el usuario esta en la pagina de inicio")
     public void queElUsuarioEstaEnLaPaginaDeInicio() {
         configurarNavegador();
-
         theActorInTheSpotlight().wasAbleTo(
                 new AbrirPaginaInicial()
 
         );
     }
-
     @Cuando("navega hasta la el formulario de registro")
     public void navegaHastaLaElFormularioDeRegistro() {
         theActorInTheSpotlight().attemptsTo(
@@ -34,11 +31,9 @@ public class StepDefinitions extends Configuracion {
         );
 
     }
-
     @Cuando("Llena todos los campos")
     public void llenaTodosLosCampos() {
         Faker faker = new Faker();
-
         theActorInTheSpotlight().attemptsTo(
                 llenarDatosRegistro()
                         .conNombre(faker.name().firstName())
@@ -51,14 +46,13 @@ public class StepDefinitions extends Configuracion {
                         .conApellido(faker.name().lastName())
                         .conCompania(faker.company().name())
                         .conDireccion(faker.address().streetAddress())
-                        .conPais("Canada")
+                        .conPais("India")
                         .conEstadoProvincia(faker.address().state())
                         .conCiudad(faker.address().city())
                         .conCodigoPostal(faker.address().zipCode())
                         .conNumeroMovil(faker.phoneNumber().cellPhone())
         );
     }
-
     @Entonces("el usuario debe ser redireccionado a la pagina principal")
     public void elUsuarioDebeSerRedireccionadoALaPaginaPrincipal() {
         quitarDriver();
@@ -71,7 +65,6 @@ public class StepDefinitions extends Configuracion {
                         .conElUsuario("juan.pineda@gmail.com")
                         .yConLaContrasenna("123456")
         );
-
     }
     @Entonces("el usuario debe ver su nombre en la pagina principal")
     public void elUsuarioDebeVerSuNombreEnLaPaginaPrincipal() {
@@ -79,5 +72,26 @@ public class StepDefinitions extends Configuracion {
                 seeThat(mensajeNombre(), equalTo("Logged in as Juan Esteban"))
         );
         quitarDriver();
+    }
+    @Cuando("inicia sesion y completa los campos necesarios para realizar la compra")
+    public void iniciaSesionYCompletaLosCamposNecesariosParaRealizarLaCompra() {
+        Faker faker = new Faker();
+        theActorInTheSpotlight().attemptsTo(
+                new RealizarCompra()
+                        .conElUsuario("james1234@gmail.com")
+                        .yConLaContrasenna("123456")
+                        .conCardname(faker.name().fullName())
+                        .conCardnumber(faker.finance().creditCard())
+                        .conCvc(faker.number().digits(3))
+                        .conExpirationmonth(String.valueOf(faker.number().numberBetween(1, 12)))
+                        .conExpirationyear(String.valueOf(faker.number().numberBetween(2024, 2030)))
+        );
+    }
+    @Entonces("el usuario debe ver un mensaje de confirmación de la compra")
+    public void elUsuarioDebeVerUnMensajeDeConfirmacionDeLaCompra() {
+            theActorInTheSpotlight().should(
+                    seeThat(mensajeNombre(), equalTo("Compra realizada"))
+            );
+            quitarDriver();
     }
 }
