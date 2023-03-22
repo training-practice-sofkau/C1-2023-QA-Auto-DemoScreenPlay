@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-       snippets = CucumberOptions.SnippetType.CAMELCASE,
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
         features = {"src/test/resources/features"},
         glue = {"com.sofkau.stepdefinitions"},
         tags = {"not @Registro"}
