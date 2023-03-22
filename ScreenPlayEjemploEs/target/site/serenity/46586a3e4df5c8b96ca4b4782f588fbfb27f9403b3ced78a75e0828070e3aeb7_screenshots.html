@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="c201050d54fa4a86627c422811c06a84eb81c5f6098a9927201ea3c2c1980ee4.html">Compras En Pagina De Pruebas</a></span>
+                > <span class="truncate-60"><a
+                    href="46586a3e4df5c8b96ca4b4782f588fbfb27f9403b3ced78a75e0828070e3aeb7.html">Registro de clientes </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-03-2023 09:23</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Compras En Pagina De Pruebas </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                yo como usuario de la pagina automation exercise<br />
+quiero crear una cuenta e ingresar<br />
+para poder comprar productos en la página
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="fa6240930fdbc18bb769cd3f99f6c79a9ae540bd58975cdbf962200efa0a89e5.html">Registro
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Registro de clientes
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="5e82ccb9a2664e2d390139d374f5558eaa11ee46bd3ff6777261ad9263b02cde.png" title=" Dado que el usuario esta en la pagina de inicio" width="1440"/>
+                <img src="5e82ccb9a2664e2d390139d374f5558eaa11ee46bd3ff6777261ad9263b02cde.png" title=" Sergio abrir pagina inicial" width="1440"/>
+                <img src="5e82ccb9a2664e2d390139d374f5558eaa11ee46bd3ff6777261ad9263b02cde.png" title=" Sergio opens the Pagina inicial" width="1440"/>
+                <img src="691e6ae83982a4145268097b999328bac74dc2a674e7d23d372b15c3e9679fc4.png" title=" Sergio opens the Pagina inicial (completed)" width="1440"/>
+                <img src="691e6ae83982a4145268097b999328bac74dc2a674e7d23d372b15c3e9679fc4.png" title=" Sergio abrir pagina inicial (completed)" width="1440"/>
+                <img src="691e6ae83982a4145268097b999328bac74dc2a674e7d23d372b15c3e9679fc4.png" title=" Dado que el usuario esta en la pagina de inicio (completed)" width="1440"/>
+                <img src="6edc7a78d187806593017095e9b6d0ff9da723821035fbacb1a62a983e7b8695.png" title=" Cuando navega hasta la el formulario de registro" width="1440"/>
+                <img src="6edc7a78d187806593017095e9b6d0ff9da723821035fbacb1a62a983e7b8695.png" title=" Sergio navegar al registro" width="1440"/>
+                <img src="6edc7a78d187806593017095e9b6d0ff9da723821035fbacb1a62a983e7b8695.png" title=" Sergio clicks on Boton ir al registro" width="1440"/>
+                <img src="6edc7a78d187806593017095e9b6d0ff9da723821035fbacb1a62a983e7b8695.png" title=" Sergio navegar al registro (completed)" width="1440"/>
+                <img src="6edc7a78d187806593017095e9b6d0ff9da723821035fbacb1a62a983e7b8695.png" title=" Cuando navega hasta la el formulario de registro (completed)" width="1440"/>
+                <img src="0d23e90829b1c97e2bfc3e64390c7e930de3d866e52821db7689dabc5ea0ed39.png" title=" Y Llena todos los campos" width="1440"/>
+                <img src="0d23e90829b1c97e2bfc3e64390c7e930de3d866e52821db7689dabc5ea0ed39.png" title=" Sergio registrar usuario" width="1440"/>
+                <img src="0d23e90829b1c97e2bfc3e64390c7e930de3d866e52821db7689dabc5ea0ed39.png" title=" Sergio enters 'Checho' into campo nombre" width="1440"/>
+                <img src="d32273e7fda55e0c5c8d188581dec7a9ff520246bde8606adc2190e5714dbf33.png" title=" Sergio enters 'Checho' into campo nombre (completed)" width="1440"/>
+                <img src="d32273e7fda55e0c5c8d188581dec7a9ff520246bde8606adc2190e5714dbf33.png" title=" Sergio enters 'legasi4530@oniecan.com' into campo email" width="1440"/>
+                <img src="7dd66fb257c3ccf1cccd6c60eb3ce210d1a7e7d1a8e470f48db3ed8a73fec4ad.png" title=" Sergio enters 'legasi4530@oniecan.com' into campo email (completed)" width="1440"/>
+                <img src="7dd66fb257c3ccf1cccd6c60eb3ce210d1a7e7d1a8e470f48db3ed8a73fec4ad.png" title=" Sergio clicks on Boton registrar" width="1440"/>
+                <img src="d7945fc796e17c46a4a8b5488ceb90b5f26bb94c0fb3a68baaf2bacb9487ff9a.png" title=" Sergio clicks on Boton registrar (completed)" width="1440"/>
+                <img src="d7945fc796e17c46a4a8b5488ceb90b5f26bb94c0fb3a68baaf2bacb9487ff9a.png" title=" Sergio enters '123456' into campo password" width="1440"/>
+                <img src="f736edd4d40cabb45c4eacdb8045c33caa9181f78c5d1bbb4cda7c179080eb40.png" title=" Sergio enters '123456' into campo password (completed)" width="1440"/>
+                <img src="0dcadd32bfba8bfe573fd6ba0ec7124cb8afc2c005204fad768a186fa5624caa.png" title=" Sergio enters 'Checho' into campo nombre" width="1440"/>
+                <img src="33a019354016c1ab31d24177f38698b754feda7b65ad0dc9c7087ac9b39327fb.png" title=" Sergio enters 'Checho' into campo nombre (completed)" width="1440"/>
+                <img src="33a019354016c1ab31d24177f38698b754feda7b65ad0dc9c7087ac9b39327fb.png" title=" Sergio enters 'Yepes' into campo apellido" width="1440"/>
+                <img src="9407b36107a56463f4047b5c0fb4f29ab0b72ca9655a48a840dac3ec4f216d72.png" title=" Sergio enters 'Yepes' into campo apellido (completed)" width="1440"/>
+                <img src="9407b36107a56463f4047b5c0fb4f29ab0b72ca9655a48a840dac3ec4f216d72.png" title=" Sergio enters 'calle30A76-49' into campo direccion" width="1440"/>
+                <img src="d12e477d8eda20449ead9911c499887f874806ed1bb348fe1f1e022f3d8ec19e.png" title=" Sergio enters 'calle30A76-49' into campo direccion (completed)" width="1440"/>
+                <img src="a375ebfe38658555bc429f81698dfecb2e6d817b4077402c88ae46de16bcd259.png" title=" Sergio clicks on campo pais" width="1440"/>
+                <img src="08b271c8e07d99c8470da904f79121e26bd343dc972b627c6e99a22d37e268b9.png" title=" Sergio clicks on campo pais (completed)" width="1440"/>
+                <img src="08b271c8e07d99c8470da904f79121e26bd343dc972b627c6e99a22d37e268b9.png" title=" Sergio clicks on elegir pais" width="1440"/>
+                <img src="8131a9839ad8d0f22ddbec2f3e8780d89b8bb125a0b3180813db88598a7e26d3.png" title=" Sergio clicks on elegir pais (completed)" width="1440"/>
+                <img src="8131a9839ad8d0f22ddbec2f3e8780d89b8bb125a0b3180813db88598a7e26d3.png" title=" Sergio enters 'Ontario' into campo estado" width="1440"/>
+                <img src="33839d72e0df8ac4a240be78240b0445c0b8971e378d244c8aa437a06bc5c39b.png" title=" Sergio enters 'Ontario' into campo estado (completed)" width="1440"/>
+                <img src="33839d72e0df8ac4a240be78240b0445c0b8971e378d244c8aa437a06bc5c39b.png" title=" Sergio enters 'Toronto' into campo ciudad" width="1440"/>
+                <img src="a07ad9b4c72cf878e326c73438c1b94e51a01ad6d63c877e49de6a6544fd0c91.png" title=" Sergio enters 'Toronto' into campo ciudad (completed)" width="1440"/>
+                <img src="a07ad9b4c72cf878e326c73438c1b94e51a01ad6d63c877e49de6a6544fd0c91.png" title=" Sergio enters 'L4K' into campo codigoPostal" width="1440"/>
+                <img src="62de3c305bc62b81ac8d0a9bea5cbecdb7d4add0a7f1a9e6feefe2c840e5ac83.png" title=" Sergio enters 'L4K' into campo codigoPostal (completed)" width="1440"/>
+                <img src="62de3c305bc62b81ac8d0a9bea5cbecdb7d4add0a7f1a9e6feefe2c840e5ac83.png" title=" Sergio enters '55523654780' into campo celular" width="1440"/>
+                <img src="3d99c118dba3013069fc045dd98104219f77da5e4d43dfc9dd030a5cb945104d.png" title=" Sergio enters '55523654780' into campo celular (completed)" width="1440"/>
+                <img src="3d99c118dba3013069fc045dd98104219f77da5e4d43dfc9dd030a5cb945104d.png" title=" Sergio clicks on boton registrar" width="1440"/>
+                <img src="9e38669d13457391927ecbcaf9d11dc80dfb8ee8ba48052552dbd336e6201c3c.png" title=" Sergio clicks on boton registrar (completed)" width="1440"/>
+                <img src="9e38669d13457391927ecbcaf9d11dc80dfb8ee8ba48052552dbd336e6201c3c.png" title=" Sergio registrar usuario (completed)" width="1440"/>
+                <img src="9e38669d13457391927ecbcaf9d11dc80dfb8ee8ba48052552dbd336e6201c3c.png" title=" Y Llena todos los campos (completed)" width="1440"/>
+                <img src="fb345d6de547f87645ff7c77d9d0584ea00434af45a9623465b0954f4c5f565a.png" title=" Entonces el usuario debe ser redireccionado a la pagina principal" width="1440"/>
+                <img src="fb345d6de547f87645ff7c77d9d0584ea00434af45a9623465b0954f4c5f565a.png" title=" Then mensaje registro exitoso should be 'ACCOUNT CREATED!'" width="1440"/>
+                <img src="fb345d6de547f87645ff7c77d9d0584ea00434af45a9623465b0954f4c5f565a.png" title=" Then mensaje registro exitoso should be 'ACCOUNT CREATED!' (completed)" width="1440"/>
+                <img src="fb345d6de547f87645ff7c77d9d0584ea00434af45a9623465b0954f4c5f565a.png" title=" Entonces el usuario debe ser redireccionado a la pagina principal (completed): <span class='success-color'>SUCCESS</span>" width="1440"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.2.9</span>
+</div>
+</body>
+</html>

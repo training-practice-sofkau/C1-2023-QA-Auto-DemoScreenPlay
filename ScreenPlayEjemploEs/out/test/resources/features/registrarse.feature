@@ -1,6 +1,6 @@
 #language:es
 #encoding:UTF-8
-#Author: Juan Esteban Pineda Angel
+#Author: Sergio Andres Balcazar Restrepo
 
 Característica: Compras en pagina de pruebas
   yo como usuario de la pagina automation exercise
