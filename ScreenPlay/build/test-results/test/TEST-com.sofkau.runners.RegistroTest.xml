@@ -2,22 +2,21 @@
 <testsuite name="com.sofkau.runners.RegistroTest" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-87LGHN0U" time="0.0">
   <properties/>
   <system-out><![CDATA[
-?[31mFailed scenarios:?[0m
-?[31mfile:///C:/Users/ivan0/Downloads/Screenplay/C1-2023-QA-Auto-DemoScreenPlay/ScreenPlay/src/test/resources/features/registrarse.feature:15?[0m# Registro de clientes
+?[33mUndefined scenarios:?[0m
+?[33mfile:///C:/Users/ivan0/Downloads/Screenplay/C1-2023-QA-Auto-DemoScreenPlay/ScreenPlay/src/test/resources/features/comprar.feature:17?[0m# Compra de productos
 
-1 Scenarios (?[31m1 failed?[0m)
-4 Steps (?[31m1 failed?[0m, ?[32m3 passed?[0m)
-0m38,969s
+1 Scenarios (?[33m1 undefined?[0m)
+7 Steps (?[36m1 skipped?[0m, ?[33m1 undefined?[0m, ?[32m5 passed?[0m)
+0m56,324s
 
 
-java.lang.AssertionError: 
-Expected: "Account Created!"
-     but: was "ACCOUNT CREATED!"
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
-	at com.sofkau.stepdefinitions.RegistroInicioSesionStepDefinitions.elUsuarioDebeSerRedireccionadoALaPaginaPrincipal(RegistroInicioSesionStepDefinitions.java:41)
-	at ?.el usuario debe ser redireccionado a la pagina principal(file:///C:/Users/ivan0/Downloads/Screenplay/C1-2023-QA-Auto-DemoScreenPlay/ScreenPlay/src/test/resources/features/registrarse.feature:17)
+You can implement missing steps with the snippets below:
+
+@Cuando("va al carrito de compras y hace el proceso de checkout")
+public void vaAlCarritoDeComprasYHaceElProcesoDeCheckout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
 
 
 ]]></system-out>
