@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Compras en pagina de pruebas" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-21T15:10:33" hostname="PSOFKA01075" time="33.405">
+<testsuite name="Compras en pagina de pruebas" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-22T20:36:28" hostname="LAPTOP-LC3UNGF6" time="55.854">
   <properties/>
-  <testcase name="Iniciar sesion" classname="Compras en pagina de pruebas" time="33.405"/>
+  <testcase name="Registro de clientes" classname="Compras en pagina de pruebas" time="37.024"/>
+  <testcase name="Iniciar sesion" classname="Compras en pagina de pruebas" time="18.829"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 38450
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 5696
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar. 21, 2023 10:10:37 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+mar. 22, 2023 3:36:31 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-mar. 21, 2023 10:10:37 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+mar. 22, 2023 3:36:32 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 25627
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 20827
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar. 21, 2023 10:10:42 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+mar. 22, 2023 3:36:35 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 33169
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mar. 22, 2023 3:37:08 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+mar. 22, 2023 3:37:08 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 6352
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mar. 22, 2023 3:37:10 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

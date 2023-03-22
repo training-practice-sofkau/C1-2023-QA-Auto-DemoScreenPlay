@@ -7,9 +7,9 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
        snippets = CucumberOptions.SnippetType.CAMELCASE,
-        features = {"src/test/resources/features"},
+        features = {"src/test/resources/features/registrarse.feature"},
         glue = {"com.sofkau.stepdefinitions"},
-        tags = {"not @Registro"}
+        tags = {"not @InicioSesión"}
 )
 public class RegistroTest {
 }
