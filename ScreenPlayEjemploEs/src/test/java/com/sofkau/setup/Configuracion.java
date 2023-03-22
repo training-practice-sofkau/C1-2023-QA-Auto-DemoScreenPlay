@@ -9,6 +9,11 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -19,14 +24,15 @@ import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver
 
 public class Configuracion {
     private static final String SWITCHES = "--remote-allow-origins=*";
-    private static final String ACTOR = "Juanes";
+    private static final String INCOGNITO = "--incognito";
+    private static final String ACTOR = "Juan David";
     private static final int DIEZ_SEGUNDOS = 10;
 
     @Managed()
     protected WebDriver webDriver;
 
 
-    private void setupUser( WebDriver webDriver) {
+    private void setupUser(WebDriver webDriver) {
         configurarDriver();
         OnStage.setTheStage(new OnlineCast());
         theActorCalled(ACTOR).can(BrowseTheWeb.with(webDriver));
@@ -36,6 +42,11 @@ public class Configuracion {
     private void configurarDriver() {
         ChromeOptions co = new ChromeOptions();
         co.addArguments(SWITCHES);
+        co.addArguments(INCOGNITO);
+        co.addArguments("--disable-notifications");
+        DesiredCapabilities cap=new DesiredCapabilities();
+        cap.setCapability(ChromeOptions.CAPABILITY, co);
+        co.merge(cap);
         WebDriverManager.chromedriver().setup();
         webDriver = new ChromeDriver(co);
     }

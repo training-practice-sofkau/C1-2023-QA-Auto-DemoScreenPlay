@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="ba5c066623e2c9cb10fc07b081ba3d44c97b0c83529ce87c9bf5451c35facb47.html">Compras En Pagina De Pruebas Automation</a></span>
+                > <span class="truncate-60"><a
+                    href="4433139e0f14728c9be784cc2c8df5d71c21bbd1a3a5f2da073dcada42ebb178.html">Compra de 2 productos distintos </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-03-2023 12:50</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Compras En Pagina De Pruebas Automation </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                yo como usuario de la pagina automation exercise<br />
+quiero empezar a comprar productos
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="b7e33abe7619d82cefda21fe358074425199aafab4998745a7f9803cfbdd6a6a.html">Compra
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Compra de 2 productos distintos
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="0b08692dd462ad9497e1507125e20b25df9bf4a9464a8e94d65dc7d4418328c9.png" title=" Dado que estoy loggeado en la pagina" width="1920"/>
+                <img src="0b08692dd462ad9497e1507125e20b25df9bf4a9464a8e94d65dc7d4418328c9.png" title=" Juan david abrir pagina inicial" width="1920"/>
+                <img src="0b08692dd462ad9497e1507125e20b25df9bf4a9464a8e94d65dc7d4418328c9.png" title=" Juan David opens the Pagina inicial" width="1920"/>
+                <img src="dd6a2a9c035cfb57096aba922d555a59ab77b84b674973dcd79e035b82c45e50.png" title=" Juan David opens the Pagina inicial (completed)" width="1920"/>
+                <img src="dd6a2a9c035cfb57096aba922d555a59ab77b84b674973dcd79e035b82c45e50.png" title=" Juan david abrir pagina inicial (completed)" width="1920"/>
+                <img src="dd6a2a9c035cfb57096aba922d555a59ab77b84b674973dcd79e035b82c45e50.png" title=" Juan david navegar al registro" width="1920"/>
+                <img src="dd6a2a9c035cfb57096aba922d555a59ab77b84b674973dcd79e035b82c45e50.png" title=" Juan David clicks on Boton ir al registro" width="1920"/>
+                <img src="5684aee593a8222362eaad02133758c83b440fa9ecf5bc5233afc06fe87f0625.png" title=" Juan David clicks on Boton ir al registro (completed)" width="1920"/>
+                <img src="5684aee593a8222362eaad02133758c83b440fa9ecf5bc5233afc06fe87f0625.png" title=" Juan david navegar al registro (completed)" width="1920"/>
+                <img src="5684aee593a8222362eaad02133758c83b440fa9ecf5bc5233afc06fe87f0625.png" title=" Juan david iniciar sesion" width="1920"/>
+                <img src="5684aee593a8222362eaad02133758c83b440fa9ecf5bc5233afc06fe87f0625.png" title=" Juan David enters 'contactowaiterapp@gmail.com' into campo usuario" width="1920"/>
+                <img src="fe4cdfc3072ad3c83e5b7f14c761924221e4617565c5044b78bb6f98fabae29b.png" title=" Juan David enters 'contactowaiterapp@gmail.com' into campo usuario (completed)" width="1920"/>
+                <img src="fe4cdfc3072ad3c83e5b7f14c761924221e4617565c5044b78bb6f98fabae29b.png" title=" Juan David enters '123456' into campo contrase&ntilde;a" width="1920"/>
+                <img src="d1eebd031933196a585b0b251c47197a9b064852aebe173853afff92644ea546.png" title=" Juan David enters '123456' into campo contrase&ntilde;a (completed)" width="1920"/>
+                <img src="d1eebd031933196a585b0b251c47197a9b064852aebe173853afff92644ea546.png" title=" Juan David clicks on Bot&oacute;n iniciar sesion" width="1920"/>
+                <img src="7631899bc7e7b7f27b8c513c64900f50dcf7c896819d1f67c1cecb9c0e6fe791.png" title=" Juan David clicks on Bot&oacute;n iniciar sesion (completed)" width="1920"/>
+                <img src="7631899bc7e7b7f27b8c513c64900f50dcf7c896819d1f67c1cecb9c0e6fe791.png" title=" Juan david iniciar sesion (completed)" width="1920"/>
+                <img src="7631899bc7e7b7f27b8c513c64900f50dcf7c896819d1f67c1cecb9c0e6fe791.png" title=" Dado que estoy loggeado en la pagina (completed)" width="1920"/>
+                <img src="71d063dc15c50bcfff0b1ad22f2c0ba69664aeebd38c29ea3f55a4b0ff91f9b1.png" title=" Cuando Agrego los productos al carrito" width="1920"/>
+                <img src="71d063dc15c50bcfff0b1ad22f2c0ba69664aeebd38c29ea3f55a4b0ff91f9b1.png" title=" Juan david navegar a productos" width="1920"/>
+                <img src="71d063dc15c50bcfff0b1ad22f2c0ba69664aeebd38c29ea3f55a4b0ff91f9b1.png" title=" Juan David clicks on Boton ir a productos" width="1920"/>
+                <img src="71d063dc15c50bcfff0b1ad22f2c0ba69664aeebd38c29ea3f55a4b0ff91f9b1.png" title=" Juan david navegar a productos (completed)" width="1920"/>
+                <img src="71d063dc15c50bcfff0b1ad22f2c0ba69664aeebd38c29ea3f55a4b0ff91f9b1.png" title=" Juan david agregar productos" width="1920"/>
+                <img src="71d063dc15c50bcfff0b1ad22f2c0ba69664aeebd38c29ea3f55a4b0ff91f9b1.png" title=" Juan David refreshes the browser" width="1920"/>
+                <img src="3d190dad22c8bcca00a8fe627ff33aa136de0557074b314dd5865a88988912c6.png" title=" Juan David refreshes the browser (completed)" width="1920"/>
+                <img src="3d190dad22c8bcca00a8fe627ff33aa136de0557074b314dd5865a88988912c6.png" title=" Juan David clicks on Categoria de hombres" width="1920"/>
+                <img src="c54423c6121e7c44fdffe1614b56502657465343341c435c310ac9d45ffcc7e6.png" title=" Juan David clicks on Categoria de hombres (completed)" width="1920"/>
+                <img src="c54423c6121e7c44fdffe1614b56502657465343341c435c310ac9d45ffcc7e6.png" title=" Juan David clicks on Selector TSHIRT" width="1920"/>
+                <img src="01486e0fbfd543da5c80600b1a08332b0dc346174a85afa1fe8fa06067c44bcb.png" title=" Juan David clicks on Selector TSHIRT (completed)" width="1920"/>
+                <img src="01486e0fbfd543da5c80600b1a08332b0dc346174a85afa1fe8fa06067c44bcb.png" title=" Juan David clicks on Tshirt 1" width="1920"/>
+                <img src="73da20c981fd9290f2b1f7286b0d2cb9e06182bcebbb5e7514d2f45ed4589480.png" title=" Juan David clicks on Tshirt 1 (completed)" width="1920"/>
+                <img src="73da20c981fd9290f2b1f7286b0d2cb9e06182bcebbb5e7514d2f45ed4589480.png" title=" Juan David clicks on Continuar comprando" width="1920"/>
+                <img src="1482692c62ebea49fbd5b83c17f8dd63f9d407ece775dc2959b9e0b0f288a8cd.png" title=" Juan David clicks on Continuar comprando (completed)" width="1920"/>
+                <img src="1482692c62ebea49fbd5b83c17f8dd63f9d407ece775dc2959b9e0b0f288a8cd.png" title=" Juan David clicks on Tshirt 2" width="1920"/>
+                <img src="d550826873d52dc271c8340be8cbb518f6aba8c99ff04f153b98d55ad7c06ace.png" title=" Juan David clicks on Tshirt 2 (completed)" width="1920"/>
+                <img src="d550826873d52dc271c8340be8cbb518f6aba8c99ff04f153b98d55ad7c06ace.png" title=" Juan David clicks on Continuar comprando" width="1920"/>
+                <img src="08169a532b8b32aaaecf6956447a2ac3663003f536603382da41265ed638c75a.png" title=" Juan David clicks on Continuar comprando (completed)" width="1920"/>
+                <img src="08169a532b8b32aaaecf6956447a2ac3663003f536603382da41265ed638c75a.png" title=" Juan david agregar productos (completed)" width="1920"/>
+                <img src="08169a532b8b32aaaecf6956447a2ac3663003f536603382da41265ed638c75a.png" title=" Cuando Agrego los productos al carrito (completed)" width="1920"/>
+                <img src="27c226a67639e61c25ce3edf087cbab3461bf61330204e9be072f547606d170c.png" title=" Y procedo a pagar los productos del carrito" width="1920"/>
+                <img src="27c226a67639e61c25ce3edf087cbab3461bf61330204e9be072f547606d170c.png" title=" Juan david navegar al carrito" width="1920"/>
+                <img src="27c226a67639e61c25ce3edf087cbab3461bf61330204e9be072f547606d170c.png" title=" Juan David clicks on Modulo Carrito" width="1920"/>
+                <img src="27c226a67639e61c25ce3edf087cbab3461bf61330204e9be072f547606d170c.png" title=" Juan david navegar al carrito (completed)" width="1920"/>
+                <img src="27c226a67639e61c25ce3edf087cbab3461bf61330204e9be072f547606d170c.png" title=" Juan david proceed to pay" width="1920"/>
+                <img src="27c226a67639e61c25ce3edf087cbab3461bf61330204e9be072f547606d170c.png" title=" Juan David clicks on Boton checkout" width="1920"/>
+                <img src="6c5fc8542b241c8b40d40f48415e9fb68f8157fef98638bb1bcbb955c0f20009.png" title=" Juan David clicks on Boton checkout (completed)" width="1920"/>
+                <img src="6c5fc8542b241c8b40d40f48415e9fb68f8157fef98638bb1bcbb955c0f20009.png" title=" Juan david proceed to pay (completed)" width="1920"/>
+                <img src="6c5fc8542b241c8b40d40f48415e9fb68f8157fef98638bb1bcbb955c0f20009.png" title=" Juan david place order" width="1920"/>
+                <img src="f5c58ae8c9625db0a907bebc707e239f60a448604d67b3fdb45d84da1cc8f5d7.png" title=" Juan David clicks on Boton PLace Order" width="1920"/>
+                <img src="0de6b1593fb1dad6b868132a16ca043b54dafe4a35c1aab1e3be0ac35445eb71.png" title=" Juan David clicks on Boton PLace Order (completed)" width="1920"/>
+                <img src="0de6b1593fb1dad6b868132a16ca043b54dafe4a35c1aab1e3be0ac35445eb71.png" title=" Juan david place order (completed)" width="1920"/>
+                <img src="0de6b1593fb1dad6b868132a16ca043b54dafe4a35c1aab1e3be0ac35445eb71.png" title=" Juan david pay and confirm page" width="1920"/>
+                <img src="0de6b1593fb1dad6b868132a16ca043b54dafe4a35c1aab1e3be0ac35445eb71.png" title=" Juan David enters 'Juan' into Campo name on card" width="1920"/>
+                <img src="f6c025e6e200c592bb0a52a878bec5bcbba96cbb310e7a2a94a9a510b720c344.png" title=" Juan David enters 'Juan' into Campo name on card (completed)" width="1920"/>
+                <img src="f6c025e6e200c592bb0a52a878bec5bcbba96cbb310e7a2a94a9a510b720c344.png" title=" Juan David enters '123456789' into Campo Numero de tarjeta" width="1920"/>
+                <img src="ba18cde6a281d60c171e8a18dd69692012a357572854ccbae6f447875086625b.png" title=" Juan David enters '123456789' into Campo Numero de tarjeta (completed)" width="1920"/>
+                <img src="ba18cde6a281d60c171e8a18dd69692012a357572854ccbae6f447875086625b.png" title=" Juan David enters '312' into Campo codigo de seguridad" width="1920"/>
+                <img src="c33d86e58ef3d663f1e0731677fd4acb722f93754526ad849524285628a6dfbb.png" title=" Juan David enters '312' into Campo codigo de seguridad (completed)" width="1920"/>
+                <img src="c33d86e58ef3d663f1e0731677fd4acb722f93754526ad849524285628a6dfbb.png" title=" Juan David enters '02' into Campo Mes de Expiracion" width="1920"/>
+                <img src="cdd8893b0283defcd7a2062198e8da9f77de47f5140572df7c6ad8c7fa4b6587.png" title=" Juan David enters '02' into Campo Mes de Expiracion (completed)" width="1920"/>
+                <img src="cdd8893b0283defcd7a2062198e8da9f77de47f5140572df7c6ad8c7fa4b6587.png" title=" Juan David enters '2027' into Campo A&ntilde;o de Expiracion" width="1920"/>
+                <img src="c0ea194e88e5720dab3f7620084e8844758c7215ae429e136a0921bcb3db70c7.png" title=" Juan David enters '2027' into Campo A&ntilde;o de Expiracion (completed)" width="1920"/>
+                <img src="c0ea194e88e5720dab3f7620084e8844758c7215ae429e136a0921bcb3db70c7.png" title=" Juan David clicks on Boton de submit" width="1920"/>
+                <img src="7a6972f30ab2dfe053f9812dabef74ba646bf2e2c58d2d9cb4372ed6b366bf98.png" title=" Juan David clicks on Boton de submit (completed)" width="1920"/>
+                <img src="7a6972f30ab2dfe053f9812dabef74ba646bf2e2c58d2d9cb4372ed6b366bf98.png" title=" Juan david pay and confirm page (completed)" width="1920"/>
+                <img src="7a6972f30ab2dfe053f9812dabef74ba646bf2e2c58d2d9cb4372ed6b366bf98.png" title=" Y procedo a pagar los productos del carrito (completed)" width="1920"/>
+                <img src="7a6972f30ab2dfe053f9812dabef74ba646bf2e2c58d2d9cb4372ed6b366bf98.png" title=" Entonces Deberia ver un mensaje indicando la compra exitosa" width="1920"/>
+                <img src="7a6972f30ab2dfe053f9812dabef74ba646bf2e2c58d2d9cb4372ed6b366bf98.png" title=" Then mensaje order placed should be 'ORDER PLACED!'" width="1920"/>
+                <img src="7a6972f30ab2dfe053f9812dabef74ba646bf2e2c58d2d9cb4372ed6b366bf98.png" title=" Entonces Deberia ver un mensaje indicando la compra exitosa (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.2.9</span>
+</div>
+</body>
+</html>
