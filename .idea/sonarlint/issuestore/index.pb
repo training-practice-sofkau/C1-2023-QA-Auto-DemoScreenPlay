@@ -15,5 +15,3 @@ z
 JScreenPlayEjemploEs/src/main/java/com/sofkau/tasks/AbrirPaginaInicial.java,1\a\1ae2f629c7c59f4e1ee3195bc4bfda40621cae30
 v
 FScreenPlayEjemploEs/src/test/java/com/sofkau/runners/RegistroTest.java,9\7\97018ca82ec89d765e37962ea8a0f78201f9a4bf
-x
-HScreenPlayEjemploEs/src/main/java/com/sofkau/tasks/EscogerProductos.java,d\a\da472defa208b91bb64f2aab6825478c9f3402ff

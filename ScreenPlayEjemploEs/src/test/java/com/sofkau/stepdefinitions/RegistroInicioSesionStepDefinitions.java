@@ -44,7 +44,9 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
     public void llena_todos_los_campos_del_resgistro() {
         theActorInTheSpotlight().attemptsTo(
                 navegarAlRegistro(),
-                llenarRegistro()
+                llenarRegistro(),
+                escogerProductos(),
+                hacerPago()
 
         );
     }
