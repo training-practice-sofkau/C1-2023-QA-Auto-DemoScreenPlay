@@ -16,4 +16,6 @@ public class PaginaRegistro extends PageObject {
 
     public static final Target BOTON_INICIAR_SESION = Target.the("Botón iniciar sesion")
             .located(By.xpath("//button[@data-qa='login-button']"));
+
+
 }
