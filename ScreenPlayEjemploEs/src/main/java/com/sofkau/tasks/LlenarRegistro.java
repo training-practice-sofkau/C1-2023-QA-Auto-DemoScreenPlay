@@ -13,12 +13,13 @@ import net.serenitybdd.screenplay.actions.Scroll;
 import net.thucydides.core.annotations.Managed;
 
 
+import static com.sofkau.tasks.Refrescar.thePage;
 import static com.sofkau.ui.PaginaRegistro.*;
 import static com.sofkau.ui.PaginaRegistro.BOTON_SUBMIT;
 
 public class LlenarRegistro implements Task {
 
-    Usuario usuario= new Usuario();
+    static Usuario usuario= new Usuario();
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
@@ -46,7 +47,10 @@ public class LlenarRegistro implements Task {
                 Enter.theValue(usuario.getCelular()).into(CELULAR),
                 Scroll.to(CREARCUENNTA),
                 Click.on(CREARCUENNTA),
+                Click.on(BOTONCONTINUA),
+                thePage(),
                 Click.on(BOTONCONTINUA)
+
         );
 
 
@@ -54,7 +58,9 @@ public class LlenarRegistro implements Task {
     public static LlenarRegistro llenarRegistro(){
         return new LlenarRegistro();}
 
-
+    public static String nombreUsuario(){
+      return usuario.getNombre();
+    };
 }
 
 

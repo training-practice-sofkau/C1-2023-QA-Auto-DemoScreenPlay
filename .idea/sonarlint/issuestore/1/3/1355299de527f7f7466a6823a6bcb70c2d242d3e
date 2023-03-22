@@ -1,7 +1,0 @@
-
-u
-java:S1104	"ZMake MENSAJE_INICIO a static final constant or non-public and provide accessors if needed.(פח־‚רÿÿÿÿ
-O
-java:S1444	"4Make this "public static MENSAJE_INICIO" field final(פח־‚רÿÿÿÿ
-t
-java:S3008	"YRename this field "MENSAJE_INICIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(פח־‚רÿÿÿÿ

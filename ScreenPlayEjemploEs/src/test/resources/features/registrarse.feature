@@ -13,16 +13,5 @@ Característica: Compras en pagina de pruebas
 
   @Registro
   Escenario: Registro de usuario
-    Y Llena todos los campos de resgistro
-    Entonces el usuario inicia sesion
-
-
-  @Compra
-  Escenario: Comprar productos
-    Y elige tres productos en su carrito de compras
-    Entonces se genera una orden de compra
-
-  @Pago
-  Escenario: Realizar pago
-    Y completa los campos de la tarjeta de credito
-    Entonces deberia ver un mensaje que la  orden fue aceptada
+    Y Llena todos los campos del resgistro
+    Entonces puede ver un mensaje con su nombre
