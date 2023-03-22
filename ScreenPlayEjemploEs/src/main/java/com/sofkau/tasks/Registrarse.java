@@ -26,14 +26,12 @@ public class Registrarse implements Task{
         return this;
     }
 
-
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Enter.theValue(usuario).into(CAMPO_NOMBRE_USUARIO),
                 Enter.theValue(email).into(CAMPO_EMAIL),
                 Click.on(BOTON_RESGISTRARSE)
-
         );
 
     }

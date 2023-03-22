@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-03-2023 13:58</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-03-2023 21:54</span>
     <br style="clear:left"/>
 </div>
 
@@ -197,9 +197,9 @@ para poder comprar productos en la página
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Registro de clientes
+                                <span class="error-color">Registro de clientes
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -216,31 +216,70 @@ para poder comprar productos en la página
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such window exception: no such window: target window already closed</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchWindowException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.sofkau.tasks.LlenarCamposRegistro.performAs(LlenarCamposRegistro.java:112)<br />com.sofkau.stepdefinitions.RegistroInicioSesionStepDefinitions.llenaTodosLosCampos(RegistroInicioSesionStepDefinitions.java:61)<br />io.cucumber.java.Invoker.invoke(Invoker.java:27)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:49)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:51)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:67)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:227)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="61866cf531c1829409ee181810543efdb6535209b0cd594f1b9aa28bc7137d46.png" title=" Dado que el usuario esta en la pagina de inicio" width="1920"/>
-                <img src="61866cf531c1829409ee181810543efdb6535209b0cd594f1b9aa28bc7137d46.png" title=" Juanes abrir pagina inicial" width="1920"/>
-                <img src="61866cf531c1829409ee181810543efdb6535209b0cd594f1b9aa28bc7137d46.png" title=" Juanes opens the Pagina inicial" width="1920"/>
-                <img src="4d4e5694f1dae75048dfefd9b55c579498f46ee0a09424cb72a7fec6ff85f8e9.png" title=" Juanes opens the Pagina inicial (completed)" width="1920"/>
-                <img src="4d4e5694f1dae75048dfefd9b55c579498f46ee0a09424cb72a7fec6ff85f8e9.png" title=" Juanes abrir pagina inicial (completed)" width="1920"/>
-                <img src="4d4e5694f1dae75048dfefd9b55c579498f46ee0a09424cb72a7fec6ff85f8e9.png" title=" Dado que el usuario esta en la pagina de inicio (completed)" width="1920"/>
-                <img src="9cd7cd67d57d9643b7b54cda08ede618c0347c65f3866dc39eb198a611a4f10a.png" title=" Cuando navega hasta la el formulario de registro" width="1920"/>
-                <img src="9cd7cd67d57d9643b7b54cda08ede618c0347c65f3866dc39eb198a611a4f10a.png" title=" Juanes navegar al registro" width="1920"/>
-                <img src="9cd7cd67d57d9643b7b54cda08ede618c0347c65f3866dc39eb198a611a4f10a.png" title=" Juanes clicks on Boton ir al registro" width="1920"/>
-                <img src="337441360f1377bbbfd44dfad37b553549bf301166b1bc010ad7fc4c8dc42749.png" title=" Juanes clicks on Boton ir al registro (completed)" width="1920"/>
-                <img src="337441360f1377bbbfd44dfad37b553549bf301166b1bc010ad7fc4c8dc42749.png" title=" Juanes navegar al registro (completed)" width="1920"/>
-                <img src="337441360f1377bbbfd44dfad37b553549bf301166b1bc010ad7fc4c8dc42749.png" title=" Cuando navega hasta la el formulario de registro (completed)" width="1920"/>
+                <img src="61866cf531c1829409ee181810543efdb6535209b0cd594f1b9aa28bc7137d46.png" title=" Jessica abrir pagina inicial" width="1920"/>
+                <img src="61866cf531c1829409ee181810543efdb6535209b0cd594f1b9aa28bc7137d46.png" title=" Jessica opens the Pagina inicial" width="1920"/>
+                <img src="f0e64de9c63fdd94ff35337ead062d471674bb69fba99f3e46479de80a6baf9a.png" title=" Jessica opens the Pagina inicial (completed)" width="1920"/>
+                <img src="f0e64de9c63fdd94ff35337ead062d471674bb69fba99f3e46479de80a6baf9a.png" title=" Jessica abrir pagina inicial (completed)" width="1920"/>
+                <img src="f0e64de9c63fdd94ff35337ead062d471674bb69fba99f3e46479de80a6baf9a.png" title=" Dado que el usuario esta en la pagina de inicio (completed)" width="1920"/>
+                <img src="2ab49a35923592deca2114f47cc2d2005dc220767d38edf9f2dea964e9cf03dd.png" title=" Cuando navega hasta la el formulario de registro" width="1920"/>
+                <img src="2ab49a35923592deca2114f47cc2d2005dc220767d38edf9f2dea964e9cf03dd.png" title=" Jessica navegar al registro" width="1920"/>
+                <img src="2ab49a35923592deca2114f47cc2d2005dc220767d38edf9f2dea964e9cf03dd.png" title=" Jessica clicks on Boton ir al registro" width="1920"/>
+                <img src="2ab49a35923592deca2114f47cc2d2005dc220767d38edf9f2dea964e9cf03dd.png" title=" Jessica navegar al registro (completed)" width="1920"/>
+                <img src="2ab49a35923592deca2114f47cc2d2005dc220767d38edf9f2dea964e9cf03dd.png" title=" Cuando navega hasta la el formulario de registro (completed)" width="1920"/>
                 <img src="2ab49a35923592deca2114f47cc2d2005dc220767d38edf9f2dea964e9cf03dd.png" title=" Y Llena todos los campos" width="1920"/>
-                <img src="2ab49a35923592deca2114f47cc2d2005dc220767d38edf9f2dea964e9cf03dd.png" title=" Juanes registrarse" width="1920"/>
-                <img src="2ab49a35923592deca2114f47cc2d2005dc220767d38edf9f2dea964e9cf03dd.png" title=" Juanes enters 'Jessica' into campo nombre usuario" width="1920"/>
-                <img src="7f21bd61d244dbd55dd42bf6ec1435946950d5934292e26182808108354174e2.png" title=" Juanes enters 'Jessica' into campo nombre usuario (completed)" width="1920"/>
-                <img src="7f21bd61d244dbd55dd42bf6ec1435946950d5934292e26182808108354174e2.png" title=" Juanes enters 'jessi@gmail.com' into campo email" width="1920"/>
-                <img src="3b40bd6cc5cdd0e405c7c954bbde861ac64a1b31533aef01eb11edbb009b4d13.png" title=" Juanes enters 'jessi@gmail.com' into campo email (completed)" width="1920"/>
-                <img src="3b40bd6cc5cdd0e405c7c954bbde861ac64a1b31533aef01eb11edbb009b4d13.png" title=" Juanes clicks on Bot&oacute;n registrarse" width="1920"/>
-                <img src="55d55b14c5a220107d6aec292b21ef2d95d4197e6992f9f862c5dfb48d938a7d.png" title=" Juanes clicks on Bot&oacute;n registrarse (completed)" width="1920"/>
-                <img src="55d55b14c5a220107d6aec292b21ef2d95d4197e6992f9f862c5dfb48d938a7d.png" title=" Juanes registrarse (completed)" width="1920"/>
-                <img src="55d55b14c5a220107d6aec292b21ef2d95d4197e6992f9f862c5dfb48d938a7d.png" title=" Y Llena todos los campos (completed)" width="1920"/>
-                <img src="76cf75f4cd1e6e940ce9acd960a47ef6c106f168d2ab26b336abaa80fe9ba324.png" title=" Entonces el usuario debe ser redireccionado a la pagina principal: <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="557b9dab71630dee573554d14fd530a8a5e62bfc5a4fec9e3b16c27257b2f70c.png" title=" Jessica registrarse" width="1920"/>
+                <img src="557b9dab71630dee573554d14fd530a8a5e62bfc5a4fec9e3b16c27257b2f70c.png" title=" Jessica enters 'Royce' into campo nombre usuario" width="1920"/>
+                <img src="557b9dab71630dee573554d14fd530a8a5e62bfc5a4fec9e3b16c27257b2f70c.png" title=" Jessica enters 'renee.schaden@hotmail.com' into campo email" width="1920"/>
+                <img src="06216cde8387e5eeaad1cbbaf563350adb0855b4a0774bee6def79ee675e5ac8.png" title=" Jessica enters 'renee.schaden@hotmail.com' into campo email (completed)" width="1920"/>
+                <img src="06216cde8387e5eeaad1cbbaf563350adb0855b4a0774bee6def79ee675e5ac8.png" title=" Jessica clicks on Bot&oacute;n registrarse" width="1920"/>
+                <img src="82a9928992507a6bcadd78a97d26056271da0d5905419dd739d1f0f8bba158ae.png" title=" Jessica clicks on Bot&oacute;n registrarse (completed)" width="1920"/>
+                <img src="82a9928992507a6bcadd78a97d26056271da0d5905419dd739d1f0f8bba158ae.png" title=" Jessica registrarse (completed)" width="1920"/>
+                <img src="5597af70f48f3056a92d024b49a676a58df7dcc686381d43c88f4ce323b30afa.png" title=" Jessica llenar campos registro" width="1920"/>
+                <img src="5597af70f48f3056a92d024b49a676a58df7dcc686381d43c88f4ce323b30afa.png" title=" Jessica clicks on campo genero femenino" width="1920"/>
+                <img src="ca694bd0d398e42e315b906157335bc77b0ba44230532c5b5765b9cd893a5b89.png" title=" Jessica clicks on campo genero femenino (completed)" width="1920"/>
+                <img src="6760e94530fb1484c2fda03198e327f532fa8ca9601dcd9d07dc573b1e6ae9f8.png" title=" Jessica enters 'usvi0Zp3' into campo password: <span class='error-color'>ERROR</span>" width="1920"/>
             </div>
         </div>
 
