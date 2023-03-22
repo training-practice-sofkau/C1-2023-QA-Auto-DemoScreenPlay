@@ -19,7 +19,9 @@ import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver
 
 public class Configuracion {
     private static final String SWITCHES = "--remote-allow-origins=*";
-    private static final String ACTOR = "Juanes";
+    private static final String INCOGNITO = "--incognito";
+    private static final String NOTIFICATIONS = "--disable-notifications";
+    private static final String ACTOR = "Sergio";
     private static final int DIEZ_SEGUNDOS = 10;
 
     @Managed()
@@ -35,7 +37,7 @@ public class Configuracion {
 
     private void configurarDriver() {
         ChromeOptions co = new ChromeOptions();
-        co.addArguments(SWITCHES);
+        co.addArguments(SWITCHES, INCOGNITO, NOTIFICATIONS);
         WebDriverManager.chromedriver().setup();
         webDriver = new ChromeDriver(co);
     }
