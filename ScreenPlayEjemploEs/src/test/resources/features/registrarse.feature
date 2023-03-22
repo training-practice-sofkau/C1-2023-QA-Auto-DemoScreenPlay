@@ -9,14 +9,20 @@ Característica: Compras en pagina de pruebas
 
   Antecedentes:
     Dado que el usuario esta en la pagina de inicio
-    Cuando navega hasta la el formulario de registro
+    Cuando navega hasta el formulario de registro
 
   @Registro
-  Escenario: Registro de clientes
-    Y Llena todos los campos
-    Entonces el usuario debe ser redireccionado a la pagina principal
+  Escenario: Registro de usuario
+    Y Llena todos los campos de resgistro
+    Entonces el usuario inicia sesion
 
-  @InicioSesión
-  Escenario: Iniciar sesion
-    Y completa los campos para iniciar sesion
-    Entonces el usuario debe ver su nombre en la pagina principal
+
+  @Compra
+  Escenario: Comprar productos
+    Y elige tres productos en su carrito de compras
+    Entonces se genera una orden de compra
+
+  @Pago
+  Escenario: Realizar pago
+    Y completa los campos de la tarjeta de credito
+    Entonces deberia ver un mensaje que la  orden fue aceptada

@@ -63,9 +63,13 @@ public class PaginaRegistro extends PageObject {
     public static final Target ANNO = Target.the("Anno")
             .located(By.id("years"));
     public static final Target NUMEROANNO = Target.the("NUMEROANNO")
-            .located(By.xpath("//option[@value='2003'"));
+            .located(By.xpath("//option[@value='2003']"));
 
     public static final Target CREARCUENNTA = Target.the("CREARCUENNTA")
             .located(By.xpath("(//button[@class='btn btn-default'])[1]"));
+    public static final Target BOTONCONTINUA = Target.the("BOTONCONTINUA")
+            .located(By.xpath("//a[@class='btn btn-primary']"));
 
+    public static final Target PUBLICIDAD = Target.the("PUBLICIDAD")
+            .located(By.id("ad_position_box"));
 }

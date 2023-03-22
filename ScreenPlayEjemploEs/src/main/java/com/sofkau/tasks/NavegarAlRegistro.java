@@ -1,5 +1,6 @@
 package com.sofkau.tasks;
 
+import com.sofkau.models.Usuario;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -11,10 +12,7 @@ public class NavegarAlRegistro implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(BOTON_REGISTRO),
-                Enter.theValue("Efrain solorzano").into(CAMPO_USUARIO),
-                Enter.theValue("efsolora@gmail.com").into(CAMPO_CORREO),
-                Click.on(BOTON_SUBMIT)
+                Click.on(BOTON_REGISTRO)
         );
     }
         public static NavegarAlRegistro navegarAlRegistro(){
