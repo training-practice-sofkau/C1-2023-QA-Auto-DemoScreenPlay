@@ -1,0 +1,9 @@
+
+y
+java:S1104"^Make MENSAJE_COMENTARIO a static final constant or non-public and provide accessors if needed.(шлчјы€€€€
+S
+java:S1444"8Make this "public static MENSAJE_COMENTARIO" field final(шлчјы€€€€
+x
+java:S3008"]Rename this field "MENSAJE_COMENTARIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(шлчјы€€€€
+O
+java:S1118":Add a private constructor to hide the implicit public one.(£ЃЏ

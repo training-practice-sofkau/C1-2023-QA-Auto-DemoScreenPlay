@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="f445c5c7a640690d1e157a6118c1b788be754066ca70495e9e2fce14ccca1bd3.html">Flujo De Compra En Una P&aacute;gina Web</a></span>
+                > <span class="truncate-60"><a
+                    href="3cfe40b75c0d7daba1492c86e3a91f37c96835add01ef425f676de38391c9276.html">: El usuario completa un flujo de compra en la pagina web </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-03-2023 12:30</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Flujo De Compra En Una Página Web </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                yo como usuaria de la pagina Automation Exercise<br />
+quiero poder comprar productos en la pagina<br />
+para poder recibirlos en mi domicilio
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="b7e33abe7619d82cefda21fe358074425199aafab4998745a7f9803cfbdd6a6a.html">Compra
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">: El usuario completa un flujo de compra en la pagina web
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="2a7791ba15962f8c5aaf5c7dda8ec8e08a9c8b927ab7a70adb90a7d966fe0fb6.png" title=" Dado que estoy en la pagina web Automation Exercise" width="1366"/>
+                <img src="2a7791ba15962f8c5aaf5c7dda8ec8e08a9c8b927ab7a70adb90a7d966fe0fb6.png" title=" Juanes abrir pagina inicial" width="1366"/>
+                <img src="2a7791ba15962f8c5aaf5c7dda8ec8e08a9c8b927ab7a70adb90a7d966fe0fb6.png" title=" Juanes opens the Pagina inicial" width="1366"/>
+                <img src="f52fb88e6e37d2acafa54cf2432dc87527c25b49fd615262664274341b72fabb.png" title=" Juanes opens the Pagina inicial (completed)" width="1366"/>
+                <img src="f52fb88e6e37d2acafa54cf2432dc87527c25b49fd615262664274341b72fabb.png" title=" Juanes abrir pagina inicial (completed)" width="1366"/>
+                <img src="f52fb88e6e37d2acafa54cf2432dc87527c25b49fd615262664274341b72fabb.png" title=" Juanes navegar al registro" width="1366"/>
+                <img src="f52fb88e6e37d2acafa54cf2432dc87527c25b49fd615262664274341b72fabb.png" title=" Juanes clicks on Boton ir al registro" width="1366"/>
+                <img src="df67248c8b9dc31db27559265248eb13939dd70ff73724e1e3141862d3c8197d.png" title=" Juanes clicks on Boton ir al registro (completed)" width="1366"/>
+                <img src="df67248c8b9dc31db27559265248eb13939dd70ff73724e1e3141862d3c8197d.png" title=" Juanes navegar al registro (completed)" width="1366"/>
+                <img src="df67248c8b9dc31db27559265248eb13939dd70ff73724e1e3141862d3c8197d.png" title=" Dado que estoy en la pagina web Automation Exercise (completed)" width="1366"/>
+                <img src="6f2d172317d6e15c959ba6fa4b396bdd46c6c0e5ac957d1a0649310d0f3d8d39.png" title=" Y me he registrado correctamente" width="1366"/>
+                <img src="6f2d172317d6e15c959ba6fa4b396bdd46c6c0e5ac957d1a0649310d0f3d8d39.png" title=" Juanes registrarse" width="1366"/>
+                <img src="6f2d172317d6e15c959ba6fa4b396bdd46c6c0e5ac957d1a0649310d0f3d8d39.png" title=" Juanes enters 'Saris Cordoba' into Campo name" width="1366"/>
+                <img src="8284964b4b2fd0672dc8ec53f732dc9963378fadbde7adad8023ae3ffd92f2ad.png" title=" Juanes enters 'Saris Cordoba' into Campo name (completed)" width="1366"/>
+                <img src="8284964b4b2fd0672dc8ec53f732dc9963378fadbde7adad8023ae3ffd92f2ad.png" title=" Juanes enters 'saris56@gmail.com' into Campo email" width="1366"/>
+                <img src="3620c73041df26f9ccede7411752bfb5567cd284151b614b3c3ed1231d646eca.png" title=" Juanes enters 'saris56@gmail.com' into Campo email (completed)" width="1366"/>
+                <img src="3620c73041df26f9ccede7411752bfb5567cd284151b614b3c3ed1231d646eca.png" title=" Juanes clicks on Boton registro" width="1366"/>
+                <img src="0536d99588d51c97f5e42f75d9a08e7253e10d4dd9a46f6e797034924d024dcc.png" title=" Juanes clicks on Boton registro (completed)" width="1366"/>
+                <img src="0536d99588d51c97f5e42f75d9a08e7253e10d4dd9a46f6e797034924d024dcc.png" title=" Juanes clicks on Campo genero" width="1366"/>
+                <img src="b91fcfad25b98bbbc218e5bebb214f99a30c4ab6b1f4c3a9a0fb45d81766d112.png" title=" Juanes clicks on Campo genero (completed)" width="1366"/>
+                <img src="b91fcfad25b98bbbc218e5bebb214f99a30c4ab6b1f4c3a9a0fb45d81766d112.png" title=" Juanes enters 'famiCordoba667' into Campo contrasenna-registro" width="1366"/>
+                <img src="9e4e5f41451a2dfe13a08ee39d7dd05d2aff2e4abe808646b7d8cbefffd560dc.png" title=" Juanes enters 'famiCordoba667' into Campo contrasenna-registro (completed)" width="1366"/>
+                <img src="9e4e5f41451a2dfe13a08ee39d7dd05d2aff2e4abe808646b7d8cbefffd560dc.png" title=" Juanes clicks on Campo dia" width="1366"/>
+                <img src="54ef5d92834ede6a74f2f150e7dff98bb8bc1fcf15a9e52361366eb9084b6687.png" title=" Juanes clicks on Campo dia (completed)" width="1366"/>
+                <img src="54ef5d92834ede6a74f2f150e7dff98bb8bc1fcf15a9e52361366eb9084b6687.png" title=" Juanes clicks on Campo dia6" width="1366"/>
+                <img src="54ef5d92834ede6a74f2f150e7dff98bb8bc1fcf15a9e52361366eb9084b6687.png" title=" Juanes clicks on Campo dia6 (completed)" width="1366"/>
+                <img src="54ef5d92834ede6a74f2f150e7dff98bb8bc1fcf15a9e52361366eb9084b6687.png" title=" Juanes clicks on Campo mes" width="1366"/>
+                <img src="4efd05dfa08181c0a5216678bd9a2ec801c7016ac26406753b5e1a4f4dcaad75.png" title=" Juanes clicks on Campo mes (completed)" width="1366"/>
+                <img src="4efd05dfa08181c0a5216678bd9a2ec801c7016ac26406753b5e1a4f4dcaad75.png" title=" Juanes clicks on Campo mes9" width="1366"/>
+                <img src="dbce248ad0cf57620c77445394d93c24d611d25008e9712ec421556f3dc6d34b.png" title=" Juanes clicks on Campo mes9 (completed)" width="1366"/>
+                <img src="dbce248ad0cf57620c77445394d93c24d611d25008e9712ec421556f3dc6d34b.png" title=" Juanes clicks on Campo anno" width="1366"/>
+                <img src="baa4765b88a835689043abd136477295929a84bcbb32be3842a065b759a671f1.png" title=" Juanes clicks on Campo anno (completed)" width="1366"/>
+                <img src="baa4765b88a835689043abd136477295929a84bcbb32be3842a065b759a671f1.png" title=" Juanes clicks on Campo anno2002" width="1366"/>
+                <img src="baa4765b88a835689043abd136477295929a84bcbb32be3842a065b759a671f1.png" title=" Juanes clicks on Campo anno2002 (completed)" width="1366"/>
+                <img src="baa4765b88a835689043abd136477295929a84bcbb32be3842a065b759a671f1.png" title=" Juanes clicks on Campo suscripcion" width="1366"/>
+                <img src="5d3524cb66c5dc8ae159d351ca6848f3afc044862fead1b101fdf3a5d300e9f2.png" title=" Juanes clicks on Campo suscripcion (completed)" width="1366"/>
+                <img src="5d3524cb66c5dc8ae159d351ca6848f3afc044862fead1b101fdf3a5d300e9f2.png" title=" Juanes clicks on Campo ofertas" width="1366"/>
+                <img src="59ba5c434810a0014c87280f2f38d1906e6c23d10b2a8de8582475c806ca5709.png" title=" Juanes clicks on Campo ofertas (completed)" width="1366"/>
+                <img src="59ba5c434810a0014c87280f2f38d1906e6c23d10b2a8de8582475c806ca5709.png" title=" Juanes enters 'Asuncion' into Campo nombre direccion" width="1366"/>
+                <img src="55c0f44284c68aaf0c5c7109dc06fd4b643e9124a8a4b4b945ec9cde78fbdfe2.png" title=" Juanes enters 'Asuncion' into Campo nombre direccion (completed)" width="1366"/>
+                <img src="55c0f44284c68aaf0c5c7109dc06fd4b643e9124a8a4b4b945ec9cde78fbdfe2.png" title=" Juanes enters 'Parte Alta' into Campo apellido direccion" width="1366"/>
+                <img src="3d0bc56cc09e7d8b4fdb20363ab367005e1f168b20f87e882098fb1f2a0fb1cc.png" title=" Juanes enters 'Parte Alta' into Campo apellido direccion (completed)" width="1366"/>
+                <img src="3d0bc56cc09e7d8b4fdb20363ab367005e1f168b20f87e882098fb1f2a0fb1cc.png" title=" Juanes enters 'Industrias Colombina' into Campo compannia" width="1366"/>
+                <img src="bdb5c1de0b9a5926b5892c585ba2bf80eef9b4906c830f5ca1edbd3ba77c80e0.png" title=" Juanes enters 'Industrias Colombina' into Campo compannia (completed)" width="1366"/>
+                <img src="bdb5c1de0b9a5926b5892c585ba2bf80eef9b4906c830f5ca1edbd3ba77c80e0.png" title=" Juanes enters 'calle 50 #25a-109' into Campo direccion 1" width="1366"/>
+                <img src="d9e9e8cc43cc3885f7f6aad95432afe96209ff9bc77f461aa11f2ef04462ac45.png" title=" Juanes enters 'calle 50 #25a-109' into Campo direccion 1 (completed)" width="1366"/>
+                <img src="d9e9e8cc43cc3885f7f6aad95432afe96209ff9bc77f461aa11f2ef04462ac45.png" title=" Juanes enters 'apto 601' into Campo direccion 2" width="1366"/>
+                <img src="bc72c87caa7805efdb3ac7d055465400760c6548d77fbe221d13a93768b2b03c.png" title=" Juanes enters 'apto 601' into Campo direccion 2 (completed)" width="1366"/>
+                <img src="bc72c87caa7805efdb3ac7d055465400760c6548d77fbe221d13a93768b2b03c.png" title=" Juanes clicks on Campo pais" width="1366"/>
+                <img src="02765e5dd53fd9724e1126247d5baa17952741f9a4ca7f4b2e469be34b86d435.png" title=" Juanes clicks on Campo pais (completed)" width="1366"/>
+                <img src="02765e5dd53fd9724e1126247d5baa17952741f9a4ca7f4b2e469be34b86d435.png" title=" Juanes clicks on Campo pais nueva zelanda" width="1366"/>
+                <img src="1102ed0dab9a8e7a04d0758879f01277b2f7298fdde8cfa05a79b466d37e42ad.png" title=" Juanes clicks on Campo pais nueva zelanda (completed)" width="1366"/>
+                <img src="1102ed0dab9a8e7a04d0758879f01277b2f7298fdde8cfa05a79b466d37e42ad.png" title=" Juanes enters 'Waikato' into Campo estado" width="1366"/>
+                <img src="47e992a3e9fb87cd5783d032322d064d1265b44c6b3c114be9e69eab9584c6c6.png" title=" Juanes enters 'Waikato' into Campo estado (completed)" width="1366"/>
+                <img src="47e992a3e9fb87cd5783d032322d064d1265b44c6b3c114be9e69eab9584c6c6.png" title=" Juanes enters 'Hamilton' into Campo ciudad" width="1366"/>
+                <img src="8334418b4cadfe09ffd9c5f552738f5387e68d19311b2b75772e98e9e1531f41.png" title=" Juanes enters 'Hamilton' into Campo ciudad (completed)" width="1366"/>
+                <img src="8334418b4cadfe09ffd9c5f552738f5387e68d19311b2b75772e98e9e1531f41.png" title=" Juanes enters '06001' into Campo zipcode" width="1366"/>
+                <img src="fbe425622aad341e885a9e6cfd26dce28850b8919c3f721529ad109a6ad82a1c.png" title=" Juanes enters '06001' into Campo zipcode (completed)" width="1366"/>
+                <img src="fbe425622aad341e885a9e6cfd26dce28850b8919c3f721529ad109a6ad82a1c.png" title=" Juanes enters '3127357845' into Campo numero de telefono" width="1366"/>
+                <img src="a50a87ce624db4310d94e72b3655bcec85c4afb18bc52e52f05306bf061a752e.png" title=" Juanes enters '3127357845' into Campo numero de telefono (completed)" width="1366"/>
+                <img src="a50a87ce624db4310d94e72b3655bcec85c4afb18bc52e52f05306bf061a752e.png" title=" Juanes clicks on Campo crear cuenta" width="1366"/>
+                <img src="f6d37d944afe9697391d3061488b5b25e1bf06de67775de272448361270de0d8.png" title=" Juanes clicks on Campo crear cuenta (completed)" width="1366"/>
+                <img src="f6d37d944afe9697391d3061488b5b25e1bf06de67775de272448361270de0d8.png" title=" Juanes clicks on boton continuar" width="1366"/>
+                <img src="4972a7463a499824a03866fb7c63801e0052bc8039cb534ded981fe4a199f17f.png" title=" Juanes clicks on boton continuar (completed)" width="1366"/>
+                <img src="4972a7463a499824a03866fb7c63801e0052bc8039cb534ded981fe4a199f17f.png" title=" Juanes registrarse (completed)" width="1366"/>
+                <img src="4972a7463a499824a03866fb7c63801e0052bc8039cb534ded981fe4a199f17f.png" title=" Y me he registrado correctamente (completed)" width="1366"/>
+                <img src="ffbc7e46030a26af115d93ccd250bfc5ffe5cc02e1a5f0d41f7c1c27578656e3.png" title=" Cuando agrego productos a mi carrito y continuo todo el flujo de la compra" width="1366"/>
+                <img src="ffbc7e46030a26af115d93ccd250bfc5ffe5cc02e1a5f0d41f7c1c27578656e3.png" title=" Juanes comprar productos" width="1366"/>
+                <img src="ffbc7e46030a26af115d93ccd250bfc5ffe5cc02e1a5f0d41f7c1c27578656e3.png" title=" Juanes refreshes the browser" width="1366"/>
+                <img src="ffbc7e46030a26af115d93ccd250bfc5ffe5cc02e1a5f0d41f7c1c27578656e3.png" title=" Juanes clicks on Boton ir a productos" width="1366"/>
+                <img src="20ce7cc407430c4189a740097f7e756a443bbb6e388f5215097e57497c321fe7.png" title=" Juanes clicks on Boton ir a productos (completed)" width="1366"/>
+                <img src="20ce7cc407430c4189a740097f7e756a443bbb6e388f5215097e57497c321fe7.png" title=" Juanes clicks on opcion productos Madame" width="1366"/>
+                <img src="977d682a88af891878a30d468be47bdce07550b20bfda977c3708ecb5618b7f0.png" title=" Juanes clicks on opcion productos Madame (completed)" width="1366"/>
+                <img src="977d682a88af891878a30d468be47bdce07550b20bfda977c3708ecb5618b7f0.png" title=" Juanes clicks on ver producto Lino pavo real" width="1366"/>
+                <img src="ec0258a5ab1af3870d049eec9b71b9b8da27e7df1186bcc7418a1035d738fa48.png" title=" Juanes clicks on ver producto Lino pavo real (completed)" width="1366"/>
+                <img src="ec0258a5ab1af3870d049eec9b71b9b8da27e7df1186bcc7418a1035d738fa48.png" title=" Juanes enters '2' into modificar cantidad liana" width="1366"/>
+                <img src="c0e79618711fa6653003f81a084bc05c75dee912d47066aca1420bf1049361b8.png" title=" Juanes enters '2' into modificar cantidad liana (completed)" width="1366"/>
+                <img src="c0e79618711fa6653003f81a084bc05c75dee912d47066aca1420bf1049361b8.png" title=" Juanes clicks on Boton agregar al carrito" width="1366"/>
+                <img src="f7ccf094c1ac59d7c965ac1d9f98c324072e75a6800e32de025b448bbc1a9b7b.png" title=" Juanes clicks on Boton agregar al carrito (completed)" width="1366"/>
+                <img src="f7ccf094c1ac59d7c965ac1d9f98c324072e75a6800e32de025b448bbc1a9b7b.png" title=" Juanes clicks on Boton seguir comprando" width="1366"/>
+                <img src="502bbde810db4354c5608ac8775488ce2d32c9dade77550607a425ee49720747.png" title=" Juanes clicks on Boton seguir comprando (completed)" width="1366"/>
+                <img src="502bbde810db4354c5608ac8775488ce2d32c9dade77550607a425ee49720747.png" title=" Juanes clicks on opcion productos Polo" width="1366"/>
+                <img src="aefce8aeb271f3eab0ff00d32f42cec2950afa846d9e9c747fcab9e1725ad722.png" title=" Juanes clicks on opcion productos Polo (completed)" width="1366"/>
+                <img src="aefce8aeb271f3eab0ff00d32f42cec2950afa846d9e9c747fcab9e1725ad722.png" title=" Juanes clicks on opcion ver jean" width="1366"/>
+                <img src="2e5141787f19a43a68a11c9a1ac19713800625899bfc9988e81ea96e91669983.png" title=" Juanes clicks on opcion ver jean (completed)" width="1366"/>
+                <img src="2e5141787f19a43a68a11c9a1ac19713800625899bfc9988e81ea96e91669983.png" title=" Juanes enters 'Saris Cordoba' into opcion nombre" width="1366"/>
+                <img src="450374bc48a8974ecc44506ad8af07105286a6b33500d9ba5529666df272a28c.png" title=" Juanes enters 'Saris Cordoba' into opcion nombre (completed)" width="1366"/>
+                <img src="450374bc48a8974ecc44506ad8af07105286a6b33500d9ba5529666df272a28c.png" title=" Juanes enters 'saris001@gmail.com' into opcion email" width="1366"/>
+                <img src="a753ab03ca92742fed9fe34b1fd56c96a4bed8ba6c559345c982a2e80395c5f8.png" title=" Juanes enters 'saris001@gmail.com' into opcion email (completed)" width="1366"/>
+                <img src="a753ab03ca92742fed9fe34b1fd56c96a4bed8ba6c559345c982a2e80395c5f8.png" title=" Juanes enters 'Me encanto este jean , de verdad que es super comodo y de buena calidad. Por eso regreso a comprarlo ;)' into opcion descripcion" width="1366"/>
+                <img src="b2bad8ba46e3f19888a48e08f413d53583a5976c31fbb2abc0cd31b9358494b8.png" title=" Juanes enters 'Me encanto este jean , de verdad que es super comodo y de buena calidad. Por eso regreso a comprarlo ;)' into opcion descripcion (completed)" width="1366"/>
+                <img src="b2bad8ba46e3f19888a48e08f413d53583a5976c31fbb2abc0cd31b9358494b8.png" title=" Juanes clicks on boton enviar descripcion" width="1366"/>
+                <img src="3e71fa7ee2da3583287101f572ee52cfa29dcce66c7cb8b8c55709630b5d8741.png" title=" Juanes clicks on boton enviar descripcion (completed)" width="1366"/>
+                <img src="3e71fa7ee2da3583287101f572ee52cfa29dcce66c7cb8b8c55709630b5d8741.png" title=" Juanes clicks on boton agregar al carrito el jean" width="1366"/>
+                <img src="fb3a536848415b1a9c705bddaaeb4c85a1890b280e2db37234ed569d1ce8c9cb.png" title=" Juanes clicks on boton agregar al carrito el jean (completed)" width="1366"/>
+                <img src="fb3a536848415b1a9c705bddaaeb4c85a1890b280e2db37234ed569d1ce8c9cb.png" title=" Juanes clicks on boton ver carrito" width="1366"/>
+                <img src="82f73ac66e013dea8dcd3ca72eb502e3aad7fa24d61e85e657accd96ab281418.png" title=" Juanes clicks on boton ver carrito (completed)" width="1366"/>
+                <img src="82f73ac66e013dea8dcd3ca72eb502e3aad7fa24d61e85e657accd96ab281418.png" title=" Juanes clicks on boton ir a la caja" width="1366"/>
+                <img src="0d0d4a04b3c278e69b9bcaedd93ac740670cc441a4b9a238ff2636dcc312175a.png" title=" Juanes clicks on boton ir a la caja (completed)" width="1366"/>
+                <img src="0d0d4a04b3c278e69b9bcaedd93ac740670cc441a4b9a238ff2636dcc312175a.png" title=" Juanes enters 'Por favor entregar a la se&ntilde;ora Pepita , muchas gracias.' into campo mensaje de anexo" width="1366"/>
+                <img src="9c3b790a48ed7051fd6c50973a51714e61c46f0da41ea68d55b1a6215a54bec4.png" title=" Juanes enters 'Por favor entregar a la se&ntilde;ora Pepita , muchas gracias.' into campo mensaje de anexo (completed)" width="1366"/>
+                <img src="9c3b790a48ed7051fd6c50973a51714e61c46f0da41ea68d55b1a6215a54bec4.png" title=" Juanes clicks on boton hacer la orden" width="1366"/>
+                <img src="6af499bcbf83e019f00b7be95786b6b0bac26360a4fd40b7f750b0162c5f38c8.png" title=" Juanes clicks on boton hacer la orden (completed)" width="1366"/>
+                <img src="6af499bcbf83e019f00b7be95786b6b0bac26360a4fd40b7f750b0162c5f38c8.png" title=" Juanes enters 'BBVA' into campo ingresar nombre tarjeta " width="1366"/>
+                <img src="7562a7a6e3add6c765c1321dc96235cf857de4e4f3de2c941b0fe8e9c4d2b412.png" title=" Juanes enters 'BBVA' into campo ingresar nombre tarjeta  (completed)" width="1366"/>
+                <img src="7562a7a6e3add6c765c1321dc96235cf857de4e4f3de2c941b0fe8e9c4d2b412.png" title=" Juanes enters '4263-7896-5263-0023' into campo ingresar numero de la tarjeta" width="1366"/>
+                <img src="1589decadce67a72ae82360e68a726467f2bec2bcf979af27540e6583e7dc305.png" title=" Juanes enters '4263-7896-5263-0023' into campo ingresar numero de la tarjeta (completed)" width="1366"/>
+                <img src="1589decadce67a72ae82360e68a726467f2bec2bcf979af27540e6583e7dc305.png" title=" Juanes enters '2320' into campo CVC" width="1366"/>
+                <img src="e8ee76574bef3fb29e6ca757accda4f3e1044e12ce4e624d7b22eb4291dbd37a.png" title=" Juanes enters '2320' into campo CVC (completed)" width="1366"/>
+                <img src="e8ee76574bef3fb29e6ca757accda4f3e1044e12ce4e624d7b22eb4291dbd37a.png" title=" Juanes enters '06' into campo MM " width="1366"/>
+                <img src="6c83efc24f905e0191260697a784cb588dbaa4ca4c0250bf9baca8e3bcd47507.png" title=" Juanes enters '06' into campo MM  (completed)" width="1366"/>
+                <img src="6c83efc24f905e0191260697a784cb588dbaa4ca4c0250bf9baca8e3bcd47507.png" title=" Juanes enters '2026' into campo YY" width="1366"/>
+                <img src="a4ee45f2c13f3ee3ade06e10edbcdd6e5cc62b2794e9ce40e184ecd8f1949116.png" title=" Juanes enters '2026' into campo YY (completed)" width="1366"/>
+                <img src="a4ee45f2c13f3ee3ade06e10edbcdd6e5cc62b2794e9ce40e184ecd8f1949116.png" title=" Juanes clicks on boton pagar y hacer pedido " width="1366"/>
+                <img src="0a4b49dde20ee91a928d7b30e624efa1f0a09fda52558f72ddc4c77a621d95fd.png" title=" Juanes clicks on boton pagar y hacer pedido  (completed)" width="1366"/>
+                <img src="0a4b49dde20ee91a928d7b30e624efa1f0a09fda52558f72ddc4c77a621d95fd.png" title=" Juanes comprar productos (completed)" width="1366"/>
+                <img src="0a4b49dde20ee91a928d7b30e624efa1f0a09fda52558f72ddc4c77a621d95fd.png" title=" Cuando agrego productos a mi carrito y continuo todo el flujo de la compra (completed)" width="1366"/>
+                <img src="0a4b49dde20ee91a928d7b30e624efa1f0a09fda52558f72ddc4c77a621d95fd.png" title=" Entonces deberia ver un mensaje de confirmacion de compra exitosa: <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.2.9</span>
+</div>
+</body>
+</html>

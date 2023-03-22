@@ -1,0 +1,7 @@
+
+{
+java:S1104"YMake MENSAJE_ORDEN a static final constant or non-public and provide accessors if needed.(“ƒþÏüÿÿÿÿ8³Å—Óð0
+U
+java:S1444"3Make this "public static MENSAJE_ORDEN" field final(“ƒþÏüÿÿÿÿ8´Å—Óð0
+z
+java:S3008"XRename this field "MENSAJE_ORDEN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“ƒþÏüÿÿÿÿ8·Å—Óð0
