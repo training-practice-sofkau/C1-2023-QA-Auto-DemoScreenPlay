@@ -4,6 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import static com.sofkau.tasks.Refrescar.thePage;
 
 import static com.sofkau.ui.PaginaRegistro.*;
 
@@ -28,6 +29,8 @@ public class IniciarSesion implements Task {
                 Enter.theValue(usuario).into(CAMPO_USUARIO),
                 Enter.theValue(contrasenna).into(CAMPO_CONTRASENNA),
                 Click.on(BOTON_INICIAR_SESION)
+
+
         );
     }
 

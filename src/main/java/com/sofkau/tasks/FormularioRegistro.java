@@ -101,7 +101,8 @@ public class FormularioRegistro implements Task {
                 Enter.theValue(ciudad).into(CAMPO_CITY),
                 Enter.theValue(zipCode).into(CAMPO_ZIPCODE),
                 Enter.theValue(celular).into(CAMPO_CELULAR),
-                Click.on(BOTON_CREAR_CUENTA)
+                Click.on(BOTON_CREAR_CUENTA),
+                Click.on(BOTON_CONTINUAR)
 
         );
     }

@@ -81,5 +81,6 @@ public class PaginaRegistro extends PageObject {
     public static final Target BOTON_CREAR_CUENTA = Target.the("boton Receive special offers from our partners")
             .located(By.xpath("//button[normalize-space()='Create Account']"));
 
-
+    public static final Target BOTON_CONTINUAR = Target.the("boton continuar")
+            .located(By.xpath("//a[normalize-space()='Continue']"));
 }
