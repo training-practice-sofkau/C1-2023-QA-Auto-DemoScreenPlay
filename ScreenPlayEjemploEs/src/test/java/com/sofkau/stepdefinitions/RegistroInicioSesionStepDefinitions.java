@@ -11,6 +11,7 @@ import static com.sofkau.questions.MensajeNombre.mensajeNombre;
 import static com.sofkau.tasks.IniciarSesion.iniciarSesion;
 import static com.sofkau.tasks.LLenarFormularioRegistroCompleto.lLenarFormularioRegistroCompleto;
 import static com.sofkau.tasks.NavegarAlRegistro.navegarAlRegistro;
+import static com.sofkau.tasks.RealizarCompra.realizarCompra;
 import static com.sofkau.tasks.RealizarRegistro.realizarRegistro;
 import static com.sofkau.ui.PaginaRedireccionamientoRegistroCompleto.CAMPO_APELLIDO;
 import static com.sofkau.ui.PaginaRegistro.CAMPO_EMAIL_NEW_USER;
@@ -73,7 +74,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
                 seeThat(mensajeConfirmacionRegistro(), equalTo("ACCOUNT CREATED!"))
         );
 
-       quitarDriver();
+        quitarDriver();
     }
 
     @Cuando("completa los campos para iniciar sesion")
@@ -96,4 +97,30 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
     }
 
 
+    @Cuando("agrega un producto al carrito de compras, realizando el pago")
+    public void agregaUnProductoAlCarritoDeComprasRealizandoElPago() {
+        theActorInTheSpotlight().attemptsTo(
+                iniciarSesion()
+                        .conElUsuario("juan.pineda@gmail.com")
+                        .yConLaContrasenna("123456")
+        );
+
+
+
+    }
+
+    @Entonces("deberia realizarse la compra exitosamente, ademas de un mensaje de confirmacion")
+    public void deberiaRealizarseLaCompraExitosamenteAdemasDeUnMensajeDeConfirmacion() {
+
+        System.out.println(" HOLAAA" );
+        theActorInTheSpotlight().attemptsTo(
+
+                realizarCompra()
+
+
+        );
+
+
+
+    }
 }
