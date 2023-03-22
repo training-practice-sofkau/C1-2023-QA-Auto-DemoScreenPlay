@@ -4,17 +4,17 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 
-import static com.sofkau.ui.PaginaRegistro.BOTON_REGISTRO;
+import static com.sofkau.ui.HomePage.SIGNUP_LOGIN_BTTN;
 
-public class NavegarAlRegistro implements Task {
+public class NavigateToSignupLogin implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(BOTON_REGISTRO)
+                Click.on(SIGNUP_LOGIN_BTTN)
         );
     }
 
-    public static NavegarAlRegistro navegarAlRegistro() {
-        return new NavegarAlRegistro();
+    public static NavigateToSignupLogin navigateToSignupLogin() {
+        return new NavigateToSignupLogin();
     }
 }

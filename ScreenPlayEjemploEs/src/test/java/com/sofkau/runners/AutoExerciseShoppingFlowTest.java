@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        features = {"src/test/resources/features/AutoExcersiceShoppingFlow.feature"},
+        features = {"src/test/resources/features/AutoExerciseShoppingFlow.feature"},
         glue = {"com.sofkau.stepdefinitions"}
 )
-public class RegistroTest {
+public class AutoExerciseShoppingFlowTest {
 }
