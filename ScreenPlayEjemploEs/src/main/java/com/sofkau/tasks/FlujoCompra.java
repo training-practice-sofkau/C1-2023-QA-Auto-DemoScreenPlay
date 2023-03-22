@@ -8,7 +8,6 @@ import net.serenitybdd.screenplay.actions.Scroll;
 
 import static com.sofkau.tasks.RefrescarPagina.refrescar;
 import static com.sofkau.ui.CategoriaCompra.*;
-import static com.sofkau.ui.CrearUsuario.CAMPO_NOMBRE_USUARIO;
 
 public class FlujoCompra implements Task {
 

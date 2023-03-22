@@ -6,11 +6,13 @@ import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 
+import static com.sofkau.questions.MensajeCompra.mensajeCompra;
 import static com.sofkau.tasks.FlujoCompra.flujoCompra;
 import static com.sofkau.tasks.IniciarSesion.iniciarSesion;
 import static com.sofkau.tasks.NavegarAlRegistro.navegarAlRegistro;
-import static com.sofkau.tasks.RefrescarPagina.refrescar;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+import static org.hamcrest.CoreMatchers.equalTo;
 
 public class CompraStepDefinitios extends Configuracion {
 
@@ -32,7 +34,9 @@ public class CompraStepDefinitios extends Configuracion {
 
     @Cuando("agrega varios productos al carrito")
     public void agregaVariosProductosAlCarrito() {
+        theActorInTheSpotlight().attemptsTo(
 
+        );
     }
 
     @Cuando("completa la informacion del formulario del pago")
@@ -49,6 +53,9 @@ public class CompraStepDefinitios extends Configuracion {
 
     @Entonces("mostrara un mensaje confirmando la compra")
     public void mostraraUnMensajeConfirmandoLaCompra() {
-
+        theActorInTheSpotlight().should(
+                seeThat(mensajeCompra(), equalTo("ORDER PLACED!"))
+        );
+        quitarDriver();
     }
 }
