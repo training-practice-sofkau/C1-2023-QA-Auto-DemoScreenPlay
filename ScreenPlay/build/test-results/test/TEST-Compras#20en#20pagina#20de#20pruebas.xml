@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Compras en pagina de pruebas" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-22T06:11:18" hostname="LAPTOP-87LGHN0U" time="37.754">
+<testsuite name="Compras en pagina de pruebas" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-22T18:40:55" hostname="LAPTOP-87LGHN0U" time="38.436">
   <properties/>
-  <testcase name="Registro de clientes" classname="Compras en pagina de pruebas" time="37.754"/>
+  <testcase name="Registro de clientes" classname="Compras en pagina de pruebas" time="38.436">
+    <failure message="java.lang.AssertionError: &#10;Expected: &quot;Account Created!&quot;&#10;     but: was &quot;ACCOUNT CREATED!&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &quot;Account Created!&quot;
+     but: was &quot;ACCOUNT CREATED!&quot;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at com.sofkau.stepdefinitions.RegistroInicioSesionStepDefinitions.elUsuarioDebeSerRedireccionadoALaPaginaPrincipal(RegistroInicioSesionStepDefinitions.java:41)
+	at ✽.el usuario debe ser redireccionado a la pagina principal(file:///C:/Users/ivan0/Downloads/Screenplay/C1-2023-QA-Auto-DemoScreenPlay/ScreenPlay/src/test/resources/features/registrarse.feature:17)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 27858
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 18734
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar. 22, 2023 1:11:21 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+mar. 22, 2023 1:40:58 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-mar. 22, 2023 1:11:22 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+mar. 22, 2023 1:40:59 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 48388
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 42704
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar. 22, 2023 1:11:25 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+mar. 22, 2023 1:41:02 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

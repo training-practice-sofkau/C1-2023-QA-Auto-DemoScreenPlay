@@ -1,1 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Compras en pagina de pruebas" skipped="0" tests="1" time="36.86" timestamp="2023-03-22 01:11:18"><testcase name="Registro de clientes"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Compras en pagina de pruebas" skipped="0" tests="1" time="37.41" timestamp="2023-03-22 01:40:55"><testcase name="Registro de clientes"><failure message="&#10;Expected: &quot;Account Created!&quot;&#10;     but: was &quot;ACCOUNT CREATED!&quot;" type="java.lang.AssertionError">
+Expected: "Account Created!"
+     but: was "ACCOUNT CREATED!"</failure><system-err>
+Expected: "Account Created!"
+     but: was "ACCOUNT CREATED!"&#13;
+com.sofkau.stepdefinitions.RegistroInicioSesionStepDefinitions.elUsuarioDebeSerRedireccionadoALaPaginaPrincipal(RegistroInicioSesionStepDefinitions.java:41)&#13;
+✽.el usuario debe ser redireccionado a la pagina principal(file:///C:/Users/ivan0/Downloads/Screenplay/C1-2023-QA-Auto-DemoScreenPlay/ScreenPlay/src/test/resources/features/registrarse.feature:17)&#13;
+</system-err></testcase></testsuite>

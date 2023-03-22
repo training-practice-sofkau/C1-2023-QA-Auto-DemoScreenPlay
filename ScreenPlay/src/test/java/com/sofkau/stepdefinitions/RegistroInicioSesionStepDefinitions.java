@@ -5,6 +5,7 @@ import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import static com.sofkau.questions.MensajeNombre.mensajeNombre;
+import static com.sofkau.questions.MensajeRegistro.mensajeRegistro;
 import static com.sofkau.tasks.IniciarSesion.iniciarSesion;
 import static com.sofkau.tasks.NavegarAlRegistro.navegarAlRegistro;
 import static com.sofkau.tasks.Registrarse.registrarse;
@@ -37,6 +38,9 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
     }
     @Entonces("el usuario debe ser redireccionado a la pagina principal")
     public void elUsuarioDebeSerRedireccionadoALaPaginaPrincipal() {
+        theActorInTheSpotlight().should(
+                seeThat(mensajeRegistro(), equalTo("ACCOUNT CREATED!"))
+        );
         quitarDriver();
     }
     @Cuando("completa los campos para iniciar sesion")
