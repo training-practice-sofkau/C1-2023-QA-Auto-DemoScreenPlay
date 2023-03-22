@@ -131,11 +131,10 @@ public class LlenarDatosRegistro implements Task {
                 Enter.theValue(faker.address().city()).into(CAMPO_CIUDAD),
                 Enter.theValue(faker.address().zipCode()).into(CAMPO_CODIGO_POSTAL),
                 Enter.theValue(faker.phoneNumber().cellPhone()).into(CAMPO_NUMERO_MOVIL),
-                Click.on(BOTON_CREAR_CUENTA),
-                Click.on(BOTON_CONTINUE)
+                Click.on(BOTON_CREAR_CUENTA)
+                //Click.on(BOTON_CONTINUE)
         );
     }
-
     public static LlenarDatosRegistro llenarDatosRegistro() {
         return new LlenarDatosRegistro();
     }

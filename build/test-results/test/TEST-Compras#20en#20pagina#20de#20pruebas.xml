@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Compras en pagina de pruebas" tests="1" skipped="1" failures="0" errors="0" timestamp="2023-03-22T17:26:20" hostname="DESKTOP-L1405KV" time="53.751">
+<testsuite name="Compras en pagina de pruebas" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-22T19:20:45" hostname="DESKTOP-L1405KV" time="51.824">
   <properties/>
-  <testcase name="Compra de productos" classname="Compras en pagina de pruebas" time="53.751">
-    <skipped/>
-  </testcase>
+  <testcase name="Compra de productos" classname="Compras en pagina de pruebas" time="51.824"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 4363
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 35735
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar. 22, 2023 12:26:23 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+mar. 22, 2023 2:20:48 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-mar. 22, 2023 12:26:23 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+mar. 22, 2023 2:20:48 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 19425
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 22781
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar. 22, 2023 12:26:26 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+mar. 22, 2023 2:20:50 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
+mar. 22, 2023 2:21:35 P. M. com.sofkau.stepdefinitions.StepDefinitions elUsuarioDebeVerUnMensajeDeConfirmacionDeLaCompra
+INFO: Verificando que el usuario vea un mensaje de confirmacion de compra
+mar. 22, 2023 2:21:35 P. M. com.sofkau.stepdefinitions.StepDefinitions elUsuarioDebeVerUnMensajeDeConfirmacionDeLaCompra
+INFO: Mensaje de confirmacion de compra verificado correctamente
+mar. 22, 2023 2:21:36 P. M. com.sofkau.stepdefinitions.StepDefinitions elUsuarioDebeVerUnMensajeDeConfirmacionDeLaCompra
+INFO: Driver quitado
 ]]></system-err>
 </testsuite>

@@ -52,7 +52,5 @@ public class PaginaDatosRegistro extends PageObject {
     public static final Target BOTON_CONTINUE = Target.the("Boton crear cuenta")
             .located(By.xpath("(//a[@data-qa='continue-button'])[1]"));
 
-
-
 }
 

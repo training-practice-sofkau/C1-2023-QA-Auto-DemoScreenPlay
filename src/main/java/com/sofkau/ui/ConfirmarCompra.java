@@ -7,5 +7,5 @@ import org.openqa.selenium.By;
 public class ConfirmarCompra extends PageObject {
 
     public static Target MENSAJE_ORDER = Target.the("mensaje con el nombre")
-            .located(By.xpath("(//a[@data-qa='continue-button'])[1]"));
+            .located(By.xpath("(//b)[2]"));
 }
