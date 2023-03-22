@@ -97,7 +97,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
             LOGGER.error("Ocurrio un error durante la ejecucion de la prueba. Error: " + e.getMessage());
             throw e;
         }
-        //quitarDriver();
+        quitarDriver();
     }
 
     @Cuando("completa los campos para iniciar sesion")
@@ -116,7 +116,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
                 seeThat(mensajeNombre(), equalTo("Logged in as Jessica"))
         );
 
-        //quitarDriver();
+        quitarDriver();
     }
 
     @Cuando("completa los campos del formulario para iniciar sesion")
