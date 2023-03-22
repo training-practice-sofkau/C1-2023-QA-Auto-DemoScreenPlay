@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 
-import static com.sofkau.ui.PaginaRegistro.BOTON_REGISTRO;
+import static com.sofkau.ui.PaginaInicioSesion.BOTON_REGISTRO;
 
 public class NavegarAlRegistro implements Task {
     @Override
