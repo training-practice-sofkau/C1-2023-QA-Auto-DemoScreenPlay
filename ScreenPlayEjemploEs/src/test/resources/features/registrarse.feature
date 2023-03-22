@@ -15,6 +15,10 @@ Característica: Compras en pagina de pruebas
   Escenario: Registro de clientes
     Y Llena todos los campos
     Entonces el usuario debe ser redireccionado a la pagina principal
+  @Compra
+  Escenario: Compra de productos
+    Y Completa los campos para el login y selecciona producto
+    Entonces el usuario debe mirar un mensaje de compra exitosa
 
   @InicioSesión
   Escenario: Iniciar sesion
