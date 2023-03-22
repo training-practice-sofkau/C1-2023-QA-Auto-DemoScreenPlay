@@ -16,7 +16,6 @@ public class IniciarSesion implements Task {
         this.usuario=usuario;
         return this;
     }
-
     public IniciarSesion yConLaContrasenna(String contrasenna){
         this.contrasenna=contrasenna;
         return this;

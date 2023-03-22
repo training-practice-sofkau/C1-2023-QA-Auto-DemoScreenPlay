@@ -1,2 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Compras en pagina de pruebas","Iniciar sesion","SUCCESS","2023-03-21T10:10:33.7353364-05:00[America/Bogota]","0.0","31.92"
+"Compras en pagina de pruebas","Registro de clientes","ERROR","2023-03-21T16:15:03.6334567-05:00[America/Bogota]","0.0","15.67"
+"Compras en pagina de pruebas","Iniciar sesion","SUCCESS","2023-03-21T16:47:35.259847-05:00[America/Bogota]","0.0","17.42"
+"Compras en pagina de pruebas","Comprar producto en pagina de pruebas","ERROR","2023-03-21T22:55:29.6070104-05:00[America/Bogota]","0.0","39.93"
