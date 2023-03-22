@@ -29,6 +29,14 @@ public class PaginaRedireccionamientoRegistroCompleto {
             .located(By.id("last_name"));
 
 
+    public static final Target CAMPO_COMPANY = Target.the("Campo company"  )
+            .located(By.id("company"));
+
+
+    public static final Target CAMPO_ADDRESS = Target.the("Campo adress"  )
+            .located(By.id("address1"));
+
+
     public static final Target CAMPO_STATE = Target.the("Campo estado"  )
             .located(By.id("state"));
 
@@ -42,5 +50,12 @@ public class PaginaRedireccionamientoRegistroCompleto {
             .located(By.id("mobile_number"));
 
     public static final Target BOTON_CREATE_ACCOUNT = Target.the("Boton create account"  )
-            .located(By.id("//button[normalize-space()='Create Account']"));
+            .located(By.xpath("//button[normalize-space()='Create Account']"));
+
+    public static final Target SELECCION_PAIS = Target.the("Seleccion pais"  )
+            .located(By.id("country"));
+
+public static final Target MENSAJE_REGISTRO_COMPLETO = Target.the("Mensaje registro completo"  )
+            .located(By.xpath("(//b[normalize-space()='Account Created!'])[1]"));
+
      }

@@ -6,7 +6,7 @@ import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.actions.Enter;
-
+import static com.sofkau.questions.MensajeConfirmacionRegistro.mensajeConfirmacionRegistro;
 import static com.sofkau.questions.MensajeNombre.mensajeNombre;
 import static com.sofkau.tasks.IniciarSesion.iniciarSesion;
 import static com.sofkau.tasks.LLenarFormularioRegistroCompleto.lLenarFormularioRegistroCompleto;
@@ -42,34 +42,49 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
 
     @Cuando("Llena todos los campos")
     public void llenaTodosLosCampos() {
+
         theActorInTheSpotlight().attemptsTo(
-                iniciarSesion()
-                        .conElUsuario("juan.pineda@gmail.com")
-                        .yConLaContrasenna("123456")
+                realizarRegistro()
+                        .conElNombre("Santy")
+                        .yElCorreo("santiokami.23@gmail.com"),
+
+                lLenarFormularioRegistroCompleto()
+                        .conLaContrasenna("123456")
+                        .yElDia("2")
+                        .yElMes("2")
+                        .yElAnio("2002")
+                        .yElApellido("Ramirez")
+                        .yElSegundoApellido("Arenas")
+                        .yElCompany("SofkaU")
+                        .yElAddress("Calle 123")
+                        .yElPais("India")
+                        .yElState("California")
+                        .yElCity("Los Angeles")
+                        .yElZipCode("90001")
+                        .yElNumeroCelular("1234567890")
+
         );
+
     }
 
     @Entonces("el usuario debe ser redireccionado a la pagina principal")
     public void elUsuarioDebeSerRedireccionadoALaPaginaPrincipal() {
-        quitarDriver();
+        theActorInTheSpotlight().should(
+                seeThat(mensajeConfirmacionRegistro(), equalTo("ACCOUNT CREATED!"))
+        );
+
+       quitarDriver();
     }
 
     @Cuando("completa los campos para iniciar sesion")
     public void completaLosCamposParaIniciarSesion() {
         theActorInTheSpotlight().attemptsTo(
-                realizarRegistro()
-                        .conElNombre("Santy")
-                        .yElCorreo("santiokami.23@gamil.com"),
+                iniciarSesion()
+                        .conElUsuario("juan.pineda@gmail.com")
+                        .yConLaContrasenna("123456")
+        );
 
-                lLenarFormularioRegistroCompleto()
-                                .conLaContrasenna("123456")
-                                .yElApellido("Ramirez")
-                                .yElSegundoApellido("Arenas")
-                                .yElState("California")
-                                .yElCity("Los Angeles")
-                                .yElZipCode("90001")
-                                .yElNumeroCelular("1234567890")
-                );
+
     }
 
     @Entonces("el usuario debe ver su nombre en la pagina principal")
@@ -77,7 +92,6 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
         theActorInTheSpotlight().should(
                 seeThat(mensajeNombre(), equalTo("Logged in as Juan Esteban"))
         );
-
         quitarDriver();
     }
 

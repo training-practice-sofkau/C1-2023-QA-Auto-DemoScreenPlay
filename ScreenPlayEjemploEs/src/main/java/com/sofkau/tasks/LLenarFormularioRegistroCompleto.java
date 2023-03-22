@@ -4,6 +4,8 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Scroll;
+import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
 import static com.sofkau.ui.PaginaRedireccionamientoRegistroCompleto.*;
 import static com.sofkau.ui.PaginaRegistro.*;
@@ -20,6 +22,14 @@ public class LLenarFormularioRegistroCompleto   implements Task {
     private String city;
     private String zipCode;
     private  String numeroCelular;
+
+    private String company;
+    private String address;
+    private String dia;
+    private String mes;
+    private String anio;
+    private String pais;
+
 
     public LLenarFormularioRegistroCompleto conLaContrasenna(String contrasenna){
         this.contrasenna=contrasenna;
@@ -62,23 +72,56 @@ public class LLenarFormularioRegistroCompleto   implements Task {
         return this;
     }
 
+    public LLenarFormularioRegistroCompleto yElCompany(String company){
+        this.company =company;
+        return this;
+    }
+
+
+    public LLenarFormularioRegistroCompleto yElAddress(String address){
+        this.address =address;
+        return this;
+    }
+
+    public LLenarFormularioRegistroCompleto yElDia(String dia){
+        this.dia =dia;
+        return this;
+    }
+
+    public LLenarFormularioRegistroCompleto yElMes(String mes){
+        this.mes =mes;
+        return this;
+    }
+    public LLenarFormularioRegistroCompleto yElAnio(String anio){
+        this.anio =anio;
+        return this;
+    }
+
+    public LLenarFormularioRegistroCompleto yElPais(String pais){
+        this.pais =pais;
+        return this;
+    }
+
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-            //    Click.on(SELECCION_GENERO),
-                //Enter.theValue(contrasenna).into(CAMPO_NAME_NEW_USER),
-                //Enter.theValue(email).into(CAMPO_EMAIL_NEW_USER),
+                //  Click.on(SELECCION_GENERO),
+                Enter.theValue(contrasenna).into(CAMPO_REGISTRO_PASSWORD),
+                SelectFromOptions.byValue(dia).from(DESPLEGABLE_DIA),
+                SelectFromOptions.byValue(mes).from(DESPLEGABLE_MES),
+                SelectFromOptions.byValue(anio).from(DESPLEGABLE_ANIO),
                 Enter.theValue(apellido).into(CAMPO_APELLIDO),
                 Enter.theValue(segundoApellido).into(CAMPO_SEGUNDO_APELLIDO),
-              //  Enter.theValue()
+                Enter.theValue(company).into(CAMPO_COMPANY),
+                Enter.theValue(address).into(CAMPO_ADDRESS),
+                SelectFromOptions.byValue(pais).from(SELECCION_PAIS),
+             //   Enter.theValue(pais).into(SELECCION_PAIS),
                 Enter.theValue(state).into(CAMPO_STATE),
                 Enter.theValue(city).into(CAMPO_CITY),
                 Enter.theValue(zipCode).into(CAMPO_ZIP_CODE),
                 Enter.theValue(numeroCelular).into(CAMPO_NUMERO_CELULAR),
+                Scroll.to(BOTON_CREATE_ACCOUNT),
                 Click.on(BOTON_CREATE_ACCOUNT)
-
-
-
         );
     }
 
