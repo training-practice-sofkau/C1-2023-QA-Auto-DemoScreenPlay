@@ -10,9 +10,13 @@ import org.junit.jupiter.api.Assertions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static com.sofkau.questions.IsAccountCreated.isAccountCreated;
 import static com.sofkau.questions.LoggedInAs.loggedInAs;
+import static com.sofkau.tasks.DoSignup.doSignup;
+import static com.sofkau.tasks.GoToSignup.goToSignup;
 import static com.sofkau.tasks.Login.login;
 import static com.sofkau.tasks.NavigateToSignupLogin.navigateToSignupLogin;
+import static com.sofkau.util.Constants.E_TITLE;
 import static com.sofkau.util.Constants.LOGGED_IN_AS;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
@@ -52,6 +56,10 @@ public class AutoExerciseShoppingFlowStepDef extends Configuration {
     public void iFillInAllRegistrationFields() {
         try {
             log.info("Running selection");
+            theActorInTheSpotlight().attemptsTo(
+                    goToSignup(),
+                    doSignup()
+            );
         } catch (Exception e) {
             log.error("Wrong steps provided");
             quitDriver();
@@ -61,6 +69,9 @@ public class AutoExerciseShoppingFlowStepDef extends Configuration {
     @Then("I will be redirected to home page")
     public void iWillBeRedirectedToHomePage() {
         try {
+            theActorInTheSpotlight().should(
+                    seeThat(isAccountCreated(), equalTo(E_TITLE))
+            );
             log.info("Test passed");
         } catch (Exception e) {
             log.error("Test failed");
@@ -104,6 +115,9 @@ public class AutoExerciseShoppingFlowStepDef extends Configuration {
     public void iMakeAPurchaseOfAMenSJean() {
         try {
             log.info("Running selection");
+            theActorInTheSpotlight().attemptsTo(
+                    login()
+            );
         } catch (Exception e) {
             log.error("Wrong steps provided");
             quitDriver();

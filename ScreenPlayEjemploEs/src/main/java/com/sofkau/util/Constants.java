@@ -7,4 +7,5 @@ public class Constants {
 
     public static final String ACTOR = "Purchaser";
     public static final String LOGGED_IN_AS = String.format("Logged in as %s", user.getName());
+    public static final String E_TITLE = "ACCOUNT CREATED!";
 }

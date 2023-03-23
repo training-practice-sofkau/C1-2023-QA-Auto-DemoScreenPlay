@@ -41,30 +41,30 @@ public class Signup extends PageObject {
     public static final Target LAST_NAME = Target.the("User last name")
             .located(By.xpath("//input[@data-qa='last_name']"));
 
-    public static final Target COMPANY = Target.the("Account password")
-            .located(By.xpath("//input[@data-qa='password']"));
+    public static final Target COMPANY = Target.the("Account company")
+            .located(By.xpath("//input[@data-qa='company']"));
 
-    public static final Target ADDRESS = Target.the("Account password")
-            .located(By.xpath("//input[@data-qa='password']"));
+    public static final Target ADDRESS = Target.the("Account address")
+            .located(By.xpath("//input[@data-qa='address']"));
 
-    public static final Target COUNTRY = Target.the("Account password")
-            .located(By.xpath("//input[@data-qa='password']"));
+    public static final Target COUNTRY = Target.the("Select country")
+            .located(By.xpath("//select[@data-qa='country']"));
 
-    public static final Target E_COUNTRY = Target.the("Account password")
+    public static final Target E_COUNTRY = Target.the("User country")
             .located(By.xpath(String.format("//select[@data-qa='country']/child::option[%s]", user.getCountry())));
 
-    public static final Target STATE = Target.the("Account password")
-            .located(By.xpath("//input[@data-qa='password']"));
+    public static final Target STATE = Target.the("Account state")
+            .located(By.xpath("//input[@data-qa='state']"));
 
-    public static final Target CITY = Target.the("Account password")
-            .located(By.xpath("//input[@data-qa='password']"));
+    public static final Target CITY = Target.the("Account city")
+            .located(By.xpath("//input[@data-qa='city']"));
 
-    public static final Target ZIPCODE = Target.the("Account password")
-            .located(By.xpath("//input[@data-qa='password']"));
+    public static final Target ZIPCODE = Target.the("Account zipcode")
+            .located(By.xpath("//input[@data-qa='zipcode']"));
 
-    public static final Target NUMBER = Target.the("Account password")
-            .located(By.xpath("//input[@data-qa='password']"));
+    public static final Target NUMBER = Target.the("Account mobile number")
+            .located(By.xpath("//input[@data-qa='mobile_number']"));
 
-    public static final Target CREATE_BTTN = Target.the("Account password")
-            .located(By.xpath("//input[@data-qa='password']"));
+    public static final Target CREATE_BTTN = Target.the("Create account button")
+            .located(By.xpath("//button[@data-qa='create-account']"));
 }
