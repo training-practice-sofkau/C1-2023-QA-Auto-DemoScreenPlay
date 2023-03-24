@@ -4,6 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Scroll;
 
 import static com.sofkau.tasks.Refrescar.thePage;
 import static com.sofkau.ui.PaginaFlujoCompra.*;
@@ -26,27 +27,37 @@ public class ComprarProductos implements Task {
         actor.attemptsTo(
                 Refrescar.thePage(),
                 Click.on(BOTON_PRODUCTS),
+                Scroll.to(OPCION_MADAME),
                 Click.on(OPCION_MADAME),
+                Scroll.to(VER_PRODUCTO_LIANA_PAVO_REAL),
                 Click.on(VER_PRODUCTO_LIANA_PAVO_REAL),
                 Enter.theValue(cantidadLiana).into(CAMPO_CANT_LIANA),
                 Click.on(BOTON_AGREGAR_AL_CARRITO),
                 Click.on(BOTON_SEGUIR_COMPRANDO),
+                Scroll.to(OPCION_POLO),
                 Click.on(OPCION_POLO),
+                Scroll.to(VER_PRODUCTO_JEAN),
                 Click.on(VER_PRODUCTO_JEAN),
+                Scroll.to(OPCION_NAME),
                 Enter.theValue(name).into(OPCION_NAME),
                 Enter.theValue(email).into(OPCION_EMAIL),
+                Scroll.to(OPCION_DESCRIPCION),
                 Enter.theValue(descripcion).into(OPCION_DESCRIPCION),
+                Scroll.to(BOTON_SUBMIT),
                 Click.on(BOTON_SUBMIT),
                 Click.on(BOTON_AGREGAR_CARRITO_JEAN),
                 Click.on(BOTON_VER_CARRITO_JEAN),
                 Click.on(BOTON_CHECKOUT),
+                Scroll.to(CAMPO_MENSAJE_ANEXO),
                 Enter.theValue(mensaje).into(CAMPO_MENSAJE_ANEXO),
                 Click.on(BOTON_HACER_ORDEN),
                 Enter.theValue(nombreTarjeta).into(CAMPO_NOMBRE_TARJETA),
                 Enter.theValue(numeroTarjeta).into(CAMPO_NUMERO_TARJETA),
+                Scroll.to(CAMPO_CVC),
                 Enter.theValue(cvc).into(CAMPO_CVC),
                 Enter.theValue(mm).into(CAMPO_MM),
                 Enter.theValue(yy).into(CAMPO_YY),
+                Scroll.to(BOTON_PAY),
                 Click.on(BOTON_PAY)
         );
 

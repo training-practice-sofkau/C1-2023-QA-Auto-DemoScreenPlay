@@ -40,9 +40,9 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
     public void llenaTodosLosCampos() {
         theActorInTheSpotlight().attemptsTo(
         registrarse()
-                .conElNombre("Sara Meneses")
-                .conElEmail("saramenehurtado1995@gmail.com")
-                .conLaContrasennaEnRegistro("famiMenE17")
+                .conElNombre("Maria Paz Hurtado")
+                .conElEmail("pazhurtado1995@gmail.com")
+                .conLaContrasennaEnRegistro("famiMenEh17")
                 .conElNombreDeDireccion("Asuncion")
                 .conElApellidoDeDireccion("Parte Alta")
                 .conLaCompannia("Industrias Haceb")
@@ -67,8 +67,8 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
     public void completaLosCamposParaIniciarSesion() {
         theActorInTheSpotlight().attemptsTo(
                 iniciarSesion()
-                        .conElUsuario("saramenehurtado1995@gmail.com")
-                        .yConLaContrasenna("famiMenE17")
+                        .conElUsuario("pazhurtado1995@gmail.com")
+                        .yConLaContrasenna("famiMenEh17")
         );
 
     }
@@ -76,7 +76,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
     @Entonces("el usuario debe ver su nombre en la pagina principal")
     public void elUsuarioDebeVerSuNombreEnLaPaginaPrincipal() {
         theActorInTheSpotlight().should(
-                seeThat(mensajeNombre(), equalTo("Logged in as Sara Meneses"))
+                seeThat(mensajeNombre(), equalTo("Logged in as Maria Paz Hurtado"))
         );
 
         quitarDriver();

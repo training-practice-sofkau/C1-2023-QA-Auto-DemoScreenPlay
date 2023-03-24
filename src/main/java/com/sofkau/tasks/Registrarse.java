@@ -4,6 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Scroll;
 
 
 import static com.sofkau.ui.PaginaIngresoDatosRegistro.*;
@@ -32,6 +33,7 @@ public class Registrarse implements Task {
                 Click.on(BOTON_SIGNUP),
                         Click.on(CHECK_GENERO),
                 Enter.theValue(contrasennaRegistro).into(CAMPO_CONTRASENNA_REGISTRO),
+                Scroll.to(CAMPO_DIA),
                 Click.on(CAMPO_DIA),
                         Click.on(CAMPO_DIA_6),
                 Click.on(CAMPO_MES),
@@ -44,6 +46,7 @@ public class Registrarse implements Task {
                 Enter.theValue(apellidoDireccion).into(CAMPO_LASTNAME_ADDRESS),
                 Enter.theValue(compannia).into(CAMPO_COMPANNIA),
                 Enter.theValue(direccion1).into(CAMPO_ADDRESS1),
+                Scroll.to(CAMPO_ADDRESS2),
                 Enter.theValue(direccion2).into(CAMPO_ADDRESS2),
                 Click.on(CAMPO_COUNTRY),
                         Click.on(CAMPO_COUNTRY_NEW_ZEALAND),

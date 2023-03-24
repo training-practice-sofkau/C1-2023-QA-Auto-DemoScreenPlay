@@ -7,6 +7,7 @@ import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.actions.Click;
+import org.apache.log4j.Logger;
 
 import static com.sofkau.questions.MensajeNombre.mensajeNombre;
 import static com.sofkau.tasks.ComprarProductos.comprar;
@@ -21,6 +22,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static com.sofkau.questions.MensajeOrder.mensajeOrder;
 
 public class FlujoDeCompraStepDefinitions extends Configuracion {
+    public static org.apache.log4j.Logger LOGGER = Logger.getLogger(String.valueOf(FlujoDeCompraStepDefinitions.class));
 
     @Dado("que estoy en la pagina web Automation Exercise")
     public void queEstoyEnLaPaginaWebAutomationExercise() {
@@ -37,8 +39,8 @@ public class FlujoDeCompraStepDefinitions extends Configuracion {
     public void meHeRegistradoCorrectamente() {
         theActorInTheSpotlight().attemptsTo(
                 registrarse()
-                        .conElNombre("Alexandra Orrego")
-                        .conElEmail("alexao20@gmail.com")
+                        .conElNombre("Ana Maria Salazar")
+                        .conElEmail("AnaSala20@gmail.com")
                         .conLaContrasennaEnRegistro("amoMiperritaLupi20")
                         .conElNombreDeDireccion("Fatima")
                         .conElApellidoDeDireccion("Parte Alta")
@@ -59,8 +61,8 @@ public class FlujoDeCompraStepDefinitions extends Configuracion {
         theActorInTheSpotlight().attemptsTo(
                 comprar()
                         .yModificoLaCantidad("2")
-                        .llenoElNombre("Alexandra Orrego")
-                        .llenoElEmail("alexao20@gmail.com")
+                        .llenoElNombre("Ana Maria Salazar")
+                        .llenoElEmail("AnaSala20@gmail.com")
                         .yLlenoLaDescripcion("Me encanto este jean , de verdad que es super comodo y de buena calidad. Por eso regreso a comprarlo ;)")
                         .creoElMensajeDeAnexo("Por favor entregar a la señora Pepita , muchas gracias.")
                         .ingresoElNombreTarjeta("BBVA")
@@ -75,8 +77,9 @@ public class FlujoDeCompraStepDefinitions extends Configuracion {
 
     @Entonces("deberia ver un mensaje de confirmacion de compra exitosa")
     public void deberiaVerUnMensajeDeConfirmacionDeCompraExitosa() {
+
         theActorInTheSpotlight().should(
-                seeThat(mensajeOrder(), equalTo("Order Placed!"))
+                seeThat(mensajeOrder(), equalTo("ORDER PLACED!"))
         );
         quitarDriver();
 
