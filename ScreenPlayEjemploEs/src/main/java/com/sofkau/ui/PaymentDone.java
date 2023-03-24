@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
 public class PaymentDone extends PageObject {
-    public static Target E_YEAR = Target.the("Expiration year of the card")
+    public static Target ORDER_TITLE = Target.the("Order placed title")
             .located(By.xpath("//h2[@data-qa='order-placed']"));
 
     public static Target DELETE_ACCOUNT = Target.the("Delete account link")

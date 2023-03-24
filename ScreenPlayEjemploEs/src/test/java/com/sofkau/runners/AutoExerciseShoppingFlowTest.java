@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         features = {"src/test/resources/features/AutoExerciseShoppingFlow.feature"},
         glue = {"com.sofkau.stepdefinitions"},
-        tags = "@Login"
+        tags = ""
 )
 public class AutoExerciseShoppingFlowTest {
 }

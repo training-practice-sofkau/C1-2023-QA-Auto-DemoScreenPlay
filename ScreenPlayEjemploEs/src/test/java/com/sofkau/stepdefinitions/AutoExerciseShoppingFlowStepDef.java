@@ -11,13 +11,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import static com.sofkau.questions.IsAccountCreated.isAccountCreated;
+import static com.sofkau.questions.IsOrderPlaced.isOrderPlaced;
 import static com.sofkau.questions.LoggedInAs.loggedInAs;
+import static com.sofkau.tasks.BuyJean.buyJean;
 import static com.sofkau.tasks.DoSignup.doSignup;
 import static com.sofkau.tasks.GoToSignup.goToSignup;
 import static com.sofkau.tasks.Login.login;
 import static com.sofkau.tasks.NavigateToSignupLogin.navigateToSignupLogin;
-import static com.sofkau.util.Constants.E_TITLE;
-import static com.sofkau.util.Constants.LOGGED_IN_AS;
+import static com.sofkau.util.Constants.*;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -116,7 +117,7 @@ public class AutoExerciseShoppingFlowStepDef extends Configuration {
         try {
             log.info("Running selection");
             theActorInTheSpotlight().attemptsTo(
-                    login()
+                    buyJean()
             );
         } catch (Exception e) {
             log.error("Wrong steps provided");
@@ -127,6 +128,9 @@ public class AutoExerciseShoppingFlowStepDef extends Configuration {
     @Then("I will see an order confirmation message")
     public void iWillSeeAnOrderConfirmationMessage() {
         try {
+            theActorInTheSpotlight().should(
+                    seeThat(isOrderPlaced(), equalTo(E_TITLE_ORDER))
+            );
             log.info("Test passed");
         } catch (Exception e) {
             log.error("Test failed");
