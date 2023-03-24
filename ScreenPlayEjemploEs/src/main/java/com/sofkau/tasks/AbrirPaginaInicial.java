@@ -11,6 +11,10 @@ public class AbrirPaginaInicial implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Open.browserOn(paginaInicial)
+
         );
+    }
+    public static AbrirPaginaInicial abrirPaginaInicial(){
+        return new AbrirPaginaInicial();
     }
 }

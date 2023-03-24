@@ -6,11 +6,15 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.*;
 
 import static com.google.common.base.StandardSystemProperty.USER_DIR;
 import static com.sofkau.util.Log4j.LOG4J_PROPERTIES_FILE_PATH;
@@ -61,6 +65,17 @@ public class Configuracion {
         WebDriverWait wait = new WebDriverWait(getDriver(), DIEZ_SEGUNDOS);
         wait.until(ExpectedConditions.alertIsPresent());
     }
+
+    public void cambiarPestana(){
+        webDriver.switchTo().defaultContent();
+        ArrayList<String> tabs2 = new ArrayList<String> (webDriver.getWindowHandles());
+        webDriver.switchTo().window(tabs2.get(1));
+    }
+    protected void refrescar(){
+        webDriver.navigate().refresh();
+    }
+
+
 
 
 }

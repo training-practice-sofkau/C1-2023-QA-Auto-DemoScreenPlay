@@ -7,5 +7,7 @@ import org.openqa.selenium.By;
 public class ConfirmacionRegistro extends PageObject {
 
     public static Target MENSAJE_INICIO = Target.the("mensaje con el nombre")
-            .located(By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[10]/a"));
+            .located(By.xpath("//b[1]"));
+    public static Target MENSAJE_CONFIRMACION = Target.the("mensaje con el nombre")
+            .located(By.xpath("//p[1]"));
 }
