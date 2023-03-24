@@ -22,6 +22,7 @@ public class User {
     private String city = faker.country().capital();
     private String zipCode = faker.address().zipCode();
     private String number = faker.phoneNumber().cellPhone();
+    private String cCard = faker.finance().creditCard();
 
     public static User getInstance() {
         if (user == null) {

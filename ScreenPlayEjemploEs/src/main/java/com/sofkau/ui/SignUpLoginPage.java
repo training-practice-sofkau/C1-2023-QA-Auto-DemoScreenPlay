@@ -1,7 +1,7 @@
 package com.sofkau.ui;
 
+import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
-import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
 public class SignUpLoginPage extends PageObject {

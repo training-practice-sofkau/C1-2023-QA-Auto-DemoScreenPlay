@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         features = {"src/test/resources/features/AutoExerciseShoppingFlow.feature"},
-        glue = {"com.sofkau.stepdefinitions"}
+        glue = {"com.sofkau.stepdefinitions"},
+        tags = "@Login"
 )
 public class AutoExerciseShoppingFlowTest {
 }

@@ -1,8 +1,8 @@
 package com.sofkau.ui;
 
 import com.sofkau.models.User;
+import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
-import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
 public class Signup extends PageObject {
