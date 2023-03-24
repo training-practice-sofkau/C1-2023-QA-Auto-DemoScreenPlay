@@ -14,6 +14,7 @@ public class AgregarProductosCarrito implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
+                Scroll.to(CATEGORIA_HOMBRE),
                 Click.on(CATEGORIA_HOMBRE),
                 Click.on(SUBCATEGORIA_JEANS),
                 refrescarPagina(),
