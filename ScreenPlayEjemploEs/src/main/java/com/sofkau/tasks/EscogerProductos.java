@@ -5,6 +5,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Scroll;
 
+import static com.sofkau.tasks.Refrescar.thePage;
 import static com.sofkau.ui.ComprarProductos.*;
 import static com.sofkau.ui.PaginaRegistro.BOTON_REGISTRO;
 
@@ -12,10 +13,11 @@ public class EscogerProductos implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(PRODUCTOS),
+                thePage(),
                 Scroll.to(WOMEN),
                 Click.on(WOMEN),
                 Click.on(DRESS),
+                thePage(),
                 Scroll.to(PRODUCTO3),
                 Click.on(PRODUCTO1),
                 Click.on(ADDPRODUCTO1),

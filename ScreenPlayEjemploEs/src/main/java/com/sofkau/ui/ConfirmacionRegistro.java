@@ -8,4 +8,6 @@ public class ConfirmacionRegistro extends PageObject {
 
     public static Target MENSAJE_INICIO = Target.the("mensaje con el nombre")
             .located(By.xpath("//b[1]"));
+    public static Target MENSAJE_CONFIRMACION = Target.the("mensaje con el nombre")
+            .located(By.xpath("//p[1]"));
 }

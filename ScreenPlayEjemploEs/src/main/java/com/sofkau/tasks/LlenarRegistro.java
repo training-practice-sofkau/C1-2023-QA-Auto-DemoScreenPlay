@@ -61,6 +61,12 @@ public class LlenarRegistro implements Task {
     public static String nombreUsuario(){
       return usuario.getNombre();
     };
+    public static String emailUsuario(){
+        return usuario.getEmailUsuario();
+    };
+    public static String contrasennaUsuario(){
+        return usuario.getContrasenna();
+    };
 }
 
 

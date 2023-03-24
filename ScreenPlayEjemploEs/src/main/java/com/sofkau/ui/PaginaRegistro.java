@@ -16,6 +16,8 @@ public class PaginaRegistro extends PageObject {
 
     public static final Target CAMPO_CORREO = Target.the("correo usuario")
             .located(By.xpath("(//input[@name='email'])[2]"));
+    public static final Target CAMPO_CORREO_LOGIN = Target.the("correo usuario")
+            .located(By.xpath("(//input[@name='email'])[1]"));
 
     public static final Target CAMPO_CONTRASENNA = Target.the("campo contraseña")
             .located(By.xpath("//input[@data-qa='login-password']"));

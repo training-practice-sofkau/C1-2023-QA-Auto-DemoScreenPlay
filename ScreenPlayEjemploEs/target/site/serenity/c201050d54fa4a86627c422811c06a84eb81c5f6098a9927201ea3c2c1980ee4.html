@@ -148,7 +148,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Compras en pagina de pruebas","type":"feature","href":"c201050d54fa4a86627c422811c06a84eb81c5f6098a9927201ea3c2c1980ee4.html","nodes":[],"selectable":false,"tags":["","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Compras en pagina de pruebas","type":"feature","href":"c201050d54fa4a86627c422811c06a84eb81c5f6098a9927201ea3c2c1980ee4.html","nodes":[],"selectable":false,"tags":["","\u003cspan class\u003d\u0027feature-count\u0027\u003e2 scenarios\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -217,7 +217,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-03-2023 15:56</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 24-03-2023 16:07</span>
     <br style="clear:left"/>
 </div>
 
@@ -253,8 +253,8 @@
                             </div>
                             <div class="requirementNarrativeTitle">
                                 yo como usuario de la pagina automation exercise<br />
-quiero crear una cuenta e ingresar<br />
-para poder comprar productos en la página
+quiero escoger varios productos<br />
+para hacer el pago por la pagina
                             </div>
 
                         </div>
@@ -289,6 +289,35 @@ para poder comprar productos en la página
                                                 <table class="table" id="toc-table">
                                                         <tr>
                                                             <td style="width:95%;" class="toc-title">
+                                                                <a href="#349e48cdbe2f008e86bad853492a55e47b392a25e3d69f0bcf8488f22995e9d8" title="View scenario details" >Orden de compra y pago</a>
+
+
+                                                            </td>
+                                                            <td style="width:5%;">
+                                                                <table>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                               href="f51cafd20b553564b9728de3dcf2e6b18ff52c1723f2f1d172457badb56b79f7.html"
+                                                                               title="View test results">
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                                                            </a>
+
+                                                                        
+                                                                        </td>
+                                                                        <td>
+                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                               href="f51cafd20b553564b9728de3dcf2e6b18ff52c1723f2f1d172457badb56b79f7.html"
+                                                                               title="View test results">
+                                                                                <i class="fas fa-search-plus"></i>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:95%;" class="toc-title">
                                                                 <a href="#1f63b2d062847ff38c0d3336b9034faeae998d088677aad662a73be63ea5906c" title="View scenario details" >Registro de usuario</a>
 
 
@@ -321,6 +350,29 @@ para poder comprar productos en la página
                                             </div>
 
                                             <h3>Scenario details</h3>
+
+                                                <div class="scenario-docs card" id="349e48cdbe2f008e86bad853492a55e47b392a25e3d69f0bcf8488f22995e9d8">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                        <div>
+                                                            <span class="scenario-heading">
+                                                                <a href="f51cafd20b553564b9728de3dcf2e6b18ff52c1723f2f1d172457badb56b79f7.html" title="View test results">Orden de compra y pago</a>
+                                                            </span>
+                                                            <span class="scenario-result-icon">
+                                                                
+
+                                                                    <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scenario-docs card-body">
+                                                            <p>Dado que el usuario se logea</p>
+                                                            <p>Cuando navega hasta productos</p>
+                                                            <p>Y escoge  productos en su carrito y pagar con su tarjeta de credito</p>
+                                                            <p>Entonces puede ver un mensaje de confirmacion de compra</p>
+                                                        <div class="examples">
+                                                        </div>
+                                                    </div>
+                                                </div>
 
                                                 <div class="scenario-docs card" id="1f63b2d062847ff38c0d3336b9034faeae998d088677aad662a73be63ea5906c">
                                                     <div class="scenario-docs card-header success" style="min-height:1.5em;">
@@ -362,7 +414,7 @@ para poder comprar productos en la página
                                                 var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
                                                 // Our series array that contains series objects or in this case series data arrays
 
-                                                var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                var series = [{meta: 'Passing tests (automated)', value: 2}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                 // as you saw in the previous example
@@ -403,7 +455,7 @@ para poder comprar productos en la página
                                                                         <a href="9a1e17a829a4a10ebe5fc0b381922674bf0c9802ec1bb9c4904860c16e3dde23.html"><i
                                                                                 class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
                                                                     </td>
-                                                <td class="automated-stats">1</td>
+                                                <td class="automated-stats">2</td>
                                                 <td class="automated-stats">100%</td>
                                             </tr>
                                             <tr>
@@ -458,7 +510,7 @@ para poder comprar productos en la página
                                             </tr>
                                             <tr class="summary-stats">
                                                 <td class="aggregate-result-count">Total</td>
-                                                <td class="automated-stats">1</td>
+                                                <td class="automated-stats">2</td>
                                                 <td class="automated-stats"></td>
                                             </tr>
                                             </tbody>
@@ -480,11 +532,11 @@ para poder comprar productos en la página
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td> 1m 42s</td>
-                                                        <td>102ms</td>
-                                                        <td> 1m 42s</td>
-                                                        <td> 1m 42s</td>
-                                                        <td> 1m 42s</td>
+                                                        <td> 1m 53s</td>
+                                                        <td> 1m 14s</td>
+                                                        <td>47s</td>
+                                                        <td> 1m 5s</td>
+                                                        <td>56s</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -509,11 +561,23 @@ para poder comprar productos en la página
                                                 <tbody>
                                                 <tr class="scenario-result SUCCESS">
                                                     <td>
+                                                            <a href="f51cafd20b553564b9728de3dcf2e6b18ff52c1723f2f1d172457badb56b79f7.html">Orden de compra y pago</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>16:07:52</td>
+                                                    <td>1m 6s</td>
+                                                    <td>
+                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                style="display:none">SUCCESS</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
                                                             <a href="9543910eb186c7dd276ac68f34811f5571fcc7d09f61edba95bab18aee29973d.html">Registro de usuario</a>
                                                     </td>
                                                     <td>4</td>
-                                                    <td>15:56:07</td>
-                                                    <td>1m 43s</td>
+                                                    <td>16:09:06</td>
+                                                    <td>47s 350ms</td>
                                                     <td>
                                                             <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
                                                                 style="display:none">SUCCESS</span>
