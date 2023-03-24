@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.sofkau.runners.RegistroTest" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="PSOFKA01075" time="0.0">
+<testsuite name="com.sofkau.runners.RegistroTest" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-LC3UNGF6" time="0.0">
   <properties/>
   <system-out><![CDATA[
-1 Scenarios (?[32m1 passed?[0m)
-4 Steps (?[32m4 passed?[0m)
-0m33,943s
+2 Scenarios (?[32m2 passed?[0m)
+8 Steps (?[32m8 passed?[0m)
+0m54,100s
 
 
 ]]></system-out>
@@ -12,7 +12,7 @@
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
 SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
-SLF4J: Ignoring binding found at [jar:file:/C:/Users/juan.pineda/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-nop/1.7.28/e427e2f69d0a8508994e0a754a44d5212fa38b56/slf4j-nop-1.7.28.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Miguel-PC/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-nop/1.7.28/e427e2f69d0a8508994e0a754a44d5212fa38b56/slf4j-nop-1.7.28.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
 ]]></system-err>
 </testsuite>
