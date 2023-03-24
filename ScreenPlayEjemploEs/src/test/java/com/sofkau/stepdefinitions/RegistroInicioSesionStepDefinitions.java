@@ -61,7 +61,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
             theActorInTheSpotlight().attemptsTo(
                     registrarse()
                             .conElNombre("Jesus")
-                            .conElCorreo("jesus.3000@gmail.com")
+                            .conElCorreo("jesus.4000@gmail.com")
                             .conLaContrasenna("1234567890")
                             .conElDiaDeNacimiento("6")
                             .conElMesDeNacimiento("April")
