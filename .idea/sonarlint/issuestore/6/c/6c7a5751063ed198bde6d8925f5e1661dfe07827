@@ -1,0 +1,7 @@
+
+z
+java:S1104	"XMake BTN_CHECKOUT a static final constant or non-public and provide accessors if needed.(ßÕ§Ìûÿÿÿÿ8»´‚³ð0
+T
+java:S1444	"2Make this "public static BTN_CHECKOUT" field final(ßÕ§Ìûÿÿÿÿ8»´‚³ð0
+y
+java:S3008	"WRename this field "BTN_CHECKOUT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßÕ§Ìûÿÿÿÿ8À´‚³ð0

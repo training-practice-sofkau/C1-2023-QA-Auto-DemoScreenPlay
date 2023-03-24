@@ -1,0 +1,177 @@
+
+rjavascript:S3776"VRefactor this function to reduce its Cognitive Complexity from 1294 to the 15 allowed.(ˆè²Ô
+Djavascript:S3504")Unexpected var, use let or const instead.(æÚ|
+Ejavascript:S3504")Unexpected var, use let or const instead.(ƒŠ£è
+Ejavascript:S35042")Unexpected var, use let or const instead.(÷âĞá
+Jjavascript:S35047")Unexpected var, use let or const instead.(úã³ßøÿÿÿÿ
+Ejavascript:S3504@")Unexpected var, use let or const instead.(í‘ŠĞ
+Djavascript:S3504P")Unexpected var, use let or const instead.(ÒÀ)
+Jjavascript:S3504^")Unexpected var, use let or const instead.(–ù£Ïùÿÿÿÿ
+djavascript:S1121l"CExtract the assignment of "$.fn[widget_name]" from this expression.(ºıÚ³ıÿÿÿÿ
+Jjavascript:S3504m")Unexpected var, use let or const instead.(øÛôÆşÿÿÿÿ
+<javascript:S878n"!Unexpected use of comma operator.(»Ùí§
+bjavascript:S1121™"FExtract the assignment of "this.mouse_down_info" from this expression.(‹Æï
+Kjavascript:S3504")Unexpected var, use let or const instead.(Û¡ÈÙùÿÿÿÿ
+Kjavascript:S3504¦")Unexpected var, use let or const instead.(×¹±Ôüÿÿÿÿ
+Kjavascript:S3504Â")Unexpected var, use let or const instead.(Û¡ÈÙùÿÿÿÿ
+hjavascript:S1121Ó"KExtract the assignment of "_this._is_mouse_delay_met" from this expression.(ñ©¹š
+ljavascript:S1121Ö"JExtract the assignment of "this._is_mouse_delay_met" from this expression.(–¾÷ÿÿÿÿÿ
+Kjavascript:S3504ü")Unexpected var, use let or const instead.(Û¡ÈÙùÿÿÿÿ
+^javascript:S1121™"BExtract the assignment of "this.mouse_delay" from this expression.(¥ç™
+Kjavascript:S3504")Unexpected var, use let or const instead.(ãşŠûÿÿÿÿ
+Kjavascript:S3504¦")Unexpected var, use let or const instead.(ãşŠûÿÿÿÿ
+Kjavascript:S3504¯")Unexpected var, use let or const instead.(ãşŠûÿÿÿÿ
+Fjavascript:S3504Ä")Unexpected var, use let or const instead.(Š¸Ë¬
+Kjavascript:S3504í")Unexpected var, use let or const instead.(ñÜÕöşÿÿÿÿ
+Xjavascript:S1121ï";Extract the assignment of "this.name" from this expression.(¬ù«ï
+]javascript:S1121õ";Extract the assignment of "this.name" from this expression.(³µ÷üÿÿÿÿ
+Xjavascript:S1121÷";Extract the assignment of "this[key]" from this expression.(È½§™
+Fjavascript:S3504ÿ")Unexpected var, use let or const instead.(Â°ğ
+Ejavascript:S3504Š")Unexpected var, use let or const instead.(æà«O
+Fjavascript:S3504¬")Unexpected var, use let or const instead.(ŸÉÎ†
+Fjavascript:S3504œ")Unexpected var, use let or const instead.(ùÄ†ï
+Fjavascript:S3504Ÿ")Unexpected var, use let or const instead.(Û¥šß
+Fjavascript:S3504Ï")Unexpected var, use let or const instead.(°”òŞ
+Kjavascript:S3504Ò")Unexpected var, use let or const instead.(ô¸¾³úÿÿÿÿ
+Kjavascript:S3504é")Unexpected var, use let or const instead.(×¹±Ôüÿÿÿÿ
+Kjavascript:S3504÷")Unexpected var, use let or const instead.(¿¥”Œûÿÿÿÿ
+Kjavascript:S3504ƒ")Unexpected var, use let or const instead.(¿¥”Œûÿÿÿÿ
+Kjavascript:S3504")Unexpected var, use let or const instead.(¹ÿÊ‘üÿÿÿÿ
+_javascript:S1121¤"=Extract the assignment of "this.parent" from this expression.(ÿ£Óğûÿÿÿÿ
+Kjavascript:S3504©")Unexpected var, use let or const instead.(ÅÚşÇÿÿÿÿÿ
+Kjavascript:S3504°")Unexpected var, use let or const instead.(ÅÚşÇÿÿÿÿÿ
+Kjavascript:S3504·")Unexpected var, use let or const instead.(ºåÍ‹øÿÿÿÿ
+Kjavascript:S3504Ã")Unexpected var, use let or const instead.(£¹‘šúÿÿÿÿ
+ljavascript:S1121Ó"JExtract the assignment of "this.id_mapping[node.id]" from this expression.(óíì«ÿÿÿÿÿ
+\javascript:S1121ä"?Extract the assignment of "this.children" from this expression.(¸Ÿÿ›
+Kjavascript:S3504è")Unexpected var, use let or const instead.(£Á„€ùÿÿÿÿ
+Fjavascript:S3504ö")Unexpected var, use let or const instead.(Åê½­
+Kjavascript:S3504Š")Unexpected var, use let or const instead.(×¹±Ôüÿÿÿÿ
+Kjavascript:S3504«")Unexpected var, use let or const instead.(ûÔÆÁûÿÿÿÿ
+Kjavascript:S3504¼")Unexpected var, use let or const instead.(ªÃ´¼şÿÿÿÿ
+Kjavascript:S3504Ã")Unexpected var, use let or const instead.(×¡Ë¾üÿÿÿÿ
+Fjavascript:S3504Ê")Unexpected var, use let or const instead.(ø ‹›
+Fjavascript:S3504ß")Unexpected var, use let or const instead.(ÕÜÖº
+Fjavascript:S3504ë")Unexpected var, use let or const instead.(ò¸Ÿ
+Kjavascript:S3504ø")Unexpected var, use let or const instead.(Æâ€şûÿÿÿÿ
+Fjavascript:S3504’")Unexpected var, use let or const instead.(ŞÜ£ğ
+Fjavascript:S3504¦")Unexpected var, use let or const instead.(Êüïò
+Fjavascript:S3504¯")Unexpected var, use let or const instead.(Êüïò
+Kjavascript:S3504Ã")Unexpected var, use let or const instead.(úİé‡úÿÿÿÿ
+Fjavascript:S3504™")Unexpected var, use let or const instead.(Ûæ
+Kjavascript:S3504«")Unexpected var, use let or const instead.(ºåÍ‹øÿÿÿÿ
+Kjavascript:S3504ğ")Unexpected var, use let or const instead.(¡†¶Çÿÿÿÿÿ
+Fjavascript:S3504ô")Unexpected var, use let or const instead.(ØíĞ­
+cjavascript:S1121	"AExtract the assignment of "url_info.method" from this expression.(±¿Şñÿÿÿÿÿ
+Fjavascript:S3504¤	")Unexpected var, use let or const instead.(¥äƒâ
+Kjavascript:S3504Æ	")Unexpected var, use let or const instead.(ˆğâÒúÿÿÿÿ
+Kjavascript:S3504ñ	")Unexpected var, use let or const instead.(ÕÓ´§øÿÿÿÿ
+Fjavascript:S3504÷	")Unexpected var, use let or const instead.(ØíĞ­
+Kjavascript:S3504²
+")Unexpected var, use let or const instead.(¶ÜŒßÿÿÿÿÿ
+Kjavascript:S3504¹
+")Unexpected var, use let or const instead.(¶ÜŒßÿÿÿÿÿ
+Kjavascript:S3504À
+")Unexpected var, use let or const instead.(¶ÜŒßÿÿÿÿÿ
+Kjavascript:S3504Ç
+")Unexpected var, use let or const instead.(ºåÍ‹øÿÿÿÿ
+Fjavascript:S3504Ñ
+")Unexpected var, use let or const instead.(§İŞª
+Kjavascript:S3504à
+")Unexpected var, use let or const instead.(ÅÚşÇÿÿÿÿÿ
+Fjavascript:S3504ê
+")Unexpected var, use let or const instead.(Şş‚¯
+Fjavascript:S3504ø
+")Unexpected var, use let or const instead.(²õè…
+Fjavascript:S3504™")Unexpected var, use let or const instead.(ˆŒ é
+hjavascript:S1121©"FExtract the assignment of "this.options[option]" from this expression.(¥ı­èşÿÿÿÿ
+Fjavascript:S3504â")Unexpected var, use let or const instead.(öÛ¡Ù
+Kjavascript:S3504æ")Unexpected var, use let or const instead.(”şÍıÿÿÿÿ
+Fjavascript:S3504›")Unexpected var, use let or const instead.(†Ò‘ğ
+Kjavascript:S3504¹")Unexpected var, use let or const instead.(ï„®Öşÿÿÿÿ
+Kjavascript:S3504Î")Unexpected var, use let or const instead.(Õ–Ôƒøÿÿÿÿ
+Kjavascript:S3504Ù")Unexpected var, use let or const instead.(‚¦–Çÿÿÿÿÿ
+Kjavascript:S3504ô")Unexpected var, use let or const instead.(´¡úÿÿÿÿ
+Kjavascript:S3504†")Unexpected var, use let or const instead.(ÅÚşÇÿÿÿÿÿ
+Fjavascript:S3504")Unexpected var, use let or const instead.(ãé©
+Kjavascript:S3504·")Unexpected var, use let or const instead.(×¹±Ôüÿÿÿÿ
+Kjavascript:S3504Ì")Unexpected var, use let or const instead.(ßµùöşÿÿÿÿ
+Fjavascript:S3504Ú")Unexpected var, use let or const instead.(ş±Îò
+Kjavascript:S3504å")Unexpected var, use let or const instead.(ÅÚşÇÿÿÿÿÿ
+ajavascript:S1121ı"?Extract the assignment of "this.$element" from this expression.(ÑúÕµşÿÿÿÿ
+Fjavascript:S3504¨")Unexpected var, use let or const instead.(™Í ë
+Kjavascript:S3504Ç")Unexpected var, use let or const instead.(œ¾¯ûÿÿÿÿ
+Kjavascript:S3504÷")Unexpected var, use let or const instead.(Ç“Óšşÿÿÿÿ
+Kjavascript:S3504’")Unexpected var, use let or const instead.(£é…²ùÿÿÿÿ
+Ajavascript:S6324“"$Remove this control character: \x00.(…½ä
+Ajavascript:S6324“"$Remove this control character: \x1f.(…½ä
+ajavascript:S5868“"DMove this Unicode combined character '\u070f\u17b4' outside of [...](…½ä
+Fjavascript:S3504¡")Unexpected var, use let or const instead.(İ´
+Kjavascript:S3504ª")Unexpected var, use let or const instead.(ş‹ìûÿÿÿÿ
+Qjavascript:S1854¿"/Remove this useless assignment to variable "v".(Ï·¢Øûÿÿÿÿ
+Kjavascript:S3504æ")Unexpected var, use let or const instead.(‹«ÂÉÿÿÿÿÿ
+Kjavascript:S3504õ")Unexpected var, use let or const instead.(‹«ÂÉÿÿÿÿÿ
+Kjavascript:S3504€")Unexpected var, use let or const instead.(×üÆ”ûÿÿÿÿ
+Kjavascript:S3504Š")Unexpected var, use let or const instead.(‹«ÂÉÿÿÿÿÿ
+Fjavascript:S3504 ")Unexpected var, use let or const instead.(Ğ ¶©
+Kjavascript:S3504£")Unexpected var, use let or const instead.(¤ø¢‚ıÿÿÿÿ
+Kjavascript:S3504°")Unexpected var, use let or const instead.(Ì—…úÿÿÿÿ
+Kjavascript:S3504²")Unexpected var, use let or const instead.(‡œÚşÿÿÿÿ
+Fjavascript:S3504Ä")Unexpected var, use let or const instead.(ûšÂ–
+Kjavascript:S3504è")Unexpected var, use let or const instead.(£İ£öøÿÿÿÿ
+Ejavascript:S3504ê")Unexpected var, use let or const instead.(öâÃ[
+Ujavascript:S1854ó"3Remove this useless assignment to variable "error".(Æã³¸øÿÿÿÿ
+Kjavascript:S3504€")Unexpected var, use let or const instead.(‹«ÂÉÿÿÿÿÿ
+Kjavascript:S3504”")Unexpected var, use let or const instead.(ı±ÛÔşÿÿÿÿ
+Fjavascript:S3504")Unexpected var, use let or const instead.(Òõ·
+Fjavascript:S3504®")Unexpected var, use let or const instead.(Òõ·
+hjavascript:S1121Í"KExtract the assignment of "this.selected_single_node" from this expression.(Á€£”
+hjavascript:S1121Ö"KExtract the assignment of "this.selected_single_node" from this expression.(Á€£”
+kjavascript:S1121ç"NExtract the assignment of "this.selected_nodes[node.id]" from this expression.(ª¹‚š
+mjavascript:S1121é"KExtract the assignment of "this.selected_single_node" from this expression.(¯«“ñùÿÿÿÿ
+Kjavascript:S3504ü")Unexpected var, use let or const instead.(Õ©™ÿÿÿÿÿ
+Kjavascript:S3504")Unexpected var, use let or const instead.(šƒé˜ıÿÿÿÿ
+Kjavascript:S3504™")Unexpected var, use let or const instead.(—Ïùúüÿÿÿÿ
+Kjavascript:S3504·")Unexpected var, use let or const instead.(Œ¨µøÿÿÿÿ
+bjavascript:S1121Ü"@Extract the assignment of "this.hit_areas" from this expression.(¯—şüùÿÿÿÿ
+ejavascript:S1121á"CExtract the assignment of "this.drag_element" from this expression.(™¿×’şÿÿÿÿ
+ejavascript:S1121ë"CExtract the assignment of "this.hovered_area" from this expression.(—‰ñûÿÿÿÿÿ
+Kjavascript:S3504ï")Unexpected var, use let or const instead.(Â±»òùÿÿÿÿ
+bjavascript:S1121ñ"@Extract the assignment of "this.hit_areas" from this expression.(¼ğœÆùÿÿÿÿ
+Fjavascript:S3504õ")Unexpected var, use let or const instead.(ÆµÎ§
+Kjavascript:S3504‹")Unexpected var, use let or const instead.(ÅÚşÇÿÿÿÿÿ
+Kjavascript:S3504‘")Unexpected var, use let or const instead.(×¡Ë¾üÿÿÿÿ
+gjavascript:S1121—"EExtract the assignment of "this.previous_ghost" from this expression.(µÖ‰šÿÿÿÿÿ
+Kjavascript:S3504›")Unexpected var, use let or const instead.(Êí³Ûÿÿÿÿÿ
+jjavascript:S1121¥"HExtract the assignment of "this.open_folder_timer" from this expression.(®³ßîüÿÿÿÿ
+ejavascript:S1121«"HExtract the assignment of "this.open_folder_timer" from this expression.(€¸”ö
+Kjavascript:S3504°")Unexpected var, use let or const instead.(äØìøÿÿÿÿ
+Kjavascript:S3504Ñ")Unexpected var, use let or const instead.(šƒé˜ıÿÿÿÿ
+Kjavascript:S3504å")Unexpected var, use let or const instead.(‚È¤“şÿÿÿÿ
+Kjavascript:S3504é")Unexpected var, use let or const instead.(¿ÖœŠıÿÿÿÿ
+Pjavascript:S1854‚"3Remove this useless assignment to variable "child".(ÜóæÂ
+Kjavascript:S3504µ")Unexpected var, use let or const instead.(ë¿Í¬øÿÿÿÿ
+\javascript:S1121¼"?Extract the assignment of "this.last_top" from this expression.(Íûá£
+Fjavascript:S3504À")Unexpected var, use let or const instead.(ú¬åÙ
+Fjavascript:S3504Ù")Unexpected var, use let or const instead.(ú¬åÙ
+Kjavascript:S3504ô")Unexpected var, use let or const instead.(°†òÔÿÿÿÿÿ
+Kjavascript:S3504ˆ")Unexpected var, use let or const instead.(§õßøÿÿÿÿ
+Kjavascript:S3504ä")Unexpected var, use let or const instead.(†˜¨Æúÿÿÿÿ
+Kjavascript:S3504ÿ")Unexpected var, use let or const instead.(‡²İƒøÿÿÿÿ
+Fjavascript:S3504‚")Unexpected var, use let or const instead.(·Ç¯Ÿ
+Fjavascript:S3504…")Unexpected var, use let or const instead.(•ÇÊŒ
+hjavascript:S1121"FExtract the assignment of "_this.$scroll_parent" from this expression.(»“Çûÿÿÿÿ
+jjavascript:S1121§"HExtract the assignment of "this.scroll_parent_top" from this expression.(ß›Á€øÿÿÿÿ
+Fjavascript:S3504®")Unexpected var, use let or const instead.(ì¯ü¥
+Kjavascript:S3504»")Unexpected var, use let or const instead.(©°Íûÿÿÿÿ
+`javascript:S1121À"CExtract the assignment of "this.previous_top" from this expression.(¡Ìòß
+`javascript:S1121Ä"CExtract the assignment of "this.previous_top" from this expression.(¡Ìòß
+Fjavascript:S3504É")Unexpected var, use let or const instead.(ÊËœ
+Kjavascript:S3504Ó")Unexpected var, use let or const instead.(ÆĞåşÿÿÿÿ
+ojavascript:S1121Õ"RExtract the assignment of "this.$scroll_parent[0].scrollTop" from this expression.(ÉÀ…¬
+Fjavascript:S3504İ")Unexpected var, use let or const instead.(ì·‡
+Fjavascript:S3504ò")Unexpected var, use let or const instead.(ìüÜÍ
+Kjavascript:S3504ˆ")Unexpected var, use let or const instead.(õß›ëÿÿÿÿÿ
+Fjavascript:S3504Í")Unexpected var, use let or const instead.(¨¸¯
+Fjavascript:S3504â")Unexpected var, use let or const instead.(ùÿÔÔ
+Kjavascript:S3504ø")Unexpected var, use let or const instead.(ñè…”øÿÿÿÿ

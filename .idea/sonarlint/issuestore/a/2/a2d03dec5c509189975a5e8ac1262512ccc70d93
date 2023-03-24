@@ -1,0 +1,16 @@
+
+t
+java:S1104
+"WMake ADD_TO_CART a static final constant or non-public and provide accessors if needed.(ÇÕ„8’ÑÇ²ğ0
+y
+java:S1104"\Make BUTTON_VIEW_CART a static final constant or non-public and provide accessors if needed.(¢áÏ8Íçä²ğ0
+N
+java:S1444
+"1Make this "public static ADD_TO_CART" field final(ÇÕ„8’ÑÇ²ğ0
+S
+java:S1444"6Make this "public static BUTTON_VIEW_CART" field final(¢áÏ8Îçä²ğ0
+s
+java:S3008
+"VRename this field "ADD_TO_CART" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÕ„8•ÑÇ²ğ0
+x
+java:S3008"[Rename this field "BUTTON_VIEW_CART" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢áÏ8Ñçä²ğ0
