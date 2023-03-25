@@ -12,6 +12,7 @@ import static com.sofkau.questions.MensajeNombre.mensajeNombre;
 import static com.sofkau.tasks.IniciarSesion.iniciarSesion;
 import static com.sofkau.tasks.NavegarAlRegistro.navegarAlRegistro;
 import static com.sofkau.tasks.FormularioRegistro.formularioRegistro;
+import static com.sofkau.tasks.Refrescar.thePage;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -42,7 +43,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
         theActorInTheSpotlight().attemptsTo(
                 formularioRegistro()
                         .nombreInicial("Bryan Polo")
-                        .email("bryan2321@hotmail.com")
+                        .email("brayan199@hotmail.com")
                         .password("bryan12345")
                         .nombre("Brayan David")
                         .apellido("Polo Cohen")
@@ -56,19 +57,19 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
 
 
         );
+
     }
     @Entonces("el usuario debe ser redireccionado a la pagina principal")
     public void elUsuarioDebeSerRedireccionadoALaPaginaPrincipal() {
-
-
+        quitarDriver();
     }
 
     @Cuando("completa los campos para iniciar sesion")
     public void completaLosCamposParaIniciarSesion() {
         theActorInTheSpotlight().attemptsTo(
                 iniciarSesion()
-                        .conElUsuario("juan.pineda@gmail.com")
-                        .yConLaContrasenna("123456")
+                        .conElUsuario("brayan199@hotmail.com")
+                        .yConLaContrasenna("bryan12345")
         );
 
     }
@@ -76,7 +77,7 @@ public class RegistroInicioSesionStepDefinitions extends Configuracion {
     @Entonces("el usuario debe ver su nombre en la pagina principal")
     public void elUsuarioDebeVerSuNombreEnLaPaginaPrincipal() {
         theActorInTheSpotlight().should(
-                seeThat(mensajeNombre(), equalTo("Logged in as Juan Esteban"))
+                seeThat(mensajeNombre(), equalTo("Logged in as Bryan Polo"))
         );
 
 

@@ -7,10 +7,12 @@ import org.openqa.selenium.By;
 
 
 public class FlujoDeCompra extends PageObject {
+    public static final Target BOTONHOME = Target.the("Boton ir a home")
+            .located(By.xpath("//a[normalize-space()='Home']"));
     public static final Target BOTON_PRODUCTOS = Target.the("Boton ir a productos")
             .located(By.xpath("//a[@href='/products']"));
-    public static final Target CATEGORIA_MEN = Target.the("opcion productos MEN")
-            .located(By.xpath("//a[normalize-space()='Men']"));
+    public static final Target CATEGORIA_MEN = Target.the("categoria productos MEN")
+            .located(By.xpath("(//a[normalize-space()='Men'])[1]"));
     public static final Target SUBCATEGORIA_TSHIRTS  = Target.the("SUBCATEGORIA TSHIRTS")
             .located(By.xpath("//a[normalize-space()='Tshirts']"));
     public static final Target BOTON_VIEW_PRODUCT_CAMISETA = Target.the("Green Side Placket Detail ")

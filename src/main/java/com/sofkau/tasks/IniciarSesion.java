@@ -29,8 +29,6 @@ public class IniciarSesion implements Task {
                 Enter.theValue(usuario).into(CAMPO_USUARIO),
                 Enter.theValue(contrasenna).into(CAMPO_CONTRASENNA),
                 Click.on(BOTON_INICIAR_SESION)
-
-
         );
     }
 

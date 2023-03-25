@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Scroll;
 
+import static com.sofkau.tasks.Refrescar.thePage;
 import static com.sofkau.ui.PaginaRegistro.*;
 
 public class FormularioRegistro implements Task {
@@ -103,7 +104,6 @@ public class FormularioRegistro implements Task {
                 Enter.theValue(celular).into(CAMPO_CELULAR),
                 Click.on(BOTON_CREAR_CUENTA),
                 Click.on(BOTON_CONTINUAR)
-
         );
     }
     public static FormularioRegistro formularioRegistro(){

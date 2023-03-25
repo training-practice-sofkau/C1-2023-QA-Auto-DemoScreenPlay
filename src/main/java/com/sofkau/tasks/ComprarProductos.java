@@ -47,15 +47,22 @@ public class ComprarProductos implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
+                Refrescar.thePage(),
+                Click.on(BOTONHOME),
                 Click.on(BOTON_PRODUCTOS),
+                Scroll.to(CATEGORIA_MEN),
                 Click.on(CATEGORIA_MEN),
+                Scroll.to(SUBCATEGORIA_TSHIRTS),
                 Click.on(SUBCATEGORIA_TSHIRTS),
+                Scroll.to(BOTON_VIEW_PRODUCT_CAMISETA),
                 Click.on(BOTON_VIEW_PRODUCT_CAMISETA),
                 Enter.theValue(cantidad).into(CAMPO_CANTIDAD),
                 Click.on(BOTON_AGREGAR_AL_CARRITO),
                 Click.on(BOTON_SEGUIR_COMPRANDO),
                 Click.on(CATEGORIA_MEN),
+                Scroll.to(SUBCATEGORIA_JEANS),
                 Click.on(SUBCATEGORIA_JEANS),
+                Scroll.to(BOTON_VIEW_PRODUCT_JEANS3),
                 Click.on(BOTON_VIEW_PRODUCT_JEANS3),
                 Click.on(BOTON_AGREGAR_AL_CARRITO),
                 Click.on(BOTON_SEGUIR_COMPRANDO),
@@ -69,7 +76,6 @@ public class ComprarProductos implements Task {
                 Enter.theValue(mesTarjeta).into(CAMPO_MES_TARJETA),
                 Enter.theValue(annoTarjeta).into(CAMPO_ANNO_TARJETA),
                 Click.on(BOTON_PAGAR)
-
 
         );
     }
