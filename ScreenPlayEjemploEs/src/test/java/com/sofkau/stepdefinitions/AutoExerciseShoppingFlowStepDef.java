@@ -6,6 +6,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.serenitybdd.screenplay.actions.Click;
 import org.junit.jupiter.api.Assertions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +19,7 @@ import static com.sofkau.tasks.DoSignup.doSignup;
 import static com.sofkau.tasks.GoToSignup.goToSignup;
 import static com.sofkau.tasks.Login.login;
 import static com.sofkau.tasks.NavigateToSignupLogin.navigateToSignupLogin;
+import static com.sofkau.ui.PaymentDone.DELETE_ACCOUNT;
 import static com.sofkau.util.Constants.*;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
@@ -73,7 +75,7 @@ public class AutoExerciseShoppingFlowStepDef extends Configuration {
             theActorInTheSpotlight().should(
                     seeThat(isAccountCreated(), equalTo(E_TITLE))
             );
-            log.info("Test passed");
+            log.info("Test 1 passed");
         } catch (Exception e) {
             log.error("Test failed");
             quitDriver();
@@ -102,7 +104,7 @@ public class AutoExerciseShoppingFlowStepDef extends Configuration {
             theActorInTheSpotlight().should(
                     seeThat(loggedInAs(), equalTo(LOGGED_IN_AS))
             );
-            log.info("Test passed");
+            log.info("Test 2 passed");
         } catch (Exception e) {
             log.error("Test failed");
             quitDriver();
@@ -131,7 +133,8 @@ public class AutoExerciseShoppingFlowStepDef extends Configuration {
             theActorInTheSpotlight().should(
                     seeThat(isOrderPlaced(), equalTo(E_TITLE_ORDER))
             );
-            log.info("Test passed");
+            theActorInTheSpotlight().attemptsTo(Click.on(DELETE_ACCOUNT));
+            log.info("Test 3 passed");
         } catch (Exception e) {
             log.error("Test failed");
             quitDriver();

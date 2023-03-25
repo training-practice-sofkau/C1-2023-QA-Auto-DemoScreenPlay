@@ -25,6 +25,7 @@ public class BuyJean implements Task {
                 Scroll.to(MEN_BTTN),
                 Click.on(MEN_BTTN),
                 Click.on(JEANS),
+                Refresh.thePage(),
                 Scroll.to(ADD_CHEAP),
                 Click.on(ADD_CHEAP),
                 Click.on(VIEW_CART),
@@ -34,9 +35,9 @@ public class BuyJean implements Task {
                 Click.on(TO_PAYMENT),
                 Enter.theValue(String.format("%s %s", user.getName(), user.getLName())).into(NAME_C),
                 Enter.theValue(user.getCCard()).into(C_NUMBER),
-                Enter.theValue().into(CVC),
-                Enter.theValue().into(E_MONTH),
-                Enter.theValue().into(E_YEAR),
+                Enter.theValue(user.getCvc()).into(CVC),
+                Enter.theValue(user.getMonthDay()).into(E_MONTH),
+                Enter.theValue(user.getYearDay()).into(E_YEAR),
                 Click.on(PAY_BTTN)
         );
     }

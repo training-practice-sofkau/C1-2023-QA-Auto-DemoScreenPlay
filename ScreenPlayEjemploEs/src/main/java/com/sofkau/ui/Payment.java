@@ -12,7 +12,7 @@ public class Payment extends PageObject {
             .located(By.xpath("//input[@data-qa='card-number']"));
 
     public static Target CVC = Target.the("CVC of the card")
-            .located(By.xpath("//input[@data-qa='expiry-month']"));
+            .located(By.xpath("//input[@data-qa='cvc']"));
 
     public static Target E_MONTH = Target.the("Expiration month of the card")
             .located(By.xpath("//input[@data-qa='expiry-month']"));
