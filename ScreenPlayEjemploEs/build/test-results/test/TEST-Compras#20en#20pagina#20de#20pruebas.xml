@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Compras en pagina de pruebas" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-21T15:10:33" hostname="PSOFKA01075" time="33.405">
+<testsuite name="Compras en pagina de pruebas" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-21T18:01:51" hostname="GRETTY" time="88.276">
   <properties/>
-  <testcase name="Iniciar sesion" classname="Compras en pagina de pruebas" time="33.405"/>
+  <testcase name="Iniciar sesion" classname="Compras en pagina de pruebas" time="88.276">
+    <failure message="java.lang.AssertionError: no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=111.0.5563.65)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'GRETTY', ip: '169.254.38.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3834}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c4efd7d37cf3477515441170aeacce56&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;header&quot;]/div/div/div/div[2]/div/ul/li[10]/a}" type="java.lang.AssertionError">java.lang.AssertionError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GRETTY', ip: '169.254.38.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3834}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c4efd7d37cf3477515441170aeacce56
+*** Element info: {Using=xpath, value=//*[@id=&quot;header&quot;]/div/div/div/div[2]/div/ul/li[10]/a}
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at com.sofkau.stepdefinitions.RegistroInicioSesionStepDefinitions.elUsuarioDebeVerSuNombreEnLaPaginaPrincipal(RegistroInicioSesionStepDefinitions.java:59)
+	at ✽.el usuario debe ver su nombre en la pagina principal(file:///D:/Training%20Automatizacion%20de%20pruebas/Semana%209%20y%2010/Ejemplo/C1-2023-QA-Auto-DemoScreenPlay/ScreenPlayEjemploEs/src/test/resources/features/registrarse.feature:22)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 38450
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 26875
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar. 21, 2023 10:10:37 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-mar. 21, 2023 10:10:37 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
-INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 25627
+mar. 21, 2023 1:01:57 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+mar. 21, 2023 1:01:58 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 28494
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar. 21, 2023 10:10:42 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
+mar. 21, 2023 1:02:05 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

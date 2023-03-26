@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Comprar en linea" skipped="0" tests="1" time="140.61" timestamp="2023-03-22 09:26:34"><testcase name="Compra exitosa de productos"><failure message="&#10;Expected: &quot;ORDER PLACD!&quot;&#10;     but: was &quot;ORDER PLACED!&quot;" type="java.lang.AssertionError">
+Expected: "ORDER PLACD!"
+     but: was "ORDER PLACED!"</failure><system-err>
+Expected: "ORDER PLACD!"
+     but: was "ORDER PLACED!"&#13;
+com.sofkau.stepdefinitions.CompraStepDefinitios.mostraraUnMensajeConfirmandoLaCompra(CompraStepDefinitios.java:79)&#13;
+✽.mostrara un mensaje confirmando la compra(file:///D:/Training%20Automatizacion%20de%20pruebas/Semana%209%20y%2010/Git/C1-2023-QA-Auto-DemoScreenPlay/ScreenPlayEjemploEs/src/test/resources/features/compra.feature:15)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="cff506f4f0d4f179a12580dd68f72e37194601fce0f5c0867ff662bcc554ff69.html">Comprar En Linea</a></span>
+                > <span class="truncate-60"><a
+                    href="bf26fe4920ff309c92963f6b0d8a74f7f8090a7516201b36a0aa5effb4bd3dc9.html">Compra exitosa de productos </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-03-2023 21:26</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Comprar En Linea </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                yo como usuario de la pagina automation exercise<br />
+Quiero comprar varias prendas por medio de la pagina web<br />
+Para poder ahorrar tiempo y acceder a mas productos disponibles
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="0097a32c154a739957f6edd03da1765fbfa9d1c27897abe56d294468bc88d1a7.html">Compra Exitosa
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">Compra exitosa de productos
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Expected: 'ORDER PLACD!' but: was 'ORDER PLACED!'</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.sofkau.stepdefinitions.CompraStepDefinitios.mostraraUnMensajeConfirmandoLaCompra(CompraStepDefinitios.java:79)<br />✽.mostrara un mensaje confirmando la compra(file:///D:/Training%20Automatizacion%20de%20pruebas/Semana%209%20y%2010/Git/C1-2023-QA-Auto-DemoScreenPlay/ScreenPlayEjemploEs/src/test/resources/features/compra.feature:15)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource1999363148380094805.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="0b08692dd462ad9497e1507125e20b25df9bf4a9464a8e94d65dc7d4418328c9.png" title=" Dado que el cliente esta logueado en la pagina principal" width="1920"/>
+                <img src="0b08692dd462ad9497e1507125e20b25df9bf4a9464a8e94d65dc7d4418328c9.png" title=" Gretty abrir pagina inicial" width="1920"/>
+                <img src="0b08692dd462ad9497e1507125e20b25df9bf4a9464a8e94d65dc7d4418328c9.png" title=" Gretty opens the Pagina inicial" width="1920"/>
+                <img src="885aefe202b0d9d189cbada9ee602836ba994eb1e0bdb8ef22d836144412872a.png" title=" Gretty opens the Pagina inicial (completed)" width="1920"/>
+                <img src="885aefe202b0d9d189cbada9ee602836ba994eb1e0bdb8ef22d836144412872a.png" title=" Gretty abrir pagina inicial (completed)" width="1920"/>
+                <img src="885aefe202b0d9d189cbada9ee602836ba994eb1e0bdb8ef22d836144412872a.png" title=" Gretty navegar al registro" width="1920"/>
+                <img src="885aefe202b0d9d189cbada9ee602836ba994eb1e0bdb8ef22d836144412872a.png" title=" Gretty clicks on Boton ir al registro" width="1920"/>
+                <img src="5684aee593a8222362eaad02133758c83b440fa9ecf5bc5233afc06fe87f0625.png" title=" Gretty clicks on Boton ir al registro (completed)" width="1920"/>
+                <img src="5684aee593a8222362eaad02133758c83b440fa9ecf5bc5233afc06fe87f0625.png" title=" Gretty navegar al registro (completed)" width="1920"/>
+                <img src="5684aee593a8222362eaad02133758c83b440fa9ecf5bc5233afc06fe87f0625.png" title=" Gretty iniciar sesion" width="1920"/>
+                <img src="5684aee593a8222362eaad02133758c83b440fa9ecf5bc5233afc06fe87f0625.png" title=" Gretty enters 'juan.pineda@gmail.com' into campo usuario" width="1920"/>
+                <img src="3a6bc57fa66bcb83b2b2bc769093ed176cde6a89657efdf6da94ac026b026676.png" title=" Gretty enters 'juan.pineda@gmail.com' into campo usuario (completed)" width="1920"/>
+                <img src="3a6bc57fa66bcb83b2b2bc769093ed176cde6a89657efdf6da94ac026b026676.png" title=" Gretty enters '123456' into campo contrase&ntilde;a" width="1920"/>
+                <img src="3e45d9a1914e058ecb92546ae4e88da7817a7dd2d36c1a6585aecf97531b4085.png" title=" Gretty enters '123456' into campo contrase&ntilde;a (completed)" width="1920"/>
+                <img src="3e45d9a1914e058ecb92546ae4e88da7817a7dd2d36c1a6585aecf97531b4085.png" title=" Gretty clicks on Bot&oacute;n iniciar sesion" width="1920"/>
+                <img src="da1d24240e94a8b13bd7885622d3b332b6c52512f0bc3844d5d636c37958ac0e.png" title=" Gretty clicks on Bot&oacute;n iniciar sesion (completed)" width="1920"/>
+                <img src="da1d24240e94a8b13bd7885622d3b332b6c52512f0bc3844d5d636c37958ac0e.png" title=" Gretty iniciar sesion (completed)" width="1920"/>
+                <img src="da1d24240e94a8b13bd7885622d3b332b6c52512f0bc3844d5d636c37958ac0e.png" title=" Dado que el cliente esta logueado en la pagina principal (completed)" width="1920"/>
+                <img src="da1d24240e94a8b13bd7885622d3b332b6c52512f0bc3844d5d636c37958ac0e.png" title=" Cuando agrega varios productos al carrito" width="1920"/>
+                <img src="b333bd019d66e771f6c2ebba1abdaf175bc8a954eef784fe25880803e87cf7d2.png" title=" Y completa la informacion del formulario del pago" width="1920"/>
+                <img src="b333bd019d66e771f6c2ebba1abdaf175bc8a954eef784fe25880803e87cf7d2.png" title=" Gretty flujo compra" width="1920"/>
+                <img src="b333bd019d66e771f6c2ebba1abdaf175bc8a954eef784fe25880803e87cf7d2.png" title=" Gretty clicks on categoria mujer" width="1920"/>
+                <img src="b333bd019d66e771f6c2ebba1abdaf175bc8a954eef784fe25880803e87cf7d2.png" title=" Gretty clicks on opcion tops" width="1920"/>
+                <img src="e4a4f03bff708e013b9d6ca36452cf5fb07a7379299c7f7e48d1449518399ac5.png" title=" Gretty clicks on opcion tops (completed)" width="1920"/>
+                <img src="e4a4f03bff708e013b9d6ca36452cf5fb07a7379299c7f7e48d1449518399ac5.png" title=" Gretty refreshes the browser" width="1920"/>
+                <img src="a6f7de3b1f5662146e033496c49d150a9c771fc07fb3087a4d68696982d267e4.png" title=" Gretty refreshes the browser (completed)" width="1920"/>
+                <img src="57df68ac70adf53798530c951573403c1bc8b156ebba91a341d741f3fe0d620b.png" title=" Gretty clicks on boton agregar producto1" width="1920"/>
+                <img src="41221973c7449844a5f378bc54a0dc08d9a5bad5a94676d8652d3d4362f17d77.png" title=" Gretty clicks on boton agregar producto1 (completed)" width="1920"/>
+                <img src="41221973c7449844a5f378bc54a0dc08d9a5bad5a94676d8652d3d4362f17d77.png" title=" Gretty clicks on boton agregar producto1" width="1920"/>
+                <img src="8a102339a3e42714c3a674e845ffbf55f923e3fd70666b4f1e1057c7ed7be53e.png" title=" Gretty clicks on boton agregar producto1 (completed)" width="1920"/>
+                <img src="8a102339a3e42714c3a674e845ffbf55f923e3fd70666b4f1e1057c7ed7be53e.png" title=" Gretty clicks on boton agregar producto1" width="1920"/>
+                <img src="972a6018ea15348eba8061b77e2539f1c0075aae4924618b8ac6843d6313a752.png" title=" Gretty clicks on boton agregar producto1 (completed)" width="1920"/>
+                <img src="972a6018ea15348eba8061b77e2539f1c0075aae4924618b8ac6843d6313a752.png" title=" Gretty clicks on categoria mujer" width="1920"/>
+                <img src="28ae9339e449b63edf6fd2cfa91c847aedb8e7474f320351555d301e2d8fe687.png" title=" Gretty clicks on categoria mujer (completed)" width="1920"/>
+                <img src="28ae9339e449b63edf6fd2cfa91c847aedb8e7474f320351555d301e2d8fe687.png" title=" Gretty clicks on opcion tops" width="1920"/>
+                <img src="f5982f30942e3001409ec99b41817d027f63a4c5117a038ae325771b22828cc9.png" title=" Gretty clicks on opcion tops (completed)" width="1920"/>
+                <img src="f5982f30942e3001409ec99b41817d027f63a4c5117a038ae325771b22828cc9.png" title=" Gretty clicks on boton agregar producto2" width="1920"/>
+                <img src="0639275730165aba27ef677bb0eeb5e3932b90ad00329e911bcc39e8bc11f794.png" title=" Gretty clicks on boton agregar producto2 (completed)" width="1920"/>
+                <img src="0639275730165aba27ef677bb0eeb5e3932b90ad00329e911bcc39e8bc11f794.png" title=" Gretty clicks on boton agregar producto1" width="1920"/>
+                <img src="4006fb5fff1336a738c4be11ee0473ae87975dbe361654c6f03c421f76b24ebd.png" title=" Gretty clicks on boton agregar producto1 (completed)" width="1920"/>
+                <img src="4006fb5fff1336a738c4be11ee0473ae87975dbe361654c6f03c421f76b24ebd.png" title=" Gretty clicks on enlace ver carrito" width="1920"/>
+                <img src="e5b6c12206ae6e0aefab8b79aaf5969f808ca414eb0b4fd5a53dc44d0e4dd37b.png" title=" Gretty clicks on enlace ver carrito (completed)" width="1920"/>
+                <img src="e5b6c12206ae6e0aefab8b79aaf5969f808ca414eb0b4fd5a53dc44d0e4dd37b.png" title=" Gretty clicks on boton pago" width="1920"/>
+                <img src="dc8c2de6de4d6244dd2beab3ef239163769518253b7e29f844341050af7363a6.png" title=" Gretty clicks on boton pago (completed)" width="1920"/>
+                <img src="8162f5136dc4ae0c2b2b5eac9180b9ffbf1f4502f1c20f7b77374fd5b4926cb0.png" title=" Gretty clicks on boton pedido" width="1920"/>
+                <img src="65a256191e99308ae8a219a4904fead2795b09f9c85ccabcb706ed0fa6c03ea9.png" title=" Gretty clicks on boton pedido (completed)" width="1920"/>
+                <img src="65a256191e99308ae8a219a4904fead2795b09f9c85ccabcb706ed0fa6c03ea9.png" title=" Gretty enters 'Bancolombia' into campo nombre tarjeta" width="1920"/>
+                <img src="9bd184f48ef0092d7e52da79f8bd1e705f9e4816159496791eb6547f516c4823.png" title=" Gretty enters 'Bancolombia' into campo nombre tarjeta (completed)" width="1920"/>
+                <img src="9bd184f48ef0092d7e52da79f8bd1e705f9e4816159496791eb6547f516c4823.png" title=" Gretty enters '16125547821' into campo numero tarjeta" width="1920"/>
+                <img src="08e04926423356432b4464a6f3c06d5079191149e4ee58f719b0a8106c272681.png" title=" Gretty enters '16125547821' into campo numero tarjeta (completed)" width="1920"/>
+                <img src="08e04926423356432b4464a6f3c06d5079191149e4ee58f719b0a8106c272681.png" title=" Gretty enters '302' into campo CVC" width="1920"/>
+                <img src="b708798424f0d2976fa87a2ee334ede9236ca9284c055bd69e5f9ee18cf273ba.png" title=" Gretty enters '302' into campo CVC (completed)" width="1920"/>
+                <img src="b708798424f0d2976fa87a2ee334ede9236ca9284c055bd69e5f9ee18cf273ba.png" title=" Gretty enters '02' into campo expiracion mes" width="1920"/>
+                <img src="f5e9579010b9d0221c89893ed6c90b7c6b986ee8ff184c706b7c7167c175c6c2.png" title=" Gretty enters '02' into campo expiracion mes (completed)" width="1920"/>
+                <img src="f5e9579010b9d0221c89893ed6c90b7c6b986ee8ff184c706b7c7167c175c6c2.png" title=" Gretty enters '2026' into campo expiracion anio" width="1920"/>
+                <img src="75fdee771f4dae5f3462ca2911d803bdaf23c6b3f559c9f4613ebb8b9f48ddcb.png" title=" Gretty enters '2026' into campo expiracion anio (completed)" width="1920"/>
+                <img src="75fdee771f4dae5f3462ca2911d803bdaf23c6b3f559c9f4613ebb8b9f48ddcb.png" title=" Gretty clicks on boton " width="1920"/>
+                <img src="3e0f1847f77f2437488cb14f08e28b4fffe43ed0c2568db991dbe87f960f93b5.png" title=" Y completa la informacion del formulario del pago" width="1920"/>
+                <img src="3e0f1847f77f2437488cb14f08e28b4fffe43ed0c2568db991dbe87f960f93b5.png" title=" Gretty flujo compra" width="1920"/>
+                <img src="3e0f1847f77f2437488cb14f08e28b4fffe43ed0c2568db991dbe87f960f93b5.png" title=" Gretty clicks on boton  (completed)" width="1920"/>
+                <img src="3e0f1847f77f2437488cb14f08e28b4fffe43ed0c2568db991dbe87f960f93b5.png" title=" Entonces mostrara un mensaje confirmando la compra" width="1920"/>
+                <img src="3e0f1847f77f2437488cb14f08e28b4fffe43ed0c2568db991dbe87f960f93b5.png" title=" Then mensaje compra should be 'ORDER PLACD!': <span class='failing-color'>FAILURE</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.2.9</span>
+</div>
+</body>
+</html>
